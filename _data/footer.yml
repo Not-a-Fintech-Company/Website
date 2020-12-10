@@ -25,6 +25,10 @@
     link: https://twitter.com/notafintechco/
     social_icon: Twitter
     new_window: true
+  - name: Github
+    link: https://github.com/not-a-fintech-company
+    social_icon: GitHub
+    new_window: false
   - name: RSS
     link: /feed.xml
     social_icon: RSS
