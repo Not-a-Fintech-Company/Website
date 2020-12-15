@@ -10,6 +10,10 @@
   link: /resources/
   new_window: false
   highlight: false
+- name: Guides
+  link: /guides/
+  new_window: false
+  highlight: false
 - name: About
   link: /about/
   new_window: false
