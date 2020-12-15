@@ -1,6 +1,8 @@
 ---
-title: An index of the guides we've compiled, create or plan to create
-description: All the pieces you need to start, build and run a fintech company.
+title: An index of models
 ---
 
 * [Term Loans](term-loan)
+* [Bank Accounts](bank-account)
+
+These models linked above serve to provide for building out 

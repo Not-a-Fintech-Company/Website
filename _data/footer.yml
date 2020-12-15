@@ -5,6 +5,8 @@
     link: /blog/
   - name: About
     link: /about/
+  - name: License
+    link: /license/
 - links:
   # - name: Contact
   #   link: /contact/
