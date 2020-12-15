@@ -1,10 +1,10 @@
 ---
 title: A random assortment of resources from around the web
-description: Heres is a compilation of links to things other people have written, or just blogs in general if they're a good source of content.
+description: A compilation of links to pieces other people have written, or just blogs in general if they're a good source of content.
 ---
 ## Readings
 
-Right now this a random assortments of things that I knew to find quickly and usually send people to read to get an initial lay of the land.
+Currently a random assortments of things that I knew to find quickly to send people to initially read.
 
 * <https://www.kunle.app/feb-2020-permissionless-issuing.html>
 * <https://www.kunle.app/march-2020-vertical-banks.html>
