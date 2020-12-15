@@ -24,6 +24,3 @@ Currently a random assortments of things that I knew to find quickly to send peo
 
 	
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">What teams are building in the customer support side of Banking as a Service? I’m struggling to find good examples.<br><br>It’s the main operational headache of building a neobank. And everyone needs the same things.<br><br>These are 👇</p>&mdash; Will White (@willwhite003) <a href="https://twitter.com/willwhite003/status/1287315227470684166?ref_src=twsrc%5Etfw">July 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
-
-This page can be edited and have pull requests added here: <https://github.com/Not-a-Fintech-Company/Website/blob/main/resources.md>
