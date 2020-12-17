@@ -23,10 +23,9 @@ One of the hardest parts of bringing a card to market is solving for each busine
 - [Networks](#networks)
   - Majors
   - Debit
-  - ACH
-- Servicing
-- Marketing
-- Vendors
+- [Servicing](#servicing)
+- [Marketing](#marketing)
+- [Resources](#resources)
 
 # Product
 
