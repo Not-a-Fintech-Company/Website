@@ -10,7 +10,7 @@ Welcome to the wild world of card issuing. With 100s of millions of cards issued
 
 One of the hardest parts of bringing a card to market is solving for each businesses unique order of operations to bring all disparate components together.  That includes bank partners, networks, technology vendors, marketing assets and plans, risk and servicing organizations, compliance programs, debt funding, and more all at once to launch a card.  While some of these pieces can be built in-house, others are much better solved via partnerships, and ultimately take time and money to pull off expediently.  Additionally not all components can be brought onboard in parallel, but need to happen serially. All of this is to say that bringing a card to market is a task with many branching codependent processes.
 
-[TOC]
+{% include toc.html html=content %}
 
 ## Areas to cover
 
