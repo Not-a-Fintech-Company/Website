@@ -32,8 +32,9 @@ One of the hardest parts of bringing a card to market is solving for each busine
 
 Defining the card product you want to launch is the first important decision you will need to make in order bring a product to market.  Some features only apply to certain product types (i.e. APR for credit cards), while others apply across all card types.  There are numerous decisions in what it takes to launch a card product, more than can be explicitly written out, so a non-exhaustive list is included below with some definitions. 
 
-##Card Product Decisions
+## Card Product Decisions
 
+{:.pure-table-bordered .pure-table}
 |   Name   | Examples     | Questions to be answered     |
 | ---- | ---- | ---- |
 |  Card Type    | Credit, Debit, Prepaid, Charge     | What type of underlying product are you offering?     |
@@ -52,6 +53,7 @@ When it comes to the technology side of the industry, modernization is always ab
 
 ## Issuing systems
 
+{:.pure-table-bordered .pure-table}
 | Name                     | Description                                                  | Examples                                                     |
 | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Pass-thru Gateway        | Provides single or multiple network access points via one access point, but almost no other services | FIS, Fiserv, STAR                                            |
@@ -59,8 +61,6 @@ When it comes to the technology side of the industry, modernization is always ab
 | Core Processor           | Connects to the network, authorizes and settles transactions, processes payments, and handles all core accounting requirements | Galileo, CoreCard, i2c, Privacy.com                          |
 | Core Banking             | Not connected to the network, but able to handle all account and accounting requirements.  With a issuing gateway on top it's how many banks initially brought debit cards to market | Profile, Phoenix, Finacle, Finxact                           |
 | General Service Provider | Bundles together core processing with bank relationship and servicing organization. Ala carte pricing on top of basic relationship | Deserve, Cardworks, TCW, Unit, Synapse, Treasury Prime, Cascade |
-
-
 
 # Compliance
 
