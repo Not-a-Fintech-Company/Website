@@ -34,7 +34,6 @@ Defining the card product you want to launch is the first important decision you
 
 ## Card Product Decisions
 
-{:.pure-table-bordered .pure-table}
 |   Name   | Examples     | Questions to be answered     |
 | ---- | ---- | ---- |
 |  Card Type    | Credit, Debit, Prepaid, Charge     | What type of underlying product are you offering?     |
@@ -53,7 +52,6 @@ When it comes to the technology side of the industry, modernization is always ab
 
 ## Issuing systems
 
-{:.pure-table-bordered .pure-table}
 | Name                     | Description                                                  | Examples                                                     |
 | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Pass-thru Gateway        | Provides single or multiple network access points via one access point, but almost no other services | FIS, Fiserv, STAR                                            |
@@ -146,4 +144,4 @@ Finding product marketing fit is never easy in this industry. With incumbents ha
 
 # Resources
 
-* [Bank Account Model](https://docs.google.com/spreadsheets/d/17SqQAYnFYKHgnnw60eD_D_9Zb79mJku-z42Wb3Pp_qI/edit?usp=sharing)
+* [Bank Account Model](/models/bank-account)
