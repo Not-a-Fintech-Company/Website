@@ -10,17 +10,17 @@ Welcome to the wild world of card issuing. With 100s of millions of cards issued
 
 One of the hardest parts of bringing a card to market is solving for each businesses unique order of operations to bring all disparate components together.  That includes bank partners, networks, technology vendors, marketing assets and plans, risk and servicing organizations, compliance programs, debt funding, and more all at once to launch a card.  While some of these pieces can be built in-house, others are much better solved via partnerships, and ultimately take time and money to pull off expediently.  Additionally not all components can be brought onboard in parallel, but need to happen serially. All of this is to say that bringing a card to market is a task with many branching codependent processes.
 
-## Areas to cover
+## Table of Contents
 
-- Product
-- Technology
-- Compliance
-- Risk
+- [Product](#product)
+- [Technology](#technology)
+- [Compliance](#compliance)
+- [Risk](#risk)
   - Fraud
   - Credit Underwriting
-- Debt Facilities
-- Banks
-- Network Associations
+- [Debt & Capital Requirements](#debt--capital-requirements)
+- [Banks](#banks)
+- [Networks](#networks)
   - Majors
   - Debit
   - ACH
@@ -116,7 +116,7 @@ For credit programs, debt is what will fuel your ability to grow.  The business 
 
 # Banks
 
-Choosing a bank partner is the most critical of all partnership decisions.   A lot of the advice can be boiled down to a piece of advice from an industry veteran: "if this is how they are when you're dating, then imagine how it will be once you're married."   A separate guide is in the works [here](how-to-choose-a-bank-partner).
+Choosing a bank partner is the most critical of all partnership decisions.   A lot of the advice can be boiled down to a piece of advice from an industry veteran: "if this is how they are when you're dating, then imagine how it will be once you're married."   A separate guide is in the works [here](/guides/how-to-select-a-bank-partner).
 
 # Networks
 
