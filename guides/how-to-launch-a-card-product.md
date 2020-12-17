@@ -122,7 +122,14 @@ Choosing a bank partner is the most critical of all partnership decisions.   A l
 
 ## Major Networks
 
-Issuing cards is dominated by two players at the network level, Visa and Mastercard.  
+Issuing cards is dominated by two players at the network level, Visa and Mastercard.  Choosing a network is a dependent on a bunch of variables including bank partner membership, processor network integrations, card printer certifications, and cobranded volume incentives.
+
+Currently the major differences between the two networks are laid out below in a simple pro/cons list.
+
+| Network    | Pros                               | Cons                        |
+| ---------- | ---------------------------------- | --------------------------- |
+| Visa       | Higher Acceptance (Notably Costco) | Typically Lower Interchange |
+| Mastercard | Typically Higher Interchange       | Lower Acceptances           |
 
 ## Other Networks
 
