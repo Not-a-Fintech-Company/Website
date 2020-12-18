@@ -6,6 +6,7 @@ description: A compilation of links to pieces other people have written, or just
 
 Currently a random assortments of things that I knew to find quickly to send people to initially read.
 
+* <https://blog.unit.co/banks-middlewares-and-unit-making-sense-of-banking-infrastructure/>
 * <https://www.kunle.app/feb-2020-permissionless-issuing.html>
 * <https://www.kunle.app/march-2020-vertical-banks.html>
 * <https://www.kunle.app/may-2020-API-routing-layers.html>
