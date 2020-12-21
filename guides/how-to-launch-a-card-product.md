@@ -134,13 +134,15 @@ Currently the major differences between the two networks are laid out below in a
 | Network    | Pros                               | Cons                        |
 | ---------- | ---------------------------------- | --------------------------- |
 | Visa       | Higher Acceptance (Notably Costco) | Typically Lower Interchange |
-| Mastercard | Typically Higher Interchange       | Lower Acceptances           |
+| Mastercard | Typically Higher Interchange       | Lower Acceptance            |
 
 ## Other Networks
 
 ### Closed Loop
 
-In recent years, both the alternative major dnetworks, American Express and Discover, have started to enable others to issue on top of their networks.  This enable them to bring in more network revenue due to the increased transaction volume, and they typically provide higher interchange rates, but beware that both Amex and Discover do not have as high merchant acceptance rates as the other two major networks, Visa and Mastercard. 
+In recent years, both the alternative major networks, American Express (Amex) and Discover, have started to enable others to issue cards on top of their networks.  For them this brings in more network revenue due to the increased transaction volume, and some additional fees. While both typically charge higher interchange rates to merchants, beware that both Amex and Discover do not have as high merchant acceptance rates as the other two major networks, Visa and Mastercard.
+
+B
 
 ### Debit Networks
 
