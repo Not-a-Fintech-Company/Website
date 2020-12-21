@@ -142,15 +142,43 @@ Currently the major differences between the two networks are laid out below in a
 
 In recent years, both the alternative major networks, American Express (Amex) and Discover, have started to enable others to issue cards on top of their networks.  For them this brings in more network revenue due to the increased transaction volume, and some additional fees. While both typically charge higher interchange rates to merchants, beware that both Amex and Discover do not have as high merchant acceptance rates as the other two major networks, Visa and Mastercard.
 
-B
+Besides acceptance, the one main drawback of these two networks is customer perception. Given their long histories and massive marketing spends on brand, each is thought of as a standalone card issuer, so some customer confusion, and also brand perception issues may be encountered. 
 
 ### Debit Networks
 
-While not a major differentiator anymore, debit networks are a requirement for all debit cards issued inside the US due to the Durbin Amendment. For most major banks in the US, dual routing (the Durbin Requirement) is usually done by the major networks wholly owned debit networks (Visa -> Interlink, Mastercard -> Maestro).
+While not a major differentiator anymore, debit networks are a requirement for all debit cards issued inside the US due to the Durbin Amendment. For most major banks in the US, dual routing (the Durbin Requirement) is usually done by the major networks wholly owned debit networks (Visa -> Interlink, Mastercard -> Maestro).  For NeoBanks, a common provider is AllPoint, which is provides \~40,000 ATMs throught the us.  There are other Interbank or Pin Debit networks that proivde ATM access and a list can be found on the this Wikipedia page <https://en.wikipedia.org/wiki/Interbank_network#United_States>.
 
 # Servicing
 
-The servicing segment of the business consists largely of 2 components. The self service capabilities provided to consumers (Mobile, Web and Phone), and the backoffice servicing organization that runs the operations for the business.
+The servicing segment of the business consists primarily of 2 major components. The self service capabilities provided to consumers (Mobile, Web and Phone), and the back office servicing organization that runs the operations for the business.
+
+## Self Service
+
+
+
+## Back Office
+
+The back office component of servicing nowadays includes everything from email to text to live phone agent to IVR.  When managing a servicing organiziation for a card product, its important to understand and drive customer interaction patterns to the most efficient means of resolution. Card businesses work hard to ensure that their economies of scale don't break down at scale by having too many costly customer interaction touchpoints.  This is why for a long time, and even today, IVR dominates a lot of initial customer inquiry calls to reduce the cost to the organziation.  *Nowadays focusing on making useful and highly functional self service applications is a high priority as it drives customer happiness and also keeps cost low for the business*.
+
+There is a laundry list of the things a back office might need to accomplish for the customer, a abridged list is below of the incidents that might need to be handled, and one goal of this project is to include a procedure manual for each of them.
+
+* Account Balance Inquiry
+* Close Account Request
+* Credit Limit Increase
+* Change Address Request
+* Change Name Request
+* Change Phone Number Request
+* New Card Request
+* Report Lost Card
+* Account Locked Request
+* Fraud Report Request
+* Application Followup Inquiry
+* General Product Inquiry (non-customer)
+* Fee Waiver Request
+* Interest Calculation Questions
+* Report Unauthorized Transaction
+* Change PIN Request
+* Statement Error Inquiry
 
 # Marketing
 
