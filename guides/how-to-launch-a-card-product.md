@@ -186,4 +186,5 @@ Finding product marketing fit is never easy in this industry. With incumbents ha
 
 # Resources
 
-* [Bank Account Model](/models/bank-account)
+* [Bank Account Model](/models/bank-account) - Supports debit card as well
+* [Credit Card Model](/models/credit-card) - Supports charge card as well
