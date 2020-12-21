@@ -75,11 +75,11 @@ An alphabet soup of regulations apply to any product you may want to launch, but
 
 # Risk
 
-One of the most complex and core components of running any program is managing risk. This needs to be considered continuously on the backend and also at critical points of customer interactions points.
+One of the most complex and key components of running any program is understanding and managing risk. This needs to be considered continuously during a live program, and also analyzed at critical points of customer interactions lifecycle.
 
-Managing overall program risk 
 
-## Customer life-cycle events
+
+## Customer lifecycle events
 
 - On-boarding & Marketing channels
 - Application
@@ -95,6 +95,12 @@ Managing overall program risk
 There are many types of identity theft: stolen, family, synthetic, and **more.**  Each has its own patterns for how it manifests itselfs for your product.
 
 ### Transactional
+
+While the customer
+
+#### Controls to put in place
+* Velocity Controls
+* 
 
 ### Account Takeover
 
