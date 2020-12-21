@@ -96,11 +96,20 @@ There are many types of identity theft: stolen, family, synthetic, and **more.**
 
 ### Transactional
 
-While the customer
+Transactional fraud refers to fraud that occurs at spend time.  It has the potential for a large custoemr impact as if fraud is suspected and an account blocked temporarily while investigaged, it prevents the user from being able use one of the primary features of the proudct.
 
-#### Controls to put in place
-* Velocity Controls
-* 
+There are constantly evolving patterns of transactional fraud, and the controls necessary to prevent it require heuristics around spend patterns, spend velocity, account age, as well as leveraging models built around overall fraud trends per MCC and Merchant.
+
+Some of the controls you would configure include things like:
+* Transactions in last 5 minutes
+* Transactoins in last N hours
+* Amount spent in last N Hours
+* Amount spent at merchant across all accounts
+* Spend threshold based upon age of account
+* Spend thresholding based upon
+
+Upon crossing any control threshold, or triggering any hard flags, there are a few ways to handle an account. Primarily these consist of a allowlist, blocklist, and graylist, with other subtleties around soft blocking versus hard blocking.
+
 
 ### Account Takeover
 
