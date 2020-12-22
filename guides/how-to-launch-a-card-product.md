@@ -114,7 +114,7 @@ There are constantly evolving patterns of transactional fraud, and the controls 
 
 Some of the controls you would configure include things like:
 * Transactions in last 5 minutes
-* Transactoins in last N hours
+* Transactions in last N hours
 * Amount spent in last N Hours
 * Amount spent at merchant across all accounts
 * Spend threshold based upon age of account
