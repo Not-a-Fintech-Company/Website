@@ -155,7 +155,7 @@ Besides acceptance, the one main drawback of these two networks is customer perc
 
 ### Debit Networks
 
-While not a major differentiator anymore, debit networks are a requirement for all debit cards issued inside the US due to the Durbin Amendment. For most major banks in the US, dual routing (the Durbin Requirement) is usually done by the major networks wholly owned debit networks (Visa -> Interlink, Mastercard -> Maestro).  For NeoBanks, a common provider is AllPoint, which is provides \~40,000 ATMs throught the us.  There are other Interbank or Pin Debit networks that proivde ATM access and a list can be found on the this Wikipedia page <https://en.wikipedia.org/wiki/Interbank_network#United_States>.
+While not a major differentiator anymore, debit networks are a requirement for all debit cards issued inside the US due to the Durbin Amendment. For most major banks in the US, dual routing (the Durbin Requirement) is usually done by the major networks wholly owned debit networks (Visa -> Interlink, Mastercard -> Maestro).  For NeoBanks, a common provider is AllPoint, which is provides \~40,000 ATMs throught the us.  There are other Interbank or Pin Debit networks that proivde ATM access and a list can be found on the this Wikipedia [page](https://en.wikipedia.org/wiki/Interbank_network#United_States).
 
 # Servicing
 
@@ -191,7 +191,11 @@ There is a laundry list of the things a back office might need to accomplish for
 
 # Marketing
 
-Finding product marketing fit is never easy in this industry. With incumbents having 100s of millions of dollars at their disposal for acquisition, its   
+Finding product marketing fit is never easy in this industry. With incumbents having 100s of millions of dollars at their disposal for acquisition, its always an uphill battle to break through the noise, so focusing on niches and truely understanding your customer acquisition cost are key.
+
+
+ToDos
+* Notes on marketing and making sure to not run afoul of UDAAP & FTC
 
 # Resources
 
