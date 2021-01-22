@@ -2,6 +2,10 @@
 title: A random assortment of resources from around the web
 description: A compilation of links to pieces other people have written, or just blogs in general if they're a good source of content.
 ---
+## Compilations
+
+* [Banks and Processors](https://docs.google.com/spreadsheets/d/1r1WT0hbTlh3bswOPZk8ssKRjF9U33FVkpq74jN8cw4A/edit#gid=0>)
+
 ## Readings
 
 Currently a random assortments of things that I knew to find quickly to send people to initially read.
