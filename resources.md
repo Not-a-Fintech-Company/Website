@@ -23,6 +23,7 @@ Currently a random assortments of things that I knew to find quickly to send peo
 * <https://www.getfinal.com/company-news/2017/07/20/transaction-processing-flow/>
 * <https://www.getfinal.com/company-news/2017/03/01/feature-development-at-final/>
 * <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
+* <https://gendal.me/2014/08/09/a-simple-explanation-of-fees-in-the-payment-card-industry/>
 * <https://blog.starpointllp.com/>
 
 
