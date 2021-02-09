@@ -24,6 +24,7 @@ Currently a random assortments of things that I knew to find quickly to send peo
 * <https://www.getfinal.com/company-news/2017/03/01/feature-development-at-final/>
 * <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
 * <https://gendal.me/2014/08/09/a-simple-explanation-of-fees-in-the-payment-card-industry/>
+* <https://research-doc.credit-suisse.com/docView?language=ENG&format=PDF&sourceid=csplusresearchcp&document_id=1082106811&serialid=9ItaQaLeKMYkTfzB0rHonfefWNL6W5uABHoXHk5EVRA%3D>
 * <https://blog.starpointllp.com/>
 
 
