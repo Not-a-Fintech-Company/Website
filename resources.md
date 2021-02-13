@@ -27,6 +27,8 @@ Currently a random assortments of things that I knew to find quickly to send peo
 * <https://research-doc.credit-suisse.com/docView?language=ENG&format=PDF&sourceid=csplusresearchcp&document_id=1082106811&serialid=9ItaQaLeKMYkTfzB0rHonfefWNL6W5uABHoXHk5EVRA%3D>
 * <https://blog.starpointllp.com/>
 
+## Videos
+* Payments Opportunities in Software - <https://markets.jpmorgan.com/research/email/l42ivjop/mNkRV3AhL-vo86tgAZE8oA/KAL-1-IK898436>
 
 ## Twitter Threads
 
