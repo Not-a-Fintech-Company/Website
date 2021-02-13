@@ -28,7 +28,7 @@ Currently a random assortments of things that I knew to find quickly to send peo
 * <https://blog.starpointllp.com/>
 
 ## Videos
-* Payments Opportunities in Software - <https://markets.jpmorgan.com/research/email/l42ivjop/mNkRV3AhL-vo86tgAZE8oA/KAL-1-IK898436>
+* Payments Opportunities in Software (JMPC) - <https://markets.jpmorgan.com/research/email/l42ivjop/mNkRV3AhL-vo86tgAZE8oA/KAL-1-IK898436>
 
 ## Twitter Threads
 
