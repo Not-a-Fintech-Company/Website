@@ -6,16 +6,19 @@ description: A primer on how to choose a bank partner.
 
 These are a handful of dimensions to look at when chosing a bank partner to launch a new product:
 
-* Location
-* Experience
-* Regulatory Concerns
-* Work Cadence
-* Contract Terms 
-  * Length
-  * Pricing
-  * Minimums
-  * Reserves
 
+## Table of Contents
+
+* [Location](#location)
+* [Experience](#Experience)
+* [Regulatory Concerns](#Regulatory-Concerns)
+* [Work Cadence](#Work-Cadence)
+* [Contracting](#contracting)
+  * [Length](#Length)
+  * [Pricing](#Pricing)
+  * [Minimums](#Minimums)
+  * [Reserves](#Reserves)
+* [Negotiations](#Negotiations)
 
 ## Location
 Depending upon the product offering, the physical location of a bank partner can highly influence their ability to support your product. For example, when issuing credit products, some banks are beholden to their state regulations that may treat fees in an non-exacting way.
@@ -35,3 +38,7 @@ One of the most important concepts when choosing a bank partner, if you have a c
 When partnering with a bank, there are a few models for how it will look.  It can be a revenue share, pay per use pricing, or some mashup of those two.  
 
 At the time of writing this, there are 4 major considerations for the contract: Length, Pricing, Minimums and Reserves.  In addition to those major costs, there are additional fees includign setup fees, diligence fees, 
+
+## Negotiations
+
+## Miscelaneous 
