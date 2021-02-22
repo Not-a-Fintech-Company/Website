@@ -10,16 +10,16 @@ These are a handful of dimensions to look at when chosing a bank partner to laun
 ## Table of Contents
 
 * [Location](#location)
-* [Experience](#Experience)
-* [Regulatory Concerns](#Regulatory-Concerns)
-* [Work Cadence](#Work-Cadence)
+* [Experience](#experience)
+* [Regulatory Concerns](#regulatory-concerns)
+* [Work Cadence](#work-cadence)
 * [Contracting](#contracting)
-  * [Length](#Length)
-  * [Pricing](#Pricing)
-  * [Minimums](#Minimums)
-  * [Reserves](#Reserves)
-* [Negotiations](#Negotiations)
-* [Miscellaneous](#Miscellaneous)
+  * [Length](#length)
+  * [Pricing](#pricing)
+  * [Minimums](#minimums)
+  * [Reserves](#reserves)
+* [Negotiations](#negotiations)
+* [Miscellaneous](#miscellaneous)
 
 ## Location
 Depending upon the product offering, the physical location of a bank partner can highly influence their ability to support your product. For example, when issuing credit products, some banks are beholden to their state regulations that may treat fees in an non-exacting way.
