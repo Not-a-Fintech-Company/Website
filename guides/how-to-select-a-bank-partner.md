@@ -19,6 +19,7 @@ These are a handful of dimensions to look at when chosing a bank partner to laun
   * [Minimums](#Minimums)
   * [Reserves](#Reserves)
 * [Negotiations](#Negotiations)
+* [Miscellaneous](#Miscellaneous)
 
 ## Location
 Depending upon the product offering, the physical location of a bank partner can highly influence their ability to support your product. For example, when issuing credit products, some banks are beholden to their state regulations that may treat fees in an non-exacting way.
@@ -40,5 +41,7 @@ When partnering with a bank, there are a few models for how it will look.  It ca
 At the time of writing this, there are 4 major considerations for the contract: Length, Pricing, Minimums and Reserves.  In addition to those major costs, there are additional fees includign setup fees, diligence fees, 
 
 ## Negotiations
+Negotiating with a bank can take in the best cases weeks and in the worst case many months.  Beyond the contracting items above, there are a bunch of considerations, tricks and tips to make the process go as smoothly as possible.  The main one we'd recommend is pre-paying all bank diligence fees at the same time to get them to start the evaluation and process of working together as quickly as possible. This has a few advantages, one it aligns all the banks timelines, so when you are answering diligence requests you likely already have the answer fresh. Additionally, as you approach end of diligence you should should be finishing negotiating pricing terms of your contract, and can play the banks off of each other to get better pricing or additional considerations (lines of credit, reduced minimums, signing credits, etc).  The other main one is that you get to learn what its like to work with your potential bank partners ahead of picking a winner, and see who has the most work capacity for your partnership, and can move quickest.
 
-## Miscelaneous 
+## Miscellaneous
+Other things to consider that do not fit into the other sections include: network relationships, 
