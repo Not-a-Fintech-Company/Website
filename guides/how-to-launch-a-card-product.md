@@ -142,7 +142,7 @@ For credit programs, debt is what will fuel your ability to grow.  The business 
 
 # Banks
 
-Choosing a bank partner is the most critical of all partnership decisions.   A lot of the advice can be boiled down to a piece of advice from an industry veteran: "if this is how they are when you're dating, then imagine how it will be once you're married."   A separate guide is in the works [here](/guides/how-to-select-a-bank-partner).
+Choosing a bank partner is the most critical of all partnership decisions.   A lot of the advice can be boiled down to a piece of advice from an unnamed industry veteran: "if this is how they are when you're dating, then imagine how it will be once you're married."   A separate guide for this exists [here](/guides/how-to-select-a-bank-partner).
 
 # Networks
 
