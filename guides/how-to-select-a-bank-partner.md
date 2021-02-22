@@ -14,7 +14,7 @@ These are a handful of dimensions to look at when chosing a bank partner to laun
   * Length
   * Pricing
   * Minimums
-  * Rev Share
+  * Reserves
 
 
 ## Location
@@ -33,3 +33,5 @@ One of the most important concepts when choosing a bank partner, if you have a c
 
 ## Contracting
 When partnering with a bank, there are a few models for how it will look.  It can be a revenue share, pay per click pricing, or some mashup of those two.  
+
+At the time of writing this, there are 4 major considerations for the contract: Length, Pricing, Minimums and Reserves.  In addition to those major costs, there are additional fees includign setup fees, diligence fees, 
