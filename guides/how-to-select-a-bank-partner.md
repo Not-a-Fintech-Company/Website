@@ -18,7 +18,7 @@ These are a handful of dimensions to look at when chosing a bank partner to laun
   * [Pricing](#pricing)
   * [Minimums](#minimums)
   * [Reserves](#reserves)
-* [Negotiations](#negotiations)
+  * [Negotiations](#negotiations)
 * [Miscellaneous](#miscellaneous)
 
 ## Location
@@ -40,7 +40,12 @@ When partnering with a bank, there are a few models for how it will look.  It ca
 
 At the time of writing this, there are 4 major considerations for the contract: Length, Pricing, Minimums and Reserves.  In addition to those major costs, there are additional fees includign setup fees, diligence fees, 
 
-## Negotiations
+### Length
+### Pricing
+### Minimums
+### Reserves
+
+### Negotiations
 Negotiating with a bank can take in the best cases weeks and in the worst case many months.  Beyond the contracting items above, there are a bunch of considerations, tricks and tips to make the process go as smoothly as possible.  The main one we'd recommend is pre-paying all bank diligence fees at the same time to get them to start the evaluation and process of working together as quickly as possible. This has a few advantages, one it aligns all the banks timelines, so when you are answering diligence requests you likely already have the answer fresh. Additionally, as you approach end of diligence you should should be finishing negotiating pricing terms of your contract, and can play the banks off of each other to get better pricing or additional considerations (lines of credit, reduced minimums, signing credits, etc).  The other main one is that you get to learn what its like to work with your potential bank partners ahead of picking a winner, and see who has the most work capacity for your partnership, and can move quickest.
 
 ## Miscellaneous
