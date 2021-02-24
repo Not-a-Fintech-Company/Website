@@ -19,6 +19,7 @@ Currently a random assortments of things that I knew to find quickly to send peo
 * <https://www.kunle.app/august-2020-differentiated-and-sustainable-lending-businesses.html>
 * <https://www.kunle.app/dec-2020-financial-reconciliation.html>
 * <https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c>
+* <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
 * <https://medium.com/@stephenjcho/deciphering-the-payments-stack-efbcb9c8eac4>
 * <https://a16z.com/2020/10/20/payroll-apis/>
 * <https://www.getfinal.com/company-news/2017/07/20/transaction-processing-flow/>
