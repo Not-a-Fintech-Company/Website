@@ -12,6 +12,7 @@ Currently a random assortments of things that I knew to find quickly to send peo
 
 * <https://blog.unit.co/banks-middlewares-and-unit-making-sense-of-banking-infrastructure/>
 * <https://blog.unit.co/how-to-safely-migrate-to-a-better-banking-infrastructure-in-21-days-or-less/>
+* <https://blog.unit.co/revenues-in-financial-features-a-complete-guide-for-tech-companies/>
 * <https://www.kunle.app/feb-2020-permissionless-issuing.html>
 * <https://www.kunle.app/march-2020-vertical-banks.html>
 * <https://www.kunle.app/may-2020-API-routing-layers.html>
