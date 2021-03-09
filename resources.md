@@ -28,6 +28,7 @@ Currently a random assortments of things that I knew to find quickly to send peo
 * <https://gendal.me/2014/08/09/a-simple-explanation-of-fees-in-the-payment-card-industry/>
 * <https://research-doc.credit-suisse.com/docView?language=ENG&format=PDF&sourceid=csplusresearchcp&document_id=1082106811&serialid=9ItaQaLeKMYkTfzB0rHonfefWNL6W5uABHoXHk5EVRA%3D>
 * <https://blog.starpointllp.com/>
+* <https://moov.io/blog/guides/complete-fintech-dictionary/>
 
 ## Videos
 * Payments Opportunities in Software (JMPC) - <https://markets.jpmorgan.com/research/email/l42ivjop/mNkRV3AhL-vo86tgAZE8oA/KAL-1-IK898436>
