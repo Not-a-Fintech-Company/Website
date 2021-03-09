@@ -2,7 +2,7 @@
 title: 14 steps to closing and working with a Bank Partner
 ---
 
-This guide servers as a compliment to the "[How to select a bank partner](/guides/how-to-select-a-bank-partner)" guide.
+This guide servers as a compliment to the "[How to select a bank partner](/guides/how-to-select-a-bank-partner)" guide (WIP).
 
 
 ## 1. Determine your product
@@ -119,7 +119,7 @@ This will likely be a soft launch with no marketing buzz, or a test run with dir
 
 
 ##       14. Ongoing bank touch bases and compliance
-Expect regular monthly touch points with your bank partner to go through your program and present on metrics, exceptions and any other pieces they’ve written into the contact.  Additionally, quarterly and annual deeper dive and audit processes are to be expected and ensure the bank has strong oversight on you as a third party.
+Expect regular monthly touch points with your bank partner to go through your program and present on metrics, exceptions and any other pieces they’ve written into the contact.  Additionally, quarterly and annual deeper dives and audit processes are to be expected and ensure the bank has strong oversight on you as a third party.
 
 <hr>
 
