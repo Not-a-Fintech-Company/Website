@@ -72,36 +72,17 @@ Example fees for Savings product:
    * Example of Dwolla / Veridian Credit Union
 
 
-Example ACH pricing
-Service
-	Fee Model
-	Examples
-	FBO Account
-	Monthly minimum
-	$15,000
-	Minimum activity
-	Transactions, funds held etc.
-	Depends
-	ACH
-	Standard per item
-	$.10 - $.20
-	
+### Example ACH pricing
 
-	Standard per file 
-	$1
-	
-
-	Same-day per item
-	$.50
-	Returns
-	Per file
-	$5
-	
-
-	Per item
-	$.50
-	
-
+| Service          | Fee Model                      | Examples      |
+| ---------------- | ------------------------------ | ------------- |
+| FBO Account      | Monthly Minimum                | $15,000       |
+| Minimum Activity | Transactions, funds held, etc. | Depends       |
+| ACH              | Standard per item              | $0.05- \$0.20 |
+|                  | Standard per file              | $1            |
+|                  | Same-day per item              | $1            |
+| Returns          | Per file                       | $5            |
+|                  | Per item                       | $0.50         |
 
 
 ##    7. Negotiate the LOI
@@ -141,34 +122,34 @@ Expect regular monthly touch points with your bank partner to go through your pr
 
 
 #### 1. Review of entire Borrower Experience, performed by independent counsel, if needed, for compliance with regulations, including but not limited to:
- 
+
 	* Electronic delivery message placement
 	* E-sign disclosure placement
 	* Credit Pull language – specific to Borrower and Cosigner, with applicable required disclosures
 	* TCPA language/placement
 	* Verify required disclosures presented at the right time (Borrower/Cosigner)
 	* Adherence to specific Wisconsin statutes
- 
+
 #### 2. Document review performed by Independent counsel:
- 
+
 	* Develop, review and/or revise program manual(s), as applicable
 	* Application, Approval, and Final Disclosure
 	* Risk Based Pricing Notices
 	* Adverse Action Notices
 	* Promissory Note
- 
+
 #### 3. Marketing review performed independent counsel, if applicable:
- 
+
 	* Review of any/all marketing material
 	* Review of website - jump page, disclosures, rates, etc.
- 
+
 #### 4. Compliance Review
- 
+
 	* Validation of Truth-in-lending disclosures pre-launch
 	* Audit of first 5 loans originated
- 
+
 #### 5. Implementation of program with originator
- 
+
 	* Development of Customer Correspondence
 	* Program Guidelines
 	* Underwriting Set-Up
