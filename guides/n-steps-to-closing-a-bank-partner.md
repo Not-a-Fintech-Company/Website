@@ -10,26 +10,28 @@ This guide servers as a compliment to the "[How to select a bank partner](/guide
 Decide what your product construct will be, whether its credit or debit or savings or asset management. Think about who the customer you’re serving is and how you are uniquely bringing your offering to market. Then work on selecting technology vendors and learn which banks they work with. Do all the work yourself, up front. Make their life easy.
 
 
-Remember, each Sponsor is unique
-   * Some support merchant acquiring, most do not
-   * Some support push-to-debit, card issuance, most do not
-   * Most provide an omnibus FBO account tied to ACH & Wire processing
-   * Some provide an ACH API 
-   * Each Sponsor is the license holder, their license is at risk 
-   * Each Sponsor tends to have a specialty: high net worth deposits, lending, issuring, etc.  
-   * Every Sponsor sits on a legacy core platform (FIS, Fiserv, JH, etc.) 
+Remember, each Sponsor is unique:
+
+	* Some support merchant acquiring, most do not
+	* Some support push-to-debit, card issuance, most do not
+	* Most provide an omnibus FBO account tied to ACH & Wire processing
+	* Some provide an ACH API 
+	* Each Sponsor is the license holder, their license is at risk 
+	* Each Sponsor tends to have a specialty: high net worth deposits, lending, issuring, etc.  
+	* Every Sponsor sits on a legacy core platform (FIS, Fiserv, JH, etc.) 
 
 
 ## 2. Make an overview deck
 This is not the same thing as a fundraising deck. Much more product oriented, it also covers flow of funds, financials, and any product nuances they would need to be comfortable with to work with you.
 
 
-Think through this like a banker…
-   * You serve consumers or businesses
-   * Here’s your underwriting & risk models 
-   * Here’s your flow of funds (example below) 
-   * Here’s your fee/pricing model 
-   * Here’s how to pass data to the bank (if/when appropriate)
+Think through this like a banker...
+
+	* You serve consumers or businesses
+	* Here’s your underwriting & risk models 
+	* Here’s your flow of funds (example below) 
+	* Here’s your fee/pricing model 
+	* Here’s how to pass data to the bank (if/when appropriate)
 
 
 ##   3. Reach out to banks
@@ -39,19 +41,22 @@ The most important considerations when reaching out to banks is their speciality
 Furthermore, consider speaking with some of the BaaS providers alongside banks, as their pricing is more competitive and may be a better strategic fit for your business. For instance, if you’re super early stage at pre-seed, a BaaS provider is likely a better option given that you can spin up your product in 3 weeks (as opposed to 6-12 months).
         
 Have low expectations and be explicit in the intro’s you want, thinking about the industry/model you’re after to guide you:
-   * Focused on underserved, fee avoidant, card-driven experience 
-   * Stay away from fee-driven, processing heavy sponsors 
-   * Lending and underwriting focused
-   * Whose balance sheet is at play? What’s the underwriting model?
-   * Who are the FinTech apps you’ve been most inspired by? 
-   * Can you meet/speak with the founding team for introductions? 
-   * Value of your investor network should be leveraged here
+
+	* Focused on underserved, fee avoidant, card-driven experience 
+	* Stay away from fee-driven, processing heavy sponsors 
+	* Lending and underwriting focused
+	* Whose balance sheet is at play? What’s the underwriting model?
+	* Who are the FinTech apps you’ve been most inspired by? 
+	* Can you meet/speak with the founding team for introductions? 
+	* Value of your investor network should be leveraged here
 
 
-##    4. First Bank meeting - get to know each other and explain what you’re building
+##    4. First Bank meeting - getting to know you
+
+Get to know each other and explain what you’re building, your background, the market opportunity and how you are going to acquire customers.
    1. Assume banks are monogamous - they want all of your business. Just another reason to be explicit about your product roadmap.
    2. Push them for next steps. Banks aren’t quite able to keep pace with fintechs yet, however, they do know the process and should know what comes next. Push them for step 1: the NDA. 
-   3. Do this with multiple banks. Think of it like dating. 
+   3. Do this with multiple banks. Think of it like dating, except try to keep them all on a similar timeline.
 
 
 ##   5. Second Bank meeting - deep dive
@@ -67,9 +72,9 @@ Have low expectations and be explicit in the intro’s you want, thinking about 
    * Interchange splits are important -- go in with a percentage of total you’d be comfortable with and negotiate hard (like you would for anything). Again, it is flexible. 
 
 
-Example fees for Savings product:
-   * Example from Evolve / SilaMoney
-   * Example of Dwolla / Veridian Credit Union
+### Example fees for Savings product:
+   * [Example from Evolve / SilaMoney](https://silamoney.com/api-pricing/)
+   * [Example of Dwolla / Veridian Credit Union](https://www.dwolla.com/pricing/)
 
 
 ### Example ACH pricing
@@ -93,7 +98,7 @@ Model out the pricing you receive from the bank based on your projected volumes 
 Once you've come to terms, it's relatively simple to sign an LOI and more forward. This step usually involves wiring some money to the bank partner in order to kick off diligence and prepay legal fees.
 
 
-##    9. Complete Due Diligence with the bank
+##    9. Complete Due Diligence with the Bank
 You want a list of policies ready to go because bank diligence takes a long time. The best advice is likely "never have anything on your plate, always make sure you turn around requests as quickly as possible."
 
 
