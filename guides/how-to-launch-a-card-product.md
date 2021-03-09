@@ -69,7 +69,7 @@ An alphabet soup of regulations apply to any product you may want to launch, but
 - Privacy Policy
 - Terms of Service
 - Schedule of Fees - debit
-- Schumer Box - credit
+- [Schumer Box - credit](https://en.wikipedia.org/wiki/Schumer_box)
 - Annual privacy notice
 - Data sharing / marketing agreement
 
@@ -78,7 +78,7 @@ An alphabet soup of regulations apply to any product you may want to launch, but
 Here is a non-exhaustive list of regulations that need to be addressed as one builds and launches a card program:
 
 * [Truth in Lending Act / Reg Z](https://en.wikipedia.org/wiki/Truth_in_Lending_Act)
-* [Truth in Savings Act / Reg ](https://en.wikipedia.org/wiki/Truth_in_Savings_Act)
+* [Truth in Savings Act / Reg DD](https://en.wikipedia.org/wiki/Truth_in_Savings_Act)
 * [Fair Credit Reporting Act](https://en.wikipedia.org/wiki/Fair_Credit_Reporting_Act)
 * [Fair Debt Collection Practices Act](https://en.wikipedia.org/wiki/Fair_Debt_Collection_Practices_Act)
 * [Equal Credit Opportunity Act / Reg B](https://en.wikipedia.org/wiki/Equal_Credit_Opportunity_Act)
@@ -88,8 +88,6 @@ Here is a non-exhaustive list of regulations that need to be addressed as one bu
 # Risk
 
 One of the most complex and key components of running any program is understanding and managing risk. This needs to be considered continuously during a live program, and also analyzed at critical points of customer interactions lifecycle.
-
-
 
 ## Customer lifecycle events
 
