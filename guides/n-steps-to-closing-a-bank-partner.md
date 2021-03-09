@@ -1,5 +1,5 @@
 ---
-title: N Steps to closing and working with a Bank Partner
+title: 14 steps to closing and working with a Bank Partner
 ---
 
 This guide servers as a compliment to the "[How to select a bank partner](/guides/how-to-select-a-bank-partner)" guide.
