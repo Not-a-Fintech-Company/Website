@@ -1,14 +1,15 @@
-# Guide to starting a challenger bank
-
-This guide is based on a dozens of conversations with upstart challenger banks and card issuers. 
-
-When I started Every, a challenger bank targeting small businesses, we mapped out the ecosystem of processors, partner banks, and other enablers, and were be left with more questions than answers. 
-
-My hope is that this guide will help you short circuit some of the initial navigational work as you evaluate your financial model and prospective partners.
-
-I will add to this guide as needed so please leave comments here or shoot me a note at jeremy.william.black@gmail.com.
+---
+title: Guide to starting a challenger bank
+---
 
 # Table of Contents
+
+1. [Components of a Challenger Bank](#the-components-of-a-challenger-bank)
+1. [Working with a processor](#working-with-a-processor)
+1. [Working with a bank partner](#working-with-a-bank-partner)
+1. [Working with a card partner](#working-with-a-card-partner)
+1. [Product Features](#features)
+1. [Glossary](#glossary-of-terms)
 
 # The components of a challenger bank
 
@@ -18,10 +19,10 @@ In industry speak, a challenger bank is an "agent of the bank" or a "marketer". 
 
 **In order to issue network-branded cards to customers, you will need the following partners:**
 
-1. Issuing bank - in the US, only regulated financial institutions are licensed to issue Visa and Mastercard products (although there has been a decades long conversation about amending this rule)
-2. Card network - challenger banks will typically sign an incentive agreement with Visa or Mastercard. This agreement provides a framework for using their respective trademarks as well as financial incentives to be used towards marketing your program.
-3. Issuer Processor - think of your issuer processor as a node within the card networks. When a card is used, the merchant processor sends an authorization request to the card network, who in turn routes that request through to the processor. From there, the processor or the program manager authorizes or declines the transaction. I will outline the architecture further below.
-4. Card Provider (aka. Card manufacturer, emboss partner, perso facility) - The card provider is licensed by the networks to manufacture cards in bulk and then personalize and ship them as they are ordered by cardholders.
+1. **Issuing bank** - in the US, only regulated financial institutions are licensed to issue Visa and Mastercard products (although there has been a decades long conversation about amending this rule)
+2. **Card network** - challenger banks will typically sign an incentive agreement with Visa or Mastercard. This agreement provides a framework for using their respective trademarks as well as financial incentives to be used towards marketing your program.
+3. **Issuer Processor** - think of your issuer processor as a node within the card networks. When a card is used, the merchant processor sends an authorization request to the card network, who in turn routes that request through to the processor. From there, the processor or the program manager authorizes or declines the transaction. I will outline the architecture further below.
+4. **Card Provider (aka. Card manufacturer, emboss partner, perso facility)** - The card provider is licensed by the networks to manufacture cards in bulk and then personalize and ship them as they are ordered by cardholders.
 
 # Working with a processor
 
@@ -214,7 +215,7 @@ Every program manager starts off thinking about the opportunity to deliver a gre
 
 One final note cards. Card partners ramp up for gift card season in early Fall.  Make sure you have enough card inventory to get through to the new year. It's unlikely the card partner will prioritize you over Walmart if you run out of stock.
 
-# **Features**
+# Product Features
 
 1. Card transactions
     1. Data you will get from your processor
@@ -257,7 +258,7 @@ You can generate the ICL yourself using the X9.37 standard. Moov has some open s
 You will need to transmit the ICL to your bank partner (the "bank of first deposit"), who will then 
 
 1. Per check deposited
-2. 
+
 1. ACH
 2. Wire Transfer
 3. Bill Pay
@@ -268,26 +269,29 @@ If you've chosen to issue your cards on the Visa or Mastercard network, they wil
 
 If you want to offer surcharge-free ATM access you will need to join Moneypass, Allpoint, or both.  When you join a surcharge-free ATM network, you will pay a discounted fee directly to the network for each transaction. 
 
-Moneypass: owned by Fiserv. Most ATM locations are in community banks. Moneypass has lower transaction fees but the process for getting setup (legal, technical, etc.) seemed like it would be full of friction. I didn't move forward with Moneypass last time I had to make this decision so I'd be curious to hear from others who did.
+**Moneypass**: owned by Fiserv. Most ATM locations are in community banks. Moneypass has lower transaction fees but the process for getting setup (legal, technical, etc.) seemed like it would be full of friction. I didn't move forward with Moneypass last time I had to make this decision so I'd be curious to hear from others who did.
 
-Allpoint: owned by Cardtronics, it is the largest ATM network with the US with 55k ATMs. Most ATMs are located in retailers like Walgreens and Target. Allpoint transaction fees are more expensive than Moneypass, but setup is easy (4-6 weeks) and their location finder API works as advertised. 
+**Allpoint**: owned by Cardtronics, it is the largest ATM network with the US with 55k ATMs. Most ATMs are located in retailers like Walgreens and Target. Allpoint transaction fees are more expensive than Moneypass, but setup is easy (4-6 weeks) and their location finder API works as advertised. 
 
 # Bonus Content
 
-Be your own processor
-
-Using multiple banks
-
-Using multiple emboss partners
+1. Be your own processor
+1. Using multiple banks
+1. Using multiple emboss partners
 
 # Glossary of terms
 
-ACH
+ACH - [Automated clearing house](https://en.wikipedia.org/wiki/Automated_clearing_house)
 
-RDFI
+RDFI - Receiving Depository Financial Institute
 
-ODFI
+ODFI - Originating Depository Financial Institute
 
-CIP
+CIP - Customer Information Program
 
-KYC/AML
+KYC - Know Your Customer
+
+AML - Anti-Money Laundering
+
+
+This document was origionally copied from [here](https://www.notion.so/Guide-to-starting-a-challenger-bank-7a89941aca484d2ab094bc8afaa96c78).  Thanks to Jeremy Black for contributing it.
