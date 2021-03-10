@@ -175,14 +175,14 @@ The servicing segment of the business consists primarily of 2 major components. 
 
 The goal of self-service is to provide customers the ability to access account information and perform certain transactions without the need to interact with back office personnel. This keeps the cost of servicing low and allows consumers to be self sufficient in getting the information they need without human interaction. This information and transactions are relatively low-risk, typically:
 
-*Initial sign-up and application
-*Balance inquiry
-*Recent transaction list
-*Statement retrieval
-*Make account payment (for credit)
-*Transfer funds to/from accounts (primarily for deposit accounts)
-*Display Account Detail (APY/APR, minimum payment, last payment, account/routing numbers, etc.)
-*ATM Locator
+* Initial sign-up and application
+* Balance inquiry
+* Recent transaction list
+* Statement retrieval
+* Make account payment (for credit)
+* Transfer funds to/from accounts (primarily for deposit accounts)
+* Display Account Detail (APY/APR, minimum payment, last payment, account/routing numbers, etc.)
+* ATM Locator
 
 Higher risk transactions, such as changing customer address, and lower frequency transactions, such as dispute handling, are typically best handled through direct contact with back office staff.
 
