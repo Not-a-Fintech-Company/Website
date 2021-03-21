@@ -53,9 +53,9 @@ When it comes to the technology side of the industry, modernization is always ab
 
 | Name                     | Description                                                  | Examples                                                     |
 | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Pass-thru Gateway        | Provides single or multiple network access points via one access point, but almost no other services | FIS, Fiserv, STAR                                            |
+| Pass-thru Gateway        | Provides single or multiple network access points via one access point, but almost no other services | FIS, Fiserv, STAR, DPS                                            |
 | Issuing Gateway          | Authorizes and settles transactions, and manage card states, but typically doesn't include core banking and payments. Originally built to sit on top of Core Banking Systems | Marqeta, Stripe                                              |
-| Core Processor           | Connects to the network, authorizes and settles transactions, processes payments, and handles all core accounting requirements | Galileo, CoreCard, i2c, Privacy.com                          |
+| Core Processor           | Connects to the network, authorizes and settles transactions, processes payments, and handles all core accounting requirements | Galileo, CoreCard, i2c, Privacy.com, DPS                          |
 | Core Banking             | Not connected to the network, but able to handle all account and accounting requirements.  With a issuing gateway on top it's how many banks initially brought debit cards to market | Profile, Phoenix, Finacle, Finxact                           |
 | General Service Provider | Bundles together core processing with bank relationship and servicing organization. Ala carte pricing on top of basic relationship | Deserve, Cardworks, TCW, Unit, Synapse, Treasury Prime, Cascade |
 
@@ -113,10 +113,10 @@ There are constantly evolving patterns of transactional fraud, and the controls 
 Some of the controls you would configure include things like:
 * Transactions in last 5 minutes
 * Transactions in last N hours
-* Amount spent in last N Hours
+* Amount spent in last N hours
 * Amount spent at merchant across all accounts
 * Spend threshold based upon age of account
-* Spend thresholding based upon
+* Spend thresholding based upon type of transaction (e.g., ATM, POS, Originated ACH Debit, etc.)
 
 Upon crossing any control threshold, or triggering any hard flags, there are a few ways to handle an account. Primarily these consist of a allowlist, blocklist, and graylist, with other subtleties around soft blocking versus hard blocking.
 
@@ -163,9 +163,9 @@ In recent years, both the alternative major networks, American Express (Amex) an
 
 Besides acceptance, the one main drawback of these two networks is customer perception. Given their long histories and massive marketing spends on brand, each is thought of as a standalone card issuer, so some customer confusion, and also brand perception issues may be encountered. 
 
-### Debit Networks
+### Debit and ATM Networks
 
-While not a major differentiator anymore, debit networks are a requirement for all debit cards issued inside the US due to the Durbin Amendment. For most major banks in the US, dual routing (the Durbin Requirement) is usually done by the major networks wholly owned debit networks (Visa -> Interlink, Mastercard -> Maestro).  For NeoBanks, a common provider is AllPoint, which is provides \~40,000 ATMs throught the us.  There are other Interbank or Pin Debit networks that proivde ATM access and a list can be found on the this Wikipedia [page](https://en.wikipedia.org/wiki/Interbank_network#United_States).
+While not a major differentiator anymore, debit networks are a requirement for all debit cards issued inside the US due to the Durbin Amendment. For most major banks in the US, dual routing (the Durbin Requirement) is usually done by the major networks wholly owned debit networks (Visa -> Interlink, Mastercard -> Maestro).  For NeoBanks, a common ATM network provider is AllPoint, which is provides \~40,000 ATMs throught the us.  There are other Interbank or Pin Debit networks that proivde ATM access and a list can be found on the this Wikipedia [page](https://en.wikipedia.org/wiki/Interbank_network#United_States).
 
 # Servicing
 
@@ -173,7 +173,18 @@ The servicing segment of the business consists primarily of 2 major components. 
 
 ## Self Service
 
+The goal of self-service is to provide customers the ability to access account information and perform certain transactions without the need to interact with back office personnel. This keeps the cost of servicing low and allows consumers to be self sufficient in getting the information they need without human interaction. This information and transactions are relatively low-risk, typically:
 
+* Initial sign-up and application
+* Balance inquiry
+* Recent transaction list
+* Statement retrieval
+* Make account payment (for credit)
+* Transfer funds to/from accounts (primarily for deposit accounts)
+* Display Account Detail (APY/APR, minimum payment, last payment, account/routing numbers, etc.)
+* ATM Locator
+
+Higher risk transactions, such as changing customer address, and lower frequency transactions, such as dispute handling, are typically best handled through direct contact with back office staff.
 
 ## Back Office
 
