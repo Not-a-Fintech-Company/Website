@@ -65,7 +65,7 @@ An alphabet soup of regulations apply to any product you may want to launch, but
 
 ### Primary Documents
 
-- Cardholder agreement
+- Cardholder agreement - [CFPB template Card Agreement](https://www.consumerfinance.gov/data-research/credit-card-data/know-you-owe-credit-cards/)
 - Privacy Policy
 - Terms of Service
 - Schedule of Fees - debit
