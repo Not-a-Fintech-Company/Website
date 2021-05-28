@@ -19,10 +19,9 @@ description: A compilation of links to pieces other people have written, or just
 
 
 ### Credit Cards
-* https://fintechtoday.substack.com/p/fttea-with-cokie-credit-cards-as
-* https://fintechtoday.substack.com/p/fttea-with-cokie-credit-card-as-a
-* https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/
-Currently a random assortments of things that I knew to find quickly to send people to initially read.
+* <https://fintechtoday.substack.com/p/fttea-with-cokie-credit-cards-as>
+* <https://fintechtoday.substack.com/p/fttea-with-cokie-credit-card-as-a>
+* <https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/>
 
 ### BaaS 
 * <https://blog.unit.co/banks-middlewares-and-unit-making-sense-of-banking-infrastructure/>
