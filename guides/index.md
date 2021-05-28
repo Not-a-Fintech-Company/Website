@@ -1,5 +1,5 @@
 ---
-title: An index of the guides we've compiled, create or plan to create
+title: Index of the guides we've compiled, create or plan to create
 description: All the pieces you need to start, build and run a fintech company.
 ---
 
@@ -9,9 +9,8 @@ description: All the pieces you need to start, build and run a fintech company.
 ## Works in Progress
 * [How to launch a card product?](how-to-launch-a-card-product)
 * [How to select a bank partner?](how-to-select-a-bank-partner)
-* Flow of Funds [Google Doc](https://docs.google.com/document/d/1WRm6XbPv-IkXErLxiszj6zrBhoNRdPHvpFfjkGZ4U1w/edit>)
-* How to think about interchange [Google Doc](https://docs.google.com/document/d/1E_olRp2TjygWyDaoypwHP1Wh6pWFrkTE7buSYU63Uw0/edit>)
-
+* Flow of Funds: [Google Doc](https://docs.google.com/document/d/1WRm6XbPv-IkXErLxiszj6zrBhoNRdPHvpFfjkGZ4U1w/edit>)
+* How to think about interchange: [Google Doc](https://docs.google.com/document/d/1E_olRp2TjygWyDaoypwHP1Wh6pWFrkTE7buSYU63Uw0/edit>)
 * MTL vs MSB vs PayFac
 * Credit card vs Charge Card vs Debit Card
 * How to select your financial crime prevention and compliance partner
