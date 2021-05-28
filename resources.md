@@ -8,27 +8,42 @@ description: A compilation of links to pieces other people have written, or just
 
 ## Readings
 
+### General
+* <https://www.getfinal.com/company-news/2017/07/20/transaction-processing-flow/>
+* <https://medium.com/@stephenjcho/deciphering-the-payments-stack-efbcb9c8eac4>
+* <https://gendal.me/2014/08/09/a-simple-explanation-of-fees-in-the-payment-card-industry/>
+* <https://moov.io/blog/guides/complete-fintech-dictionary/>
+* <https://research-doc.credit-suisse.com/docView?language=ENG&format=PDF&sourceid=csplusresearchcp&document_id=1082106811&serialid=9ItaQaLeKMYkTfzB0rHonfefWNL6W5uABHoXHk5EVRA%3D>
+* <https://blog.starpointllp.com/>
+* <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
+
+
+### Credit Cards
+* https://fintechtoday.substack.com/p/fttea-with-cokie-credit-cards-as
+* https://fintechtoday.substack.com/p/fttea-with-cokie-credit-card-as-a
+* https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/
 Currently a random assortments of things that I knew to find quickly to send people to initially read.
 
+### BaaS 
 * <https://blog.unit.co/banks-middlewares-and-unit-making-sense-of-banking-infrastructure/>
 * <https://blog.unit.co/how-to-safely-migrate-to-a-better-banking-infrastructure-in-21-days-or-less/>
 * <https://blog.unit.co/revenues-in-financial-features-a-complete-guide-for-tech-companies/>
-* <https://www.kunle.app/feb-2020-permissionless-issuing.html>
 * <https://www.kunle.app/march-2020-vertical-banks.html>
+
+### Debt
+* <https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c>
+* <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
+
+### Random
+* <https://www.kunle.app/feb-2020-permissionless-issuing.html>
 * <https://www.kunle.app/may-2020-API-routing-layers.html>
 * <https://www.kunle.app/august-2020-differentiated-and-sustainable-lending-businesses.html>
 * <https://www.kunle.app/dec-2020-financial-reconciliation.html>
-* <https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c>
-* <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
-* <https://medium.com/@stephenjcho/deciphering-the-payments-stack-efbcb9c8eac4>
 * <https://a16z.com/2020/10/20/payroll-apis/>
-* <https://www.getfinal.com/company-news/2017/07/20/transaction-processing-flow/>
+
+### Product
 * <https://www.getfinal.com/company-news/2017/03/01/feature-development-at-final/>
-* <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
-* <https://gendal.me/2014/08/09/a-simple-explanation-of-fees-in-the-payment-card-industry/>
-* <https://research-doc.credit-suisse.com/docView?language=ENG&format=PDF&sourceid=csplusresearchcp&document_id=1082106811&serialid=9ItaQaLeKMYkTfzB0rHonfefWNL6W5uABHoXHk5EVRA%3D>
-* <https://blog.starpointllp.com/>
-* <https://moov.io/blog/guides/complete-fintech-dictionary/>
+
 
 ## Videos
 * Payments Opportunities in Software (JMPC) - <https://markets.jpmorgan.com/research/email/l42ivjop/mNkRV3AhL-vo86tgAZE8oA/KAL-1-IK898436>

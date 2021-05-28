@@ -6,6 +6,7 @@ description: All the pieces you need to start, build and run a fintech company.
 * [How to launch a card product?](how-to-launch-a-card-product)
 * [How to select a bank partner?](how-to-select-a-bank-partner)
 * [14 steps to closing a bank partner](n-steps-to-closing-a-bank-partner)
+* Flow of Funds (WIP: <https://docs.google.com/document/d/1WRm6XbPv-IkXErLxiszj6zrBhoNRdPHvpFfjkGZ4U1w/edit>)
 * MTL vs MSB vs PayFac
 * Credit card vs Charge Card vs Debit Card
 * How to select your financial crime prevention and compliance partner
