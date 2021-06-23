@@ -6,7 +6,7 @@ title: How to launch a card product?
 
 > "Only trillion dollar industry where nothing is written down" - T.P.
 
-Welcome to the wild world of card issuing. With 100s of millions of cards issued in the US and more internationally, its one of the most ubiquitous products around, but also incredibly complex.  The industry operates on the shoulders of giants who have existed for decades and I suggest for those looking for history of cards to read one of the fabulous books that have been written previously on the topic.  This goal of this guide is to provide tactical and strategic advice in how to bring a card to market.
+Welcome to the wild world of card issuing. With 100s of millions of cards issued in the US and more internationally, it's one of the most ubiquitous products around, but also incredibly complex.  The industry operates on the shoulders of giants who have existed for decades and I suggest for those looking for history of cards to read one of the fabulous books that have been written previously on the topic.  The goal of this guide is to provide tactical and strategic advice in how to bring a card to market.
 
 One of the hardest parts of bringing a card to market is solving for each businesses unique order of operations to bring all disparate components together.  That includes bank partners, networks, technology vendors, marketing assets and plans, risk and servicing organizations, compliance programs, debt funding, and more all at once to launch a card.  While some of these pieces can be built in-house, others are much better solved via partnerships, and ultimately take time and money to pull off expediently.  Additionally not all components can be brought onboard in parallel, but need to happen serially. All of this is to say that bringing a card to market is a task with many branching codependent processes.
 
@@ -61,7 +61,7 @@ When it comes to the technology side of the industry, modernization is always ab
 
 # Compliance
 
-An alphabet soup of regulations apply to any product you may want to launch, but given the work of countless others its easier now than ever.
+An alphabet soup of regulations apply to any product you may want to launch, but given the work of countless others it's easier now than ever.
 
 ### Primary Documents
 
@@ -106,7 +106,7 @@ There are many types of identity theft: stolen, family, synthetic, and **more.**
 
 ### Transactional
 
-Transactional fraud refers to fraud that occurs at spend time.  It has the potential for a large custoemr impact as if fraud is suspected and an account blocked temporarily while investigaged, it prevents the user from being able use one of the primary features of the proudct.
+Transactional fraud refers to fraud that occurs at spend time.  It has the potential for a large customer impact as if fraud is suspected and an account blocked temporarily while investigaged, it prevents the user from being able use one of the primary features of the proudct.
 
 There are constantly evolving patterns of transactional fraud, and the controls necessary to prevent it require heuristics around spend patterns, spend velocity, account age, as well as leveraging models built around overall fraud trends per MCC and Merchant.
 
@@ -165,7 +165,7 @@ Besides acceptance, the one main drawback of these two networks is customer perc
 
 ### Debit and ATM Networks
 
-While not a major differentiator anymore, debit networks are a requirement for all debit cards issued inside the US due to the Durbin Amendment. For most major banks in the US, dual routing (the Durbin Requirement) is usually done by the major networks wholly owned debit networks (Visa -> Interlink, Mastercard -> Maestro).  For NeoBanks, a common ATM network provider is AllPoint, which is provides \~40,000 ATMs throught the us.  There are other Interbank or Pin Debit networks that proivde ATM access and a list can be found on the this Wikipedia [page](https://en.wikipedia.org/wiki/Interbank_network#United_States).
+While not a major differentiator anymore, debit networks are a requirement for all debit cards issued inside the US due to the Durbin Amendment. For most major banks in the US, dual routing (the Durbin Requirement) is usually done by the major networks wholly owned debit networks (Visa -> Interlink, Mastercard -> Maestro).  For NeoBanks, a common ATM network provider is AllPoint, which is provides \~40,000 ATMs throughout the us.  There are other Interbank or Pin Debit networks that proivde ATM access and a list can be found on the this Wikipedia [page](https://en.wikipedia.org/wiki/Interbank_network#United_States).
 
 # Servicing
 
@@ -212,7 +212,7 @@ There is a laundry list of the things a back office might need to accomplish for
 
 # Marketing
 
-Finding product marketing fit is never easy in this industry. With incumbents having 100s of millions of dollars at their disposal for acquisition, its always an uphill battle to break through the noise, so focusing on niches and truely understanding your customer acquisition cost are key.
+Finding product marketing fit is never easy in this industry. With incumbents having 100s of millions of dollars at their disposal for acquisition, its always an uphill battle to break through the noise, so focusing on niches and truly understanding your customer acquisition cost are key.
 
 
 ToDos
