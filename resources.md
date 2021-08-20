@@ -13,10 +13,10 @@ description: A compilation of links to pieces other people have written, or just
 * <https://medium.com/@stephenjcho/deciphering-the-payments-stack-efbcb9c8eac4>
 * <https://gendal.me/2014/08/09/a-simple-explanation-of-fees-in-the-payment-card-industry/>
 * <https://moov.io/blog/guides/complete-fintech-dictionary/>
+* <https://kunle.app/august-2021-common-problems-with-bank-partners.html>
 * <https://research-doc.credit-suisse.com/docView?language=ENG&format=PDF&sourceid=csplusresearchcp&document_id=1082106811&serialid=9ItaQaLeKMYkTfzB0rHonfefWNL6W5uABHoXHk5EVRA%3D>
 * <https://blog.starpointllp.com/>
 * <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
-
 
 ### Credit Cards
 * <https://fintechtoday.substack.com/p/fttea-with-cokie-credit-cards-as>
@@ -42,7 +42,6 @@ description: A compilation of links to pieces other people have written, or just
 
 ### Product
 * <https://www.getfinal.com/company-news/2017/03/01/feature-development-at-final/>
-
 
 ## Videos
 * Payments Opportunities in Software (JMPC) - <https://markets.jpmorgan.com/research/email/l42ivjop/mNkRV3AhL-vo86tgAZE8oA/KAL-1-IK898436>
