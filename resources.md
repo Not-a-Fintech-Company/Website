@@ -19,9 +19,7 @@ description: A compilation of links to pieces other people have written, or just
 * <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
 
 ### Credit Cards
-* <https://fintechtoday.substack.com/p/fttea-with-cokie-credit-cards-as>
-* <https://fintechtoday.substack.com/p/fttea-with-cokie-credit-card-as-a>
-* <https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/>
+* Credit Card as a Service [Part 1](https://ckarchive.com/b/92uzhnhmlqpw) [Part 2](https://ckarchive.com/b/wvu2hghprdkk) [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/)
 
 ### BaaS 
 * <https://blog.unit.co/banks-middlewares-and-unit-making-sense-of-banking-infrastructure/>
