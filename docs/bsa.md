@@ -1,5 +1,5 @@
 ---
-title: BSA/AML/OFAC sample policy
+title: BSA/AML/OFAC Sample Policy
 ---
 
 <iframe width="100%" height="600px" src="https://docs.google.com/document/d/e/2PACX-1vS5NzUfU9rDoHYS73_q_1DxyQv-E90x-Aysyxs4w8HCRigyreOd2Nr9D8e_AIZIkQ/pub?embedded=true"></iframe>
