@@ -1,9 +1,13 @@
 ---
 title: An index of documents
 ---
+Here are a collection (currently one) of policy and procedure documents for what it takes to launch a new product.
 
-* [BSA](term-loan)
-* [Bank Accounts](bank-account)
-* [Credit Cards](credit-card)
+* [BSA/AML/OFAC](bsa)
 
-These models serve to provide a baseline for what the unit economics look like if you're building out one of the many configurable products. Please leave comments in the model, we're figuring out a better system for collaboration for them.
+
+Thanks to the following people for providing documents so far: 
+* [Mark Kallal](https://www.linkedin.com/in/mkallal/) at [Maquette Advisors](https://www.maquetteadvisors.com/)
+
+
+These documents are provided under 
