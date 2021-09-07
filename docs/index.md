@@ -3,7 +3,15 @@ title: An index of documents
 ---
 Here are a collection (currently one) of policy and procedure documents for what it takes to launch a new product.
 
+# Policies
 * [BSA/AML/OFAC](bsa)
+* More to come...
+
+# Procedures
+* TBD
+
+# Strategy Docs
+* [Credit Card Business Trunk](credit-card-trunk)
 * More to come...
 
 Thanks to the following people for providing documents so far: 
