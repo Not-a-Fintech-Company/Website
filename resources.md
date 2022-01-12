@@ -36,14 +36,14 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
 
 ### Fraud
-* [Fraud Glossary - RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:27459ec7-5481-4a5d-9dea-155210f9e65b)
+* [Fraud Glossary - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:27459ec7-5481-4a5d-9dea-155210f9e65b)
 
 ### Marketing
-* [Marketing Guidlines - RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:5ad7f104-9935-43b7-9dba-d3423d206e1c)
+* [Marketing Guidlines - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:5ad7f104-9935-43b7-9dba-d3423d206e1c)
 
 ### Compliance
-* [Policy Glossary - RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:112717cc-15cf-4b2c-b8ab-eb9c18988ddf)
-* [Basics of Financial Compliance - RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b89e7527-19a2-4b45-a570-f5c57c0d9fd2)
+* [Policy Glossary - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:112717cc-15cf-4b2c-b8ab-eb9c18988ddf)
+* [Basics of Financial Compliance - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b89e7527-19a2-4b45-a570-f5c57c0d9fd2)
 
 ### Random
 * <https://www.kunle.app/feb-2020-permissionless-issuing.html>
