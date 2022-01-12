@@ -21,8 +21,12 @@ description: A compilation of links to pieces other people have written, guides,
 ### Credit Cards
 * Credit Card as a Service [Part 1](https://ckarchive.com/b/92uzhnhmlqpw) [Part 2](https://ckarchive.com/b/wvu2hghprdkk) [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/)
 
+### Cards
+* [Ultimate guide to interchange revenues - Unit.co](https://www.unit.co/guides/ultimate-guide-interchange-revenue)
+ 
+
 ### BaaS 
-* <https://blog.unit.co/banks-middlewares-and-unit-making-sense-of-banking-infrastructure/>
+* [Banks, middlewares, and Unit making sense of banking infrastructure - Unit.co](https://blog.unit.co/banks-middlewares-and-unit-making-sense-of-banking-infrastructure/)
 * <https://blog.unit.co/how-to-safely-migrate-to-a-better-banking-infrastructure-in-21-days-or-less/>
 * <https://blog.unit.co/revenues-in-financial-features-a-complete-guide-for-tech-companies/>
 * <https://www.kunle.app/march-2020-vertical-banks.html>
@@ -32,14 +36,14 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
 
 ### Fraud
-* [Fraud Glossary | RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:27459ec7-5481-4a5d-9dea-155210f9e65b)
+* [Fraud Glossary - RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:27459ec7-5481-4a5d-9dea-155210f9e65b)
 
 ### Marketing
-* [Marketing Guidlines | RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:5ad7f104-9935-43b7-9dba-d3423d206e1c)
+* [Marketing Guidlines - RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:5ad7f104-9935-43b7-9dba-d3423d206e1c)
 
 ### Compliance
-* [Policy Glossary | RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:112717cc-15cf-4b2c-b8ab-eb9c18988ddf)
-* [Basics of Financial Compliance | RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b89e7527-19a2-4b45-a570-f5c57c0d9fd2)
+* [Policy Glossary - RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:112717cc-15cf-4b2c-b8ab-eb9c18988ddf)
+* [Basics of Financial Compliance - RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b89e7527-19a2-4b45-a570-f5c57c0d9fd2)
 
 ### Random
 * <https://www.kunle.app/feb-2020-permissionless-issuing.html>
