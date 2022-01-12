@@ -1,6 +1,6 @@
 ---
-title: A random assortment of resources from around the web
-description: A compilation of links to pieces other people have written, or just blogs in general if they're a good source of content.
+title: An assortment of resources from around the web
+description: A compilation of links to pieces other people have written, guides, or just blogs in general if they're a good source of content.
 ---
 ## Compilations
 
@@ -30,6 +30,16 @@ description: A compilation of links to pieces other people have written, or just
 ### Debt
 * <https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c>
 * <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
+
+### Fraud
+* [Fraud Glossary | RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:27459ec7-5481-4a5d-9dea-155210f9e65b)
+
+### Marketing
+* [Marketing Guidlines | RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:5ad7f104-9935-43b7-9dba-d3423d206e1c)
+
+### Compliance
+* [Policy Glossary | RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:112717cc-15cf-4b2c-b8ab-eb9c18988ddf)
+* [Basics of Financial Compliance | RiseFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b89e7527-19a2-4b45-a570-f5c57c0d9fd2)
 
 ### Random
 * <https://www.kunle.app/feb-2020-permissionless-issuing.html>
