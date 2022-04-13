@@ -1,10 +1,11 @@
 ---
 title: Go To Market Plan
 ---
-Goal: Launch a product in year 1, start seeing signs of product market fit
+**Goal: Launch a product in year 1, start seeing signs of product market fit**
 
 
-## Month 0 - Figure out your target customer + product
+## Month 0
+*Figure out your target customer + product*
 ### Strategy Questions to Answer:
 1. What problem exists for which there's no solution?
 2. What's the reason the solution does not exist?
@@ -16,14 +17,14 @@ Goal: Launch a product in year 1, start seeing signs of product market fit
 
 
 ### Product Questions to Answer
-* What is the product you’re launching?
+1. What is the product you’re launching?
     * Debit card + checking?
     * Savings?
     * Brokerage?
     * Credit of some sort?
     * Crypto?
     * Thought another way: Transacting, Savings, Investing, Borrowing, Insuring
-* Which segment of the target community are you targeting?
+1. Which segment of the target community are you targeting?
    * How are you segmenting your community?
       * Age/income?
       * Group Affinity?
@@ -31,11 +32,11 @@ Goal: Launch a product in year 1, start seeing signs of product market fit
    * How do they bank currently?
    * What are the strongest pain points with their existing products?
    * Where do you think a wedge exists?
-* How can I provide a product that responds to these initial pain points? (e.g. if they are banking with Western Union and paying a ton of fees, offering them no fee product)
+1. How can I provide a product that responds to these initial pain points? (e.g. if they are banking with Western Union and paying a ton of fees, offering them no fee product)
    * Example: Figure out if the ITIN set-up number a) useful b) feasible). If you can get the ITIN number, will that be enough to get someone to set-up an account?
-* What is the functional appeal and what is the emotional appeal? What feeling do I want customers to feel when they use my product?
-* What are the minimum features needed to make this work? (e.g. how are customers sending funds to their cards? Do they need a check deposit feature?)
-* What do you think is the best way to get this product into consumers hands? Where will you find them? How do you build trust?
+1. What is the functional appeal and what is the emotional appeal? What feeling do I want customers to feel when they use my product?
+1. What are the minimum features needed to make this work? (e.g. how are customers sending funds to their cards? Do they need a check deposit feature?)
+1. What do you think is the best way to get this product into consumers hands? Where will you find them? How do you build trust?
 
 
 ### Action Items
@@ -60,5 +61,44 @@ Goal: Launch a product in year 1, start seeing signs of product market fit
 ### Other Notes
 * It’s ok to pick the wrong product to start! Chris Britt at Chime started with a rewards product and then pivoted into the 2 day early deposit product, but if you don’t have a product, otherwise you can’t get to the next downstream decision
 * You can “cheat” for a while by building on a BaaS provider (e.g. Unit, Treasury Prime, Synapse) - a number of players were built on top of Synapse, then went with someone like Galileo after things were working (e.g. Point, Empower, Dave). This movement is fairly well-documented too!  Some never leave the BaaS provider and just focus on product differentiation and scaling (Mercury)
-________________
 
+***
+
+## Months 1-3
+**Goal: Build the fintech backend to the product you designed**
+
+
+### Key Questions
+* How am I going to launch this product (bank? BaaS provider?) ? Which vendors am I going to use? Which baking partner?
+* What will initial and scale unit economics look like? What pricing do I need to break-even as a result?  What pieces of unit economics can you fix later, what ones can you not?
+
+
+### Work
+* Finalize secondary product features (e.g. do they need ATM network access?)
+* Talk to the BaaS providers and the partner banks, get price quotes, negotiate for best fit and terms.[j]
+* Find a compliance consultant that can help you set-up compliance and look more competent in the eyes of a bank (most banks want a dedicated compliance officer - you can use a consultant to start and then once things are up and running, you can hire in-house). You can’t sign an agreement with a bank without this![k][l]
+* Some of this will be dependent on the product you launch with, for example, if you’re issuing a credit product, you should start having conversation
+* Build model for economics
+   * Might be some helpful resources here: https://notafintechcompany.com/models/
+* Identify engineering needs, where to hire to get an MVP out the door
+
+
+
+
+### Deliverables
+* Starting negotiating agreements with banking providers and other vendors[m]
+* Hire compliance consultant or shop
+* If building credit product, start looking for underwriting / credit lead
+
+
+### Other Notes
+* Some of this will feel circular (i.e. vendor selection might drive bank and vice versa[n]), so it might feel like it’s a bit up in the air
+* Banks care about a few things 1) is this worth their time[o]? 2) fraud risk 3) how fast you will grow
+
+
+### What do people get wrong in the beginning?
+* Focus on optimizing partners rather than speed to launch
+* Not understanding how fintech infra works :) Don’t worry - we’re here for that! You should do references with other current customers, figure out how much they charge and run it by multiple people before signing anything. Compare your terms to similar card products / limits (e.g. credit limits, daily transaction limits, spend and balance threshold, ATM access)
+* Not getting compliance right. This is *especially* important if your target customers might not be banked! You need to find a bank who is willing to work with you on this
+
+***
