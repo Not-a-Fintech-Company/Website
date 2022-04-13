@@ -75,11 +75,10 @@ title: Go To Market Plan
 
 ### Work
 * Finalize secondary product features (e.g. do they need ATM network access?)
-* Talk to the BaaS providers and the partner banks, get price quotes, negotiate for best fit and terms.[j]
+* Talk to the BaaS providers and the partner banks, [get price quotes](/guides/n-steps-to-closing-a-bank-partner/#example-fees-for-savings-product), negotiate for best fit and terms.
 * Find a compliance consultant that can help you set-up compliance and look more competent in the eyes of a bank (most banks want a dedicated compliance officer - you can use a consultant to start and then once things are up and running, you can hire in-house). You can’t sign an agreement with a bank without this![k][l]
 * Some of this will be dependent on the product you launch with, for example, if you’re issuing a credit product, you should start having conversation
-* Build model for economics
-   * Might be some helpful resources here: https://notafintechcompany.com/models/
+* Build model for economics - [models](/models) can be found here
 * Identify engineering needs, where to hire to get an MVP out the door
 
 
