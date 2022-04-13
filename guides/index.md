@@ -5,6 +5,7 @@ description: All the pieces you need to start, build and run a fintech company.
 
 ## Done
 * [14 steps to closing a bank partner](n-steps-to-closing-a-bank-partner)
+* [Go To Market Plan](go-to-market-plan)
 
 ## Works in Progress
 * [How to launch a card product?](how-to-launch-a-card-product)
