@@ -3,6 +3,12 @@ title: Go To Market Plan
 ---
 **Goal: Launch a product in year 1, start seeing signs of product market fit**
 
+## Table of Contents
+1. [Month 0](#month-0)
+1. [Months 1-3](#months-1-3)
+1. [Months 3-6](#months-3-6)
+1. [Months 6-9+](#months-6-9)
+
 
 ## Month 0
 *Figure out your target customer + product*
@@ -76,17 +82,14 @@ title: Go To Market Plan
 ### Work
 * Finalize secondary product features (e.g. do they need ATM network access?)
 * Talk to the BaaS providers and the partner banks, [get price quotes](/guides/n-steps-to-closing-a-bank-partner/#example-fees-for-savings-product), negotiate for best fit and terms.
-* Find a compliance consultant that can help you set-up compliance and look more competent in the eyes of a bank (most banks want a dedicated compliance officer - you can use a consultant to start and then once things are up and running, you can hire in-house). You can’t sign an agreement with a bank without this![k][l]
+* Figure out compliance needs to launch.  Many times this involved finding a compliance consultant that can help you set-up compliance program(policies and procedures).  This will make you look more competent in the eyes of a bank (most banks want a dedicated compliance officer - you can use a consultant to start and then once things are up and running, you can hire in-house).
 * Some of this will be dependent on the product you launch with, for example, if you’re issuing a credit product, you should start having conversation
 * Build model for economics - [models](/models) can be found here
-* Identify engineering needs, where to hire to get an MVP out the door
-
-
-
+* Identify engineering needs, where to hire to get an MVP out the door, and what necessary for launch
 
 ### Deliverables
-* Starting negotiating agreements with banking providers and other vendors[m]
-* Hire compliance consultant or shop
+* Starting negotiating agreements with banking providers and other vendors. Different vendors and products will have different pricing models (revenue share versus a-la carte)
+* Hire compliance consultant or compliance shop
 * If building credit product, start looking for underwriting / credit lead
 
 
