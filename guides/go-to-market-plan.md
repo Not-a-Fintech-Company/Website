@@ -1,5 +1,5 @@
 ---
-title: Go to market plan
+title: Go to market guide
 ---
 The goal of this guide is to provide a list of questions to answer in order to launch a product within year 1 and hopefully start seeing signs of product market fit.
 
@@ -75,8 +75,10 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 ### Key Questions
-* How am I going to launch this product (bank? BaaS provider?) ? Which vendors am I going to use? Which baking partner?
-* What will initial and scale unit economics look like? What pricing do I need to break-even as a result?  What pieces of unit economics can you fix later, what ones can you not?
+1. How am I going to launch this product (bank? BaaS provider?)?
+1. Which vendors am I going to use?
+1. Which baking partner?
+1. What will initial and scale unit economics look like? What pricing do I need to break-even as a result?  What pieces of unit economics can you fix later, what ones can you not?
 
 
 ### Work
@@ -110,8 +112,9 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 ### Key Questions to Figure Out
-* What is my digital product going to look like? How is it going to embody the brand I want to build?[p]
-* How am I going to work with my partner banks and vendors to make the process as smooth as possible for my customers?
+1. What is my digital product going to look like?
+1. How is it going to embody the brand I want to build?[
+1. How am I going to work with my partner banks and vendors to make the process as smooth as possible for my customers?
 
 
 ### Work
