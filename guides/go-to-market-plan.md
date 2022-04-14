@@ -65,7 +65,7 @@ title: Go To Market Plan
 ***
 
 ## Months 1-3
-**Goal: Build the fintech backend to the product you designed**
+*Goal: Build the fintech backend to the product you designed*
 
 
 ### Key Questions
@@ -101,3 +101,71 @@ title: Go To Market Plan
 * Not getting compliance right. This is *especially* important if your target customers might not be banked! You need to find a bank who is willing to work with you on this
 
 ***
+
+## Months 3-6
+*Start building the digital side of the bank*
+
+
+### Key Questions to Figure Out
+* What is my digital product going to look like? How is it going to embody the brand I want to build?[p]
+* How am I going to work with my partner banks and vendors to make the process as smooth as possible for my customers?
+
+
+### Work
+* Test UX design, build UI
+* Build back-end (e.g. username and password, shadow ledger with account info), connection into bank partner FBO account, interest calculation - a lot of this is simplified with a BaaS provider
+* Make sure compliance (e.g. PCI, PII) is complete, build out security stack (e.g. data leaks)
+* Design the card, plan for how many cards you’ll need over year 1 (if printing cards)
+* Come up with strategy around customer service - what software you’ll use and how you’ll staff it (e.g. Zendesk? have 24/7 whatsapp support?)
+* Start talking to potential senior marketing hires - want someone with experience talking to this segment and who can quickly iterate on strategies (doesn’t have to be a fintech expert!)
+
+
+### Deliverables
+* Have signed agreements with banking providers and other vendors - make sure you have a) issuing bank 2) card network 3) processor 4) card provider - much of this can be done by a BaaS provider to start
+* Have working mobile app
+* If building credit product, start looking for underwriting / credit lead
+* Finalize compliance processes (how are you onboarding customers, how notifying banks of complaints, how applying sanctions list compliance, filing SARs) and policies (e.g. how do you assess the risk of individual transactions? Account takeover?)
+   * Make sure things like information security, physical security procedures process is also in place)
+* Hire lawyers to write up things like disclosures & agreements (depending on product starting with)
+* Find a card printer if issuing a card
+
+
+### Other Notes
+* This process can be a lot easier with a BaaS platform, who can save months to launch
+
+
+### What do people get wrong at this stage?
+* Seamless onboarding. The most important thing (that is also hard!) is getting onboarding to be seamless and easy. That means not having people wait a week to use the product. The more time you can spend with the bank getting comfortable with your KYC procedures, the better
+* You don’t need a GC yet! You might need additional legal help if you are doing novel things, but don’t bring in-house
+
+*** 
+
+## Months 6-9+
+*Polish product for launch, get the marketing plan into action*
+
+
+### Key Questions to Figure Out
+   * How am I going to get this product into customers' hands? What marketing strategies am I going to test? Offline? Online? Which digital channels?
+
+
+### Work
+   * Order cards (if doing physical) - lead times can be months depending on queue backlogs and quality of cards
+   * Test secondary compliance / risk policy set-up (e.g. information security, AML training)
+   * Start trying cards, make sure product works, identify edge cases
+   * Identify beta test population
+   * Set-up launch page and waitlist
+
+### Deliverables
+   * Have a marketing plan with hypothesis and how you’re going to test each of them
+   * Bring on senior marketing hire
+
+
+### Other Notes
+   * [ ]
+
+### What do people get wrong at this stage?
+   * Launching a poor experience - It’s hard to earn back trust - better to launch with a product that works and is a good experience, than get the product out quickly
+   * Launching with influencers too early - make sure the beta is complete first. Feedback is critical - you want to know how people are using the product and what works and what doesn’t before going out with a bang. Thing about influencers as a way to *accelerate* growth, not launch for the first time
+   * Offline marketing - It’s hard to get fast feedback on offline channels. It can be an expensive channel to test
+
+Thanks to [Seema](https://twitter.com/seema_amble/) for the initial inspiration, and [Ayo](https://twitter.com/ay_o/), [Drew](https://twitter.com/drewrants) and [Nichole](https://twitter.com/nwischoff) for addiitonal feedback.
