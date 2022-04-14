@@ -1,7 +1,7 @@
 ---
-title: Go To Market Plan
+title: Go to market plan
 ---
-**Goal: Launch a product in year 1, start seeing signs of product market fit**
+The goal of this guide is to provide a list of questions to answer in order to launch a product within year 1 and hopefully start seeing signs of product market fit.
 
 ## Table of Contents
 1. [Month 0](#month-0)
