@@ -47,7 +47,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 ### Action Items
-* Talk to customers to find target segment
+* Talk to customers to find target segment. Talk to customers. Talk to customers.
 * Talk to other neobank founders to figure out what did and did not work
 * Talk to prior similar products that have failed
    * Identify what they learned that did and did not work
@@ -60,6 +60,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 ### What do people get wrong at this stage? 
 * Think target customer is bigger than it is
 * Failure to pick a product
+* Don’t talk to customers, or don’t talk to them enough
 * Unit economics - way to aggressive - assume just savings
 * Focus on marketing - there’s not a lot of benefit to focusing on marketing at this point. You can put up a landing page to test digital value props, but don’t worry about setting up a waitlist yet. Can’t give potential customers product yet!
 * Focus on hiring a lot of people - you don’t need them yet :) As long as you have someone to do the user research and someone to build, you’re good!
