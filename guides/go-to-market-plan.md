@@ -19,7 +19,8 @@ The goal of this guide is to provide a list of questions to answer in order to l
 * not enough revenue
 * too much risk/fraud
 * not technically possible
-3. What is technically possible now that wasn't possible before, and what emergent behavior does it enable? Why now?
+3. Who has previously tried to fix this problem? Who has tried to do it with this solution?
+4. What is technically possible now that wasn't possible before, and what emergent behavior does it enable? Why now?
 
 
 ### Product Questions to Answer
@@ -30,7 +31,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
     * Credit of some sort?
     * Crypto?
     * Thought another way: Transacting, Savings, Investing, Borrowing, Insuring
-1. Which segment of the target community are you targeting?
+1. Which segment of the target market are you targeting?
    * How are you segmenting your community?
       * Age/income?
       * Group Affinity?
@@ -129,7 +130,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 ### Deliverables
 * Have signed agreements with banking providers and other vendors - make sure you have a) issuing bank 2) card network 3) processor 4) card provider - much of this can be done by a BaaS provider to start
 * Have working mobile app
-* If building credit product, start looking for underwriting / credit lead
+* If building a credit product, have a underwriting / credit lead ready to hire
 * Finalize compliance processes (how are you onboarding customers, how notifying banks of complaints, how applying sanctions list compliance, filing SARs) and policies (e.g. how do you assess the risk of individual transactions? Account takeover?)
    * Make sure things like information security, physical security procedures process is also in place)
 * Hire lawyers to write up things like disclosures & agreements (depending on product starting with)
