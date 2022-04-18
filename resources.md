@@ -32,6 +32,7 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://www.kunle.app/march-2020-vertical-banks.html>
 
 ### Debt
+* <https://a16z.com/2022/04/15/16-things-to-know-about-raising-debt-for-startups/>
 * <https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c>
 * <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
 
