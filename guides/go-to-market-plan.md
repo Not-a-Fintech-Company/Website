@@ -1,9 +1,9 @@
 ---
 title: Go to market guide
 ---
-The goal of this guide is to provide a list of questions to answer in order to launch a product within year 1 and hopefully start seeing signs of product market fit.
+The goal of this guide is to provide a list of questions to answer in order to launch a product within one year and hopefully start seeing signs of product market fit for a new fintech company. While not exhausitve on all questions, it should provide a good start on what you will need to plan to build versus buy versus rent to get a new product launched.
 
-## Table of Contents
+### Table of Contents
 1. [Month 0](#month-0)
 1. [Months 1-3](#months-1-3)
 1. [Months 3-6](#months-3-6)
@@ -11,8 +11,9 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 ## Month 0
-*Figure out your target customer + product*
-### Strategy Questions to Answer:
+*Goal: Figure out your target customer and product*
+
+### Strategy Questions to Answer
 1. What problem exists for which there's no solution?
 2. What's the reason the solution does not exist?
 * too expensive to acquire customers for
@@ -25,7 +26,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 ### Product Questions to Answer
 1. What is the product you’re launching?
-    * Debit card + checking?
+    * Debit card and checking account?
     * Savings?
     * Brokerage?
     * Credit of some sort?
@@ -55,10 +56,10 @@ The goal of this guide is to provide a list of questions to answer in order to l
    * Learn what has changed about the market timing
 
 ### Deliverables
-* Have a document detailing the target customer profile, initial product, and how it’s going to ideally work + brand / how you think you’ll get to them
+* Have a document detailing the target customer profile, initial product, and how it’s going to ideally work and brand / how you think you’ll get to them
 
 
-### What do people get wrong at this stage? 
+### What do people get wrong at this stage?
 * Think target customer is bigger than it is
 * Failure to pick a product
 * Don’t talk to customers, or don’t talk to them enough. Figure out which of your assumptions are wrong. The quicker you can correct them the better off you'll be.
@@ -86,7 +87,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 
-### Work
+### Action Items
 * Finalize secondary product features (e.g. do they need ATM network access?)
 * Talk to the BaaS providers and the partner banks, [get price quotes](/guides/n-steps-to-closing-a-bank-partner/#example-fees-for-savings-product), negotiate for best fit and terms.
 * Figure out compliance needs to launch.  Many times this involved finding a compliance consultant that can help you set-up compliance program(policies and procedures).  This will make you look more competent in the eyes of a bank (most banks want a dedicated compliance officer - you can use a consultant to start and then once things are up and running, you can hire in-house).
@@ -111,7 +112,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 * Drawing out every functional component of your "stack" at this early stage and understanding the interplay between them can help you get it out of your head.
 
 
-### What do people get wrong in the beginning?
+### What do people get wrong at this stage?
 * Focus on optimizing partners rather than speed to launch
 * Making assumptions that some elements are more important or long-term than they are. Assume everything will need to be rebuilt
 * Not understanding how fintech infra works :) Don’t worry - we’re here for that! You should do references with other current customers, figure out how much they charge and run it by multiple people before signing anything. Compare your terms to similar card products / limits (e.g. credit limits, daily transaction limits, spend and balance threshold, ATM access)
@@ -120,7 +121,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 ***
 
 ## Months 3-6
-*Start building the digital side of the bank*
+*Goal: Start building the digital side of the bank*
 
 
 ### Key Questions to Figure Out
@@ -129,10 +130,10 @@ The goal of this guide is to provide a list of questions to answer in order to l
 3. How am I going to work with my partner banks and vendors to make the process as smooth as possible for my customers?
 
 
-### Work
+### Action Items
 * Start with best practices. Good artists borrow, great artists steal
 * Test UX design, build UI
-* Build back-end (e.g. username/password, shadow ledger with account info), connection into bank partner FBO account, interest calculation - a lot of this is simplified with a BaaS provider
+* Build back-end infrastructure (e.g. username/password, shadow ledger, account management, bank vendor integration, flow of funds reconciliation)
 * Make sure compliance (e.g. PCI, PII) is complete, build out security stack (e.g. data leaks)
 * Design the card, plan for how many cards you’ll need over year 1 (if printing cards)
 * Come up with strategy around customer service - what software you’ll use and how you’ll staff it (e.g. Zendesk? have 24/7 whatsapp support?)
@@ -160,14 +161,14 @@ The goal of this guide is to provide a list of questions to answer in order to l
 *** 
 
 ## Months 6-9+
-*Polish product for launch, get the marketing plan into action*
+*Goal: Polish product for launch, get the marketing plan into action*
 
 
 ### Key Questions to Figure Out
    * How am I going to get this product into customers' hands? What marketing strategies am I going to test? Offline? Online? Which digital channels?
 
 
-### Work
+### Action Items
    * Order cards (if doing physical) - lead times can be months depending on queue backlogs and quality of cards
    * Test secondary compliance / risk policy set-up (e.g. information security, AML training)
    * Start trying cards, make sure product works, identify edge cases
@@ -176,15 +177,15 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 ### Deliverables
    * Have a marketing plan with hypothesis and how you’re going to test each of them
-   * Bring on senior marketing hire
+   * Bring on senior marketing hire or test marketing channels
 
 
 ### Other Notes
-   * [ ]
+   * Product marketing fit (finding scalable and durable marketing channels) is just as hard to find as product market fit in Fintech. You might have the right product for your segment, but if they never know you exist
 
 ### What do people get wrong at this stage?
    * Launching a poor experience - It’s hard to earn back trust - better to launch with a product that works and is a good experience, than get the product out quickly
    * Launching with influencers too early - make sure the beta is complete first. Feedback is critical - you want to know how people are using the product and what works and what doesn’t before going out with a bang. Thing about influencers as a way to *accelerate* growth, not launch for the first time
    * Offline marketing - It’s hard to get fast feedback on offline channels. It can be an expensive channel to test
 
-Thanks to [Seema](https://twitter.com/seema_amble/) for the initial inspiration, and [Ayo](https://twitter.com/ay_o/), [Drew](https://twitter.com/drewrants) and [Nichole](https://twitter.com/nwischoff) for addiitonal feedback.
+Thanks to [Seema](https://twitter.com/seema_amble/) for the initial documenation and inspiration for this doc, and [Ayo](https://twitter.com/ay_o/), [Drew](https://twitter.com/drewrants) and [Nichole](https://twitter.com/nwischoff) for addiitonal feedback.
