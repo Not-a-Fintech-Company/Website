@@ -1,7 +1,7 @@
 ---
 title: Go to market guide
 ---
-The goal of this guide is to provide a list of questions to answer in order to launch a product within one year and hopefully start seeing signs of product market fit for a new fintech company. While not exhausitve on all questions, it should provide a good start on what you will need to plan to build versus buy versus rent to get a new product launched.
+The goal of this guide is to provide a list of questions to answer in order to launch a product within one year and hopefully start seeing signs of product market fit for a new fintech company. While not exhaustive on all questions, it should provide a good start on what you will need to plan to build vs. buy vs. rent to get a new product launched.
 
 ### Table of Contents
 1. [Month 0](#month-0)
@@ -25,7 +25,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 ### Product Questions to Answer
-* What is the product you’re launching?
+* What is the product you are launching?
     * Debit card and checking account?
     * Savings?
     * Brokerage?
@@ -50,7 +50,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 ### Action Items
 * Talk to customers to find target segment. Talk to customers. Talk to customers.
-* Talk to other neobank founders to figure out what did and did not work
+* Talk to other neo-bank founders to figure out what did and did not work
 * Talk to prior similar products that have failed
    * Identify what they learned that did and did not work
    * Learn what has changed about the market timing
@@ -80,10 +80,10 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 ### Key Questions
 * How am I going to launch this product (bank partners? MTL? Lending Licenses? BaaS/Issuing partner)?
-* Have you raised enough capital to solve counterparty risk for the companies you will partner with?
+* Have you raised enough capital to solve counter-party risk for the companies you will partner with?
 * Which vendors am I going to use? Which banking partner?
 * What will initial and scale unit economics look like? What pricing do I need to break-even as a result?  What pieces of unit economics can you fix later, what ones can you not?
-* What does my regulatory roadmap look like? What can I do as an agent or licensee of another’s authorisation to begin with, and what must I do myself? 
+* What does my regulatory roadmap look like? What can I do as an agent or licensee of another’s authorization to begin with, and what must I do myself? 
 
 
 
@@ -107,8 +107,8 @@ The goal of this guide is to provide a list of questions to answer in order to l
 * Some of this will feel circular (i.e. vendor selection might drive bank and vice versa - certain vendors/banks are a better fit for certain products and not others), so it might feel like it’s a bit up in the air
 * Banks care about a few things:
     1. Is this worth their time? Will you drive meaningful revenue to them on your core product?
-    2. Risk you are bringing them from a fraud, money laundering, complaince front.
-    3. How fast you will grow? A customer acquisiton model to project 3-5 year growth is a good start.
+    2. Risk you are bringing them from a fraud, money laundering, compliance front.
+    3. How fast you will grow? A customer acquisition model to project 3-5 year growth is a good start.
 * Drawing out every functional component of your "stack" at this early stage and understanding the interplay between them can help you get it out of your head.
 
 
@@ -136,7 +136,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 * Build back-end infrastructure (e.g. username/password, shadow ledger, account management, bank vendor integration, flow of funds reconciliation)
 * Make sure compliance (e.g. PCI, PII) is complete, build out security stack (e.g. data leaks)
 * Design the card, plan for how many cards you’ll need over year 1 (if printing cards)
-* Come up with strategy around customer service - what software you’ll use and how you’ll staff it (e.g. Zendesk? have 24/7 whatsapp support?)
+* Come up with strategy around customer service - what software you’ll use and how you’ll staff it (e.g. Zendesk? have 24/7 WhatsApp support?)
 * Start talking to potential senior marketing hires - want someone with experience talking to this segment and who can quickly iterate on strategies (doesn’t have to be a fintech expert!)
 
 
@@ -162,7 +162,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 * Seamless onboarding. The most important thing (that is also hard!) is getting onboarding to be seamless and easy. That means not having people wait a week to use the product. The more time you can spend with the bank getting comfortable with your KYC procedures, the better.
 * You most likely don’t need a general counsel yet! You might need additional legal help if you are doing novel things, but don’t bring in-house
 
-*** 
+***
 
 ## Months 6-9+
 *Goal: Polish product for launch, get the marketing plan into action*
@@ -196,4 +196,4 @@ The goal of this guide is to provide a list of questions to answer in order to l
    * Launching with influencers too early - make sure the beta is complete first. Feedback is critical - you want to know how people are using the product and what works and what doesn’t before going out with a bang. Thing about influencers as a way to *accelerate* growth, not launch for the first time
    * Offline marketing - It’s hard to get fast feedback on offline channels. It can be an expensive channel to test
 
-Thanks to [Seema](https://twitter.com/seema_amble/) for the initial documenation and inspiration for this doc, and [Ayo](https://twitter.com/ay_o/), [Drew](https://twitter.com/drewrants) and [Nichole](https://twitter.com/nwischoff) for addiitonal feedback.
+Thanks to [Seema](https://twitter.com/seema_amble/) for the initial documentation and inspiration for this doc, and [Ayo](https://twitter.com/ay_o/), [Drew](https://twitter.com/drewrants) and [Nichole](https://twitter.com/nwischoff) for additional feedback.
