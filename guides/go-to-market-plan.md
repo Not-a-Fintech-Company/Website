@@ -14,25 +14,25 @@ The goal of this guide is to provide a list of questions to answer in order to l
 *Goal: Figure out your target customer and product*
 
 ### Strategy Questions to Answer
-1. What problem exists for which there's no solution?
-2. What's the reason the solution does not exist?
-* too expensive to acquire customers for
-* not enough revenue
-* too much risk/fraud
-* not technically possible
-3. Who has previously tried to fix this problem? Who has tried to do it with this solution?
-4. What is technically possible now that wasn't possible before, and what emergent behavior does it enable? Why now?
+* What problem exists for which there's no solution?
+* What's the reason the solution does not exist?
+    * too expensive to acquire customers for
+    * not enough revenue
+    * too much risk/fraud
+    * not technically possible
+* Who has previously tried to fix this problem? Who has tried to do it with this solution?
+* What is technically possible now that wasn't possible before, and what emergent behavior does it enable? Why now?
 
 
 ### Product Questions to Answer
-1. What is the product you’re launching?
+* What is the product you’re launching?
     * Debit card and checking account?
     * Savings?
     * Brokerage?
     * Credit of some sort?
     * Crypto?
     * Thought another way: Transacting, Savings, Investing, Borrowing, Insuring
-1. Which segment of the target market are you targeting?
+* Which segment of the target market are you targeting?
    * How are you segmenting your community?
       * Age/income?
       * Group Affinity?
@@ -41,11 +41,11 @@ The goal of this guide is to provide a list of questions to answer in order to l
    * What are the strongest pain points with their existing products?
    * Where do you think a wedge exists?
    * Who are their other trusted relationships that you can leverage?
-1. How can I provide a product that responds to these initial pain points? (e.g. if they are banking with Western Union and paying a ton of fees, offering them no fee product)
+* How can I provide a product that responds to these initial pain points? (e.g. if they are banking with Western Union and paying a ton of fees, offering them no fee product)
    * Example: Figure out if the ITIN set-up number a) useful b) feasible). If you can get the ITIN number, will that be enough to get someone to set-up an account?
-1. What is the functional appeal and what is the emotional appeal? What feeling do I want customers to feel when they use my product?
-1. What are the minimum features needed to make this work? (e.g. how are customers sending funds to their cards? Do they need a check deposit feature?)
-1. What do you think is the best way to get this product into consumers hands? Where will you find them? How do you build trust?
+* What is the functional appeal and what is the emotional appeal? What feeling do I want customers to feel when they use my product?
+* What are the minimum features needed to make this work? (e.g. how are customers sending funds to their cards? Do they need a check deposit feature?)
+* What do you think is the best way to get this product into consumers hands? Where will you find them? How do you build trust?
 
 
 ### Action Items
@@ -79,11 +79,11 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 ### Key Questions
-1. How am I going to launch this product (bank? BaaS provider?)?
-1. Have you raised enough capital to solve counterparty risk for the companies you will partner with?
-1. Which vendors am I going to use? Which banking partner?
-1. What will initial and scale unit economics look like? What pricing do I need to break-even as a result?  What pieces of unit economics can you fix later, what ones can you not?
-1. What does my regulatory roadmap look like? What can I do as an agent or licensee of another’s authorisation to begin with, and what must I do myself? 
+* How am I going to launch this product (bank partners? MTL? Lending Licenses? BaaS/Issuing partner)?
+* Have you raised enough capital to solve counterparty risk for the companies you will partner with?
+* Which vendors am I going to use? Which banking partner?
+* What will initial and scale unit economics look like? What pricing do I need to break-even as a result?  What pieces of unit economics can you fix later, what ones can you not?
+* What does my regulatory roadmap look like? What can I do as an agent or licensee of another’s authorisation to begin with, and what must I do myself? 
 
 
 
@@ -125,9 +125,9 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 ### Key Questions to Figure Out
-1. What is my digital product going to look like? Will my partners approve of the brand I am building?
-2. How is it going to embody the brand I want to build?
-3. How am I going to work with my partner banks and vendors to make the process as smooth as possible for my customers?
+* What is my digital product going to look like? Will my partners approve of the brand I am building?
+* How is it going to embody the brand I want to build?
+* How am I going to work with my partner banks and vendors to make the process as smooth as possible for my customers?
 
 
 ### Action Items
@@ -144,8 +144,12 @@ The goal of this guide is to provide a list of questions to answer in order to l
 * Have signed agreements with banking providers and other vendors - make sure you have a) issuing bank 2) card network 3) processor 4) card provider - much of this can be done by a BaaS provider to start
 * Have working mobile app
 * If building a credit product, have a underwriting / credit lead ready to hire
-* Finalize compliance processes (how are you onboarding customers, how notifying banks of complaints, how applying sanctions list compliance, filing SARs) and policies (e.g. how do you assess the risk of individual transactions? Account takeover?)
-   * Make sure things like information security, physical security procedures process is also in place)
+* Finalize compliance processes
+    * How are you onboarding customers
+    * How will you notify the banks of complaints
+    * How will you apply sanctions list compliance and filing SARs
+    * Finish a version of your compliance policies (e.g. how do you assess the risk of individual transactions? Account takeover?)
+    * Make sure things like information security and physical security procedures process are also in place
 * Hire lawyers to write up things like disclosures & agreements (depending on product starting with)
 * Find a card printer if issuing a card
 
@@ -155,8 +159,8 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 ### What do people get wrong at this stage?
-* Seamless onboarding. The most important thing (that is also hard!) is getting onboarding to be seamless and easy. That means not having people wait a week to use the product. The more time you can spend with the bank getting comfortable with your KYC procedures, the better
-* You don’t need a GC yet! You might need additional legal help if you are doing novel things, but don’t bring in-house
+* Seamless onboarding. The most important thing (that is also hard!) is getting onboarding to be seamless and easy. That means not having people wait a week to use the product. The more time you can spend with the bank getting comfortable with your KYC procedures, the better.
+* You most likely don’t need a general counsel yet! You might need additional legal help if you are doing novel things, but don’t bring in-house
 
 *** 
 
@@ -165,15 +169,19 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 ### Key Questions to Figure Out
-   * How am I going to get this product into customers' hands? What marketing strategies am I going to test? Offline? Online? Which digital channels?
+* How am I going to get this product into customers' hands?
+* What marketing strategies am I going to test? 
+    * Offline?
+    * Online?
+    * Which digital channels?
 
 
 ### Action Items
    * Order cards (if doing physical) - lead times can be months depending on queue backlogs and quality of cards
    * Test secondary compliance / risk policy set-up (e.g. information security, AML training)
-   * Start trying cards, make sure product works, identify edge cases
+   * Start trying cards, make sure product works, identify edge cases and bugs
    * Identify beta test population
-   * Set-up launch page and waitlist
+   * Set up launch page and waitlist
 
 ### Deliverables
    * Have a marketing plan with hypothesis and how you’re going to test each of them
