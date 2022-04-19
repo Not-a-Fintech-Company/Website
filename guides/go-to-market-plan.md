@@ -1,5 +1,5 @@
 ---
-title: Go to market guide
+heading: Go to market guide
 ---
 The goal of this guide is to provide a list of questions to answer in order to launch a product within one year and hopefully start seeing signs of product market fit for a new fintech company. While not exhaustive on all questions, it should provide a good start on what you will need to plan to build vs. buy vs. rent to get a new product launched.
 

@@ -1,5 +1,5 @@
 ---
-title: Index of the guides we've compiled, create or plan to create
+title: An index of fintech guides to start a company
 description: All the pieces you need to start, build and run a fintech company.
 ---
 
