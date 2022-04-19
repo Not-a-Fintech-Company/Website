@@ -17,6 +17,8 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://research-doc.credit-suisse.com/docView?language=ENG&format=PDF&sourceid=csplusresearchcp&document_id=1082106811&serialid=9ItaQaLeKMYkTfzB0rHonfefWNL6W5uABHoXHk5EVRA%3D>
 * <https://blog.starpointllp.com/>
 * <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
+* [Best practives in bank-fintech partnerships - QED & BCG](https://www.linkedin.com/posts/qed-investors_best-practices-in-bank-fintech-partnerships-activity-6921888698519142400-2rf5?utm_source=linkedin_share&utm_medium=member_desktop_web)
+
 
 ### Credit Cards
 * Credit Card as a Service [Part 1](https://ckarchive.com/b/92uzhnhmlqpw) [Part 2](https://ckarchive.com/b/wvu2hghprdkk) [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/)
@@ -32,6 +34,7 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://www.kunle.app/march-2020-vertical-banks.html>
 
 ### Debt
+* <https://a16z.com/2022/04/15/16-things-to-know-about-raising-debt-for-startups/>
 * <https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c>
 * <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
 
