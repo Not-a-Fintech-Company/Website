@@ -20,6 +20,12 @@ description: A compilation of links to pieces other people have written, guides,
 * [Best practices in bank-fintech partnerships - QED & BCG](https://www.linkedin.com/posts/qed-investors_best-practices-in-bank-fintech-partnerships-activity-6921888698519142400-2rf5?utm_source=linkedin_share&utm_medium=member_desktop_web)
 * [Explainer on The Prepaid Rule for Fintechs - Lithic](https://blog.lithic.com/prepaid-rule/)
 
+### Newsletters
+* <https://bam.kalzumeus.com/>
+* <https://fintechtldr.substack.com/>
+* <https://www.netinterest.co/>
+* <https://fintechbusinessweekly.substack.com/>
+
 
 ### Credit Cards
 * Credit Card as a Service [Part 1](https://ckarchive.com/b/92uzhnhmlqpw) [Part 2](https://ckarchive.com/b/wvu2hghprdkk) [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/)
