@@ -63,7 +63,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 * Think target customer is bigger than it is
 * Failure to pick a product
 * Don’t talk to customers, or don’t talk to them enough. Figure out which of your assumptions are wrong. The quicker you can correct them the better off you'll be.
-* Unit economics - way to aggressive - assume just savings
+* Unit economics - way too aggressive - assume just savings
 * Focus on marketing - there’s not a lot of benefit to focusing on marketing at this point. You can put up a landing page to test digital value props, but don’t worry about setting up a waitlist yet. Can’t give potential customers product yet!
 * Focus on hiring a lot of people - you don’t need them yet :) As long as you have someone to do the user research and someone to build, you’re good!
 
