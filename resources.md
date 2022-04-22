@@ -72,3 +72,5 @@ description: A compilation of links to pieces other people have written, guides,
 
 	
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">What teams are building in the customer support side of Banking as a Service? I’m struggling to find good examples.<br><br>It’s the main operational headache of building a neobank. And everyone needs the same things.<br><br>These are 👇</p>&mdash; Will White (@willwhite003) <a href="https://twitter.com/willwhite003/status/1287315227470684166?ref_src=twsrc%5Etfw">July 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I spent the last month diving into &quot;instant&quot; ACH with four different players (Sardine, Astra, Orum and Plaid) and it&#39;s fascinating how much of fintech is being built as I type this message. So damn bullish on this space.</p>&mdash; Aditi Shekar (@aditishekar) <a href="https://twitter.com/aditishekar/status/1517085880929955840?ref_src=twsrc%5Etfw">April 21, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
