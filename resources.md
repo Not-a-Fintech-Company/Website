@@ -19,6 +19,7 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
 * [Best practices in bank-fintech partnerships - QED & BCG](https://www.linkedin.com/posts/qed-investors_best-practices-in-bank-fintech-partnerships-activity-6921888698519142400-2rf5?utm_source=linkedin_share&utm_medium=member_desktop_web)
 * [Explainer on The Prepaid Rule for Fintechs - Lithic](https://blog.lithic.com/prepaid-rule/)
+* [Modern Treasury Learn](https://www.moderntreasury.com/learn)
 
 ### Newsletters
 * <https://bam.kalzumeus.com/>
