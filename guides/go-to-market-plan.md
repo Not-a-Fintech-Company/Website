@@ -25,7 +25,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 
 ### Product Questions to Answer
-* What is the product you are launching?
+* What is the product you are launching?  
     * Debit card and checking account?
     * Savings?
     * Brokerage?
@@ -37,6 +37,8 @@ The goal of this guide is to provide a list of questions to answer in order to l
       * Age/income?
       * Group Affinity?
       * Demographic
+      * Commercial/Consumer?
+      * SMB/Enterprise?
    * How do they bank currently?
    * What are the strongest pain points with their existing products?
    * Where do you think a wedge exists?
@@ -66,12 +68,11 @@ The goal of this guide is to provide a list of questions to answer in order to l
 * Unit economics - way too aggressive - assume just savings
 * Focus on marketing - there’s not a lot of benefit to focusing on marketing at this point. You can put up a landing page to test digital value props, but don’t worry about setting up a waitlist yet. Can’t give potential customers product yet!
 * Focus on hiring a lot of people - you don’t need them yet :) As long as you have someone to do the user research and someone to build, you’re good!
-
+* Didn't read our guide on [how to launch a card product](/guides/how-to-launch-a-card-product/).
 
 ### Other Notes
 * It’s ok to pick the wrong product to start! Chris Britt at Chime started with a rewards product and then pivoted into the 2 day early deposit product, but if you don’t have a product, otherwise you can’t get to the next downstream decision
 * You can “cheat” for a while by building on a BaaS provider (e.g. Unit, Treasury Prime, Synapse) - a number of players were built on top of Synapse, then went with someone like Galileo after things were working (e.g. Point, Empower, Dave). This movement is fairly well-documented too!  Some never leave the BaaS provider and just focus on product differentiation and scaling (Mercury)
-
 ***
 
 ## Months 1-3
@@ -80,6 +81,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 ### Key Questions
 * How am I going to launch this product (bank partners? MTL? Lending Licenses? BaaS/Issuing partner)?
+* Should I hire an experienced dev shop or build tech in-house?
 * Have you raised enough capital to solve counter-party risk for the companies you will partner with?
 * Which vendors am I going to use? Which banking partner?
 * What will initial and scale unit economics look like? What pricing do I need to break-even as a result?  What pieces of unit economics can you fix later, what ones can you not?
@@ -90,17 +92,17 @@ The goal of this guide is to provide a list of questions to answer in order to l
 ### Action Items
 * Finalize secondary product features (e.g. do they need ATM network access?)
 * Talk to the BaaS providers and the partner banks, [get price quotes](/guides/n-steps-to-closing-a-bank-partner/#example-fees-for-savings-product), negotiate for best fit and terms.
-* Figure out compliance needs to launch.  Many times this involved finding a compliance consultant that can help you set-up compliance program(policies and procedures).  This will make you look more competent in the eyes of a bank (most banks want a dedicated compliance officer - you can use a consultant to start and then once things are up and running, you can hire in-house).
-* Some of this will be dependent on the product you launch with, for example, if you’re issuing a credit product, you should start having conversation
+* Figure out compliance needs to launch.  Many times this involved finding a compliance consultant that can help you set-up compliance program (policies and procedures).  This will make you look more competent in the eyes of a bank (most banks want a dedicated compliance officer - you can use a consultant to start and then once things are up and running, you can hire in-house).
 * Build model for economics - [models](/models) can be found here
-* Identify engineering needs, where to hire to get an MVP out the door, and what necessary for launch
+* Identify engineering needs, where to hire to get an MVP out the door, and what is necessary for launch
 * Read the regulatory handbooks and guides yourself to get familiar with what you are allowed to build and required to do to launch the product
 
 
 ### Deliverables
-* Starting negotiating agreements with banking providers and other vendors. Different vendors and products will have different pricing models (revenue share versus a-la carte versus)
+* Start negotiating agreements with banking providers and other vendors. Different vendors and products will have different pricing models (revenue share versus a-la carte versus)
 * Hire compliance consultant or compliance shop
-* If building credit product, start looking for underwriting / credit lead
+* Hire dev shop if needed
+* If building credit product, start looking for underwriting / credit lead or consulting shop
 
 
 ### Other Notes
@@ -114,6 +116,7 @@ The goal of this guide is to provide a list of questions to answer in order to l
 
 ### What do people get wrong at this stage?
 * Focus on optimizing partners rather than speed to launch
+* Overcomplicated MVP and/or too many vendors and integrations - try to keep a slim vendor profile.
 * Making assumptions that some elements are more important or long-term than they are. Assume everything will need to be rebuilt
 * Not understanding how fintech infra works :) Don’t worry - we’re here for that! You should do references with other current customers, figure out how much they charge and run it by multiple people before signing anything. Compare your terms to similar card products / limits (e.g. credit limits, daily transaction limits, spend and balance threshold, ATM access)
 * Not getting compliance right. This is *especially* important if your target customers might not be banked! You need to find a bank who is willing to work with you on this
