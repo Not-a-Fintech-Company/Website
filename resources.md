@@ -15,7 +15,6 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://moov.io/blog/guides/complete-fintech-dictionary/>
 * <https://kunle.app/august-2021-common-problems-with-bank-partners.html>
 * <https://research-doc.credit-suisse.com/docView?language=ENG&format=PDF&sourceid=csplusresearchcp&document_id=1082106811&serialid=9ItaQaLeKMYkTfzB0rHonfefWNL6W5uABHoXHk5EVRA%3D>
-* <https://blog.starpointllp.com/>
 * <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
 * [Best practices in bank-fintech partnerships - QED & BCG](https://www.qedinvestors.com/blog/whitepaper-best-practices-in-bank-fintech-partnerships)
 * [Explainer on The Prepaid Rule for Fintechs - Lithic](https://blog.lithic.com/prepaid-rule/)
@@ -33,7 +32,6 @@ description: A compilation of links to pieces other people have written, guides,
 
 ### Cards
 * [Ultimate guide to interchange revenues - Unit.co](https://www.unit.co/guides/ultimate-guide-interchange-revenue)
- 
 
 ### BaaS 
 * [Banks, middlewares, and Unit making sense of banking infrastructure - Unit.co](https://blog.unit.co/banks-middlewares-and-unit-making-sense-of-banking-infrastructure/)
@@ -55,6 +53,9 @@ description: A compilation of links to pieces other people have written, guides,
 ### Compliance
 * [Policy Glossary - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:112717cc-15cf-4b2c-b8ab-eb9c18988ddf)
 * [Basics of Financial Compliance - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b89e7527-19a2-4b45-a570-f5c57c0d9fd2)
+* [Fintech Guide to Building U.S. KYC/KYB Operations - Lithic.com](https://blog.lithic.com/kyc-operations/)
+* [Fintech Guide to Building a Compliance Program - Lithic.com](https://blog.lithic.com/compliance-program/)
+* [The Complete Guide to Transaction Monitoring - Unit21.ai](https://www.unit21.ai/blog/the-complete-guide-to-transaction-monitoring)
 
 ### Random
 * <https://www.kunle.app/feb-2020-permissionless-issuing.html>
