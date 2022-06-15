@@ -5,7 +5,7 @@ Here are a collection (currently one) of policy and procedure documents for what
 
 # Policies
 * [BSA/AML/OFAC](bsa)
-* More to come...
+* [Lithic Legal Library - Lithic.com](https://blog.lithic.com/legal-library/) - [Templates](https://docs.lithic.com/docs/legal-templates)
 
 # Procedures
 * TBD
