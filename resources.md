@@ -58,6 +58,7 @@ description: A compilation of links to pieces other people have written, guides,
 * [The Complete Guide to Transaction Monitoring - Unit21.ai](https://www.unit21.ai/blog/the-complete-guide-to-transaction-monitoring)
 
 ### Random
+* <https://ayokunle.substack.com/p/time-to-money>
 * <https://www.kunle.app/feb-2020-permissionless-issuing.html>
 * <https://www.kunle.app/may-2020-API-routing-layers.html>
 * <https://www.kunle.app/august-2020-differentiated-and-sustainable-lending-businesses.html>
