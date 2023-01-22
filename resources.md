@@ -33,6 +33,9 @@ description: A compilation of links to pieces other people have written, guides,
 ### Cards
 * [Ultimate guide to interchange revenues - Unit.co](https://www.unit.co/guides/ultimate-guide-interchange-revenue)
 
+### Payments / Acquiring
+* [Payment Processor Shopping](https://truptinatu.substack.com/p/lets-go-payment-processor-shopping)
+
 ### BaaS 
 * [Banks, middlewares, and Unit making sense of banking infrastructure - Unit.co](https://blog.unit.co/banks-middlewares-and-unit-making-sense-of-banking-infrastructure/)
 * <https://blog.unit.co/how-to-safely-migrate-to-a-better-banking-infrastructure-in-21-days-or-less/>
