@@ -68,6 +68,9 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://www.kunle.app/dec-2020-financial-reconciliation.html>
 * <https://a16z.com/2020/10/20/payroll-apis/>
 
+### KYC/Identity/Fraud
+* [Mapping the Identity Verification Tech Stack](https://medium.com/9yards/mapping-the-identity-verification-technology-stack-in-financial-services-6d8edc74121f)
+
 ### Product
 * <https://www.getfinal.com/company-news/2017/03/01/feature-development-at-final/>
 
