@@ -32,6 +32,7 @@ description: A compilation of links to pieces other people have written, guides,
 
 ### Cards
 * [Ultimate guide to interchange revenues - Unit.co](https://www.unit.co/guides/ultimate-guide-interchange-revenue)
+* [Interchange in 1000 words](https://www.mtb.xyz/notes/interchange-in-1000-words)
 
 ### Payments / Acquiring
 * [Payment Processor Shopping](https://truptinatu.substack.com/p/lets-go-payment-processor-shopping)
