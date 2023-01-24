@@ -26,7 +26,6 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://www.netinterest.co/>
 * <https://fintechbusinessweekly.substack.com/>
 
-
 ### Credit Cards
 * Credit Card as a Service [Part 1](https://ckarchive.com/b/92uzhnhmlqpw) [Part 2](https://ckarchive.com/b/wvu2hghprdkk) [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/)
 
@@ -48,7 +47,9 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c>
 * <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
 
-### Fraud
+### KYC/Identity/Fraud
+* [Mapping the Identity Verification Tech Stack](https://medium.com/9yards/mapping-the-identity-verification-technology-stack-in-financial-services-6d8edc74121f)
+* [KYC and AML: beyond the acronyms](https://www.bitsaboutmoney.com/archive/kyc-and-aml-beyond-the-acronyms/)
 * [Fraud Glossary - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:27459ec7-5481-4a5d-9dea-155210f9e65b)
 
 ### Marketing
@@ -68,9 +69,6 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://www.kunle.app/august-2020-differentiated-and-sustainable-lending-businesses.html>
 * <https://www.kunle.app/dec-2020-financial-reconciliation.html>
 * <https://a16z.com/2020/10/20/payroll-apis/>
-
-### KYC/Identity/Fraud
-* [Mapping the Identity Verification Tech Stack](https://medium.com/9yards/mapping-the-identity-verification-technology-stack-in-financial-services-6d8edc74121f)
 
 ### Product
 * <https://www.getfinal.com/company-news/2017/03/01/feature-development-at-final/>
