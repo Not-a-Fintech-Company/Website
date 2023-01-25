@@ -47,6 +47,9 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c>
 * <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
 
+### Insurance
+* [Insurtech Areas of Interest](https://www.jaredfranklin.com/2023/01/21/2023-insurtech-areas-of-interest/)
+
 ### KYC/Identity/Fraud
 * [Mapping the Identity Verification Tech Stack](https://medium.com/9yards/mapping-the-identity-verification-technology-stack-in-financial-services-6d8edc74121f)
 * [KYC and AML: beyond the acronyms](https://www.bitsaboutmoney.com/archive/kyc-and-aml-beyond-the-acronyms/)
