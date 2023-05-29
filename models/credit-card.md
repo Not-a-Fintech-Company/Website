@@ -5,4 +5,4 @@ title: A model to demonstate the economics of credit cards
 
 The model can be found here if you'd like to make a copy for your own use: <https://docs.google.com/spreadsheets/d/1Q2vsPIlfoncvZDPCYjv2JXhWTXVdI3EqgT6UxJMsSbY/>
 
-Also a big thank you to [Matthew Goldman](https://twitter.com/magoldman) for providing the origional foundational template for this model.
+Also a big thank you to [Matthew Goldman](https://matthewgoldman.com) for providing the origional foundational template for this model.
