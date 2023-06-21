@@ -9,7 +9,7 @@ A non-exhaustive list of people who have contributed in some form so far:
 * [@arfrank](https://twitter.com/arfrank)
 * [@lachygroom](https://twitter.com/lachygroom)
 * [@cokiehasiotis](https://twitter.com/cokiehasiotis)
-* [@magoldman](https://twitter.com/magoldman)
+* [@magoldman](https://matthewgoldman.com)
 * [@cedpvd](https://twitter.com/cedpvd)
 * [@waltrcox](https://twitter.com/waltrcox)
 * [@amandapey](https://twitter.com/amandapey)
