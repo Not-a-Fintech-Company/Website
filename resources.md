@@ -25,7 +25,7 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://fintechtldr.substack.com/>
 * <https://www.netinterest.co/>
 * <https://fintechbusinessweekly.substack.com/>
-* <https://cardsftw.substack.com/>
+* <https://www.cardsftw.com/>
 
 ### Credit Cards
 * Credit Card as a Service [Part 1](https://ckarchive.com/b/92uzhnhmlqpw) [Part 2](https://ckarchive.com/b/wvu2hghprdkk) [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/)
