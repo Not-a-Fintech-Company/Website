@@ -5,6 +5,9 @@
 ### Added
 - Plausible Analytics on all pages via `_layouts/default.html`
 
+### Removed
+- Dead links from resources.md: 3 Unit.co blog posts (404), JP Morgan research video (404), Credit Suisse research doc (domain defunct after UBS acquisition), Videos section (now empty)
+
 ### Changed
 - Updated contact email from not.a.fintech.company@gmail.com to hello@notafintech.co across all pages (index, contact, pricing)
 - Updated site URL from notafintech.company to notafintech.co in _config.yml and README.md

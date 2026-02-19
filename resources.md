@@ -14,7 +14,6 @@ description: A compilation of links to pieces other people have written, guides,
 * <https://gendal.me/2014/08/09/a-simple-explanation-of-fees-in-the-payment-card-industry/>
 * <https://moov.io/blog/guides/complete-fintech-dictionary/>
 * <https://kunle.app/august-2021-common-problems-with-bank-partners.html>
-* <https://research-doc.credit-suisse.com/docView?language=ENG&format=PDF&sourceid=csplusresearchcp&document_id=1082106811&serialid=9ItaQaLeKMYkTfzB0rHonfefWNL6W5uABHoXHk5EVRA%3D>
 * <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
 * [Best practices in bank-fintech partnerships - QED & BCG](https://www.qedinvestors.com/blog/whitepaper-best-practices-in-bank-fintech-partnerships)
 * [Explainer on The Prepaid Rule for Fintechs - Lithic](https://blog.lithic.com/prepaid-rule/)
@@ -37,10 +36,7 @@ description: A compilation of links to pieces other people have written, guides,
 ### Payments / Acquiring
 * [Payment Processor Shopping](https://truptinatu.substack.com/p/lets-go-payment-processor-shopping)
 
-### BaaS 
-* [Banks, middlewares, and Unit making sense of banking infrastructure - Unit.co](https://blog.unit.co/banks-middlewares-and-unit-making-sense-of-banking-infrastructure/)
-* <https://blog.unit.co/how-to-safely-migrate-to-a-better-banking-infrastructure-in-21-days-or-less/>
-* <https://blog.unit.co/revenues-in-financial-features-a-complete-guide-for-tech-companies/>
+### BaaS
 * <https://www.kunle.app/march-2020-vertical-banks.html>
 
 ### Debt
@@ -76,9 +72,6 @@ description: A compilation of links to pieces other people have written, guides,
 
 ### Product
 * <https://www.getfinal.com/company-news/2017/03/01/feature-development-at-final/>
-
-## Videos
-* Payments Opportunities in Software (JMPC) - <https://markets.jpmorgan.com/research/email/l42ivjop/mNkRV3AhL-vo86tgAZE8oA/KAL-1-IK898436>
 
 ## X (formerly Twitter) Threads
 
