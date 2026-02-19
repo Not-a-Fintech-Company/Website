@@ -14,8 +14,8 @@ map:
 
 <div class="contact-box">
 	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
-		<input type="hidden" name="_to" value="support@example.com" />
-		<input type="text" name="_gotcha" style="display: none;">
+		<input type="hidden" name="_to" value="hello@notafintech.co" />
+		<input type="text" name="_gotcha" style="position: absolute; left: -9999px;" aria-hidden="true" tabindex="-1" autocomplete="off">
 
 		<label for="name">Full Name</label>
 		<input type="text" name="name" id="name" placeholder="Enter your name..." />
@@ -31,10 +31,10 @@ map:
 
 	<div class="contact-details">
 		<h3 class="editable">Address</h3>
-		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
+		<address><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 
 		<h3 class="editable">Email</h3>
-		<p><a href="mailto:support@example.com">support@example.com</a></p>
+		<p><a href="mailto:hello@notafintech.co">hello@notafintech.co</a></p>
 	</div>
 </div>
 

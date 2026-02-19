@@ -199,4 +199,4 @@ The goal of this guide is to provide a list of questions to answer in order to l
    * Launching with influencers too early - make sure the beta is complete first. Feedback is critical - you want to know how people are using the product and what works and what doesn’t before going out with a bang. Thing about influencers as a way to *accelerate* growth, not launch for the first time
    * Offline marketing - It’s hard to get fast feedback on offline channels. It can be an expensive channel to test
 
-Thanks to [Seema](https://twitter.com/seema_amble/) for the initial documentation and inspiration for this doc, and [Ayo](https://twitter.com/ay_o/), [Drew](https://twitter.com/drewrants) and [Nichole](https://twitter.com/nwischoff) for additional feedback.
+Thanks to [Seema](https://x.com/seema_amble/) for the initial documentation and inspiration for this doc, and [Ayo](https://x.com/ay_o/), [Drew](https://x.com/drewrants) and [Nichole](https://x.com/nwischoff) for additional feedback.

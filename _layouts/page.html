@@ -5,13 +5,13 @@ layout: default
 	<section class="page">
 		<div class="container {% if page.full_width %}max-container{% endif %}">
 			{% if page.heading %}
-				<h1>{{ page.heading }}</h1>
+				<h1>{{ page.heading | escape }}</h1>
 			{% elsif page.title and page.layout != 'archive' %}
-				<h1>{{ page.title }}</h1>
+				<h1>{{ page.title | escape }}</h1>
 			{% endif %}
 			<hr/>
 			{% if page.description %}
-				<p class="subtext">{{ page.description }}</p>
+				<p class="subtext">{{ page.description | escape }}</p>
 			{% endif %}
 			{{ content }}
 		</div>

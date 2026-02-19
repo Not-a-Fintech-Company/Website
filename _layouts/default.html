@@ -7,6 +7,8 @@ layout: compress
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-Content-Type-Options" content="nosniff">
+		<meta name="referrer" content="strict-origin-when-cross-origin">
 
 		{% seo %}
 		{% feed_meta %}
@@ -16,21 +18,16 @@ layout: compress
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 
 		<!-- CSS Reset -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous">
 
 		<!-- Milligram CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css" integrity="sha512-CQw8fBrTrIafAzH3rPnvche6JJfBur5Y//Ea1iBJW9IJNbdgfIFgH11jSmIy1offAIB+Z1s9bgNocphhgDJSrQ==" crossorigin="anonymous">
 
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 
-		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
-			<script>
-				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-				ga('create', '{{ site.google_analytics_key }}', 'auto');
-				ga('send', 'pageview');
-			</script>
-			<script async src='https://www.google-analytics.com/analytics.js'></script>
-		{% endif %}
+		<!-- Plausible Analytics -->
+		<script async src="https://plausible.io/js/pa-W0Dq5s5xrg0nZbo6PsWi5.js"></script>
+		<script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
 	</head>
 	<body>
 		<header>
@@ -47,17 +44,17 @@ layout: compress
 					{% for column in site.data.footer %}
 					<ul class="footer-links">
 						{% for link in column.links %}
-							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+							<li><a {% if link.new_window %}target="_blank" rel="noopener noreferrer"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
 								{% if link.social_icon %}
 									{% include social-icon.html icon=link.social_icon %}
 								{% endif %}
-								{{ link.name }}</a></li>
+								{{ link.name | escape }}</a></li>
 						{% endfor %}
 					</ul>
 					{% endfor %}
 				</div>
 
-						<p class="copyright">The source of this page can be viewed and changes made via pull request <a href="https://github.com/Not-a-Fintech-Company/Website/blob/main/{{page.path}}">here.</a></p>
+						<p class="copyright">&copy; 2026 Not a Fintech Company. The source of this page can be viewed and changes made via pull request <a href="https://github.com/Not-a-Fintech-Company/Website/blob/main/{{page.path}}">here.</a></p>
 				</div>
 		</footer>
 		<script>

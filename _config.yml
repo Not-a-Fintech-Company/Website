@@ -2,9 +2,8 @@
 # Site
 
 title: Not a Fintech Company
-url: "https://notafintech.company"
+url: "https://notafintech.co"
 baseurl:
-google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
@@ -14,7 +13,7 @@ description: Open Sourcing the rest of Fintech.
 author:
   name:
   email:
-  twitter: notafintechco # twitter username without the @ symbol
+  x: notafintechco # x.com username without the @ symbol
 social:
   name: Not a Fintech Company
   links:
@@ -90,7 +89,7 @@ exclude:
 # CloudCannon
 
 social_icons:
-  - Twitter
+  # - X
   # - Facebook
   # - Google Plus
   # - Instagram

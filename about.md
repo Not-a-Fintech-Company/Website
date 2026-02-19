@@ -6,11 +6,11 @@ title: The folks helping to free the things locked up in their brain
 A non-exhaustive list of people who have contributed in some form so far:
 
 
-* [@arfrank](https://twitter.com/arfrank)
-* [@lachygroom](https://twitter.com/lachygroom)
-* [@cokiehasiotis](https://twitter.com/cokiehasiotis)
+* [@arfrank](https://x.com/arfrank)
+* [@lachygroom](https://x.com/lachygroom)
+* [@cokiehasiotis](https://x.com/cokiehasiotis)
 * [@magoldman](https://matthewgoldman.com)
-* [@cedpvd](https://twitter.com/cedpvd)
-* [@waltrcox](https://twitter.com/waltrcox)
-* [@amandapey](https://twitter.com/amandapey)
-* [@willwhite003](https://twitter.com/willwhite003)
+* [@cedpvd](https://x.com/cedpvd)
+* [@waltrcox](https://x.com/waltrcox)
+* [@amandapey](https://x.com/amandapey)
+* [@willwhite003](https://x.com/willwhite003)

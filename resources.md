@@ -80,7 +80,7 @@ description: A compilation of links to pieces other people have written, guides,
 ## Videos
 * Payments Opportunities in Software (JMPC) - <https://markets.jpmorgan.com/research/email/l42ivjop/mNkRV3AhL-vo86tgAZE8oA/KAL-1-IK898436>
 
-## Twitter Threads
+## X (formerly Twitter) Threads
 
 	
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">What teams are building in the customer support side of Banking as a Service? I’m struggling to find good examples.<br><br>It’s the main operational headache of building a neobank. And everyone needs the same things.<br><br>These are 👇</p>&mdash; Will White (@willwhite003) <a href="https://twitter.com/willwhite003/status/1287315227470684166?ref_src=twsrc%5Etfw">July 26, 2020</a></blockquote>
