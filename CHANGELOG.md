@@ -5,6 +5,8 @@
 ### Added
 - Plausible Analytics on all pages via `_layouts/default.html`
 
+- Linked challenger bank guide into guides/index.md
+
 ### Fixed
 - guides/guide-to-starting-a-challenger-bank.md: fixed heading hierarchy (h1 → h2, etc.) to avoid duplicate h1 with page title, fixed TOC anchor for Product Features, completed two truncated sentences, removed emoji, fixed typo ("origionally" → "originally"), added trailing newline
 
