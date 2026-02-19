@@ -5,6 +5,9 @@
 ### Added
 - Plausible Analytics on all pages via `_layouts/default.html`
 
+### Fixed
+- guides/guide-to-starting-a-challenger-bank.md: fixed heading hierarchy (h1 → h2, etc.) to avoid duplicate h1 with page title, fixed TOC anchor for Product Features, completed two truncated sentences, removed emoji, fixed typo ("origionally" → "originally"), added trailing newline
+
 ### Removed
 - Dead links from resources.md: 3 Unit.co blog posts (404), JP Morgan research video (404), Credit Suisse research doc (domain defunct after UBS acquisition), Videos section (now empty)
 
