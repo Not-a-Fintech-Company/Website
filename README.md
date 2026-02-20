@@ -1,6 +1,6 @@
 # Not A Fintech Company
 
-This is the website for [NotAFintech.co](https://notafintech.co) — an open-source knowledge base for fintech founders.
+This is the website for [NotAFintech.co](https://www.notafintech.co) — an open-source knowledge base for fintech founders.
 
 Built with [Astro](https://astro.build) + [Starlight](https://starlight.astro.build). Deployed on Cloudflare Pages.
 

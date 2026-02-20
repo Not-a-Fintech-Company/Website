@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://notafintech.co',
+  site: 'https://www.notafintech.co',
   output: 'static',
   devToolbar: { enabled: false },
   integrations: [
@@ -83,7 +83,7 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             property: 'og:image',
-            content: 'https://notafintech.co/og-image.png',
+            content: 'https://www.notafintech.co/og-image.png',
           },
         },
         {
@@ -119,7 +119,7 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             name: 'twitter:image',
-            content: 'https://notafintech.co/og-image.png',
+            content: 'https://www.notafintech.co/og-image.png',
           },
         },
         // Additional SEO

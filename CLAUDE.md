@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Astro + Starlight static site for [Not a Fintech Company](https://notafintech.co) — an open-source knowledge base for fintech founders. Licensed under CC0 1.0. Deployed on Cloudflare Pages at `notafintech.pages.dev` with custom domain `notafintech.co` (and `www.notafintech.co`). Contact email: hello@notafintech.co.
+Astro + Starlight static site for [Not a Fintech Company](https://www.notafintech.co) — an open-source knowledge base for fintech founders. Licensed under CC0 1.0. Deployed on Cloudflare Pages at `notafintech.pages.dev` with primary domain `www.notafintech.co` (`notafintech.co` redirects to `www` via Cloudflare rules). Contact email: hello@notafintech.co.
 
 Previously a Jekyll 4.x site on GitHub Pages — fully migrated to Astro in February 2026. No Jekyll files remain.
 
@@ -78,7 +78,8 @@ Configured in `astro.config.mjs` head config:
 - **Project name**: `notafintech` (on Cloudflare)
 - **Build command**: `npm run build`
 - **Build output directory**: `dist`
-- **Custom domains**: `notafintech.co`, `www.notafintech.co`
+- **Primary domain**: `www.notafintech.co` (canonical)
+- **Redirect**: `notafintech.co` → `www.notafintech.co` (Cloudflare redirect rule)
 - **Pages URL**: `notafintech.pages.dev`
 
 The `wrangler.jsonc` file is for local Wrangler CLI deploys only. Git-connected Pages deploys do not use it — Cloudflare's Pages build system handles deployment natively after running the build command. Do not set a deploy command in the Cloudflare dashboard for Pages projects.

@@ -82,13 +82,14 @@ Cloudflare will automatically rebuild on every push to the configured branch.
 ## Custom Domain Setup
 
 1. In the Cloudflare dashboard, go to your Pages project > **Custom domains**.
-2. Click **Set up a custom domain** and enter `notafintech.co`.
-3. Cloudflare will guide you through DNS configuration:
-   - If the domain is already on Cloudflare DNS, it will add the required CNAME record automatically.
+2. Click **Set up a custom domain** and enter `www.notafintech.co` (primary).
+3. Also add `notafintech.co` as a custom domain.
+4. Cloudflare will guide you through DNS configuration:
+   - If the domain is already on Cloudflare DNS, it will add the required CNAME records automatically.
    - If the domain is on an external registrar, point the DNS to Cloudflare's nameservers or add a CNAME record pointing to `<project-name>.pages.dev`.
-4. Add `www.notafintech.co` as a second custom domain to handle the www subdomain.
+5. Set up a Cloudflare redirect rule to redirect `notafintech.co` → `www.notafintech.co` (301).
 
-The custom domain is configured entirely through the Cloudflare dashboard.
+The custom domain and redirect rules are configured entirely through the Cloudflare dashboard.
 
 ## Environment Variables
 

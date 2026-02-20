@@ -39,8 +39,9 @@ After this, `main` contains the Astro site. The Jekyll site is gone from the rep
 ## Step 4: Configure the custom domain on Cloudflare Pages
 
 1. In the Cloudflare dashboard, go to your Pages project > **Custom domains**.
-2. Click **Set up a custom domain** and enter `notafintech.co`.
-3. Add `www.notafintech.co` as a second custom domain.
+2. Click **Set up a custom domain** and enter `www.notafintech.co` (primary).
+3. Add `notafintech.co` as a second custom domain.
+4. Set up a Cloudflare redirect rule to redirect `notafintech.co` → `www.notafintech.co` (301).
 
 ### If the domain is already on Cloudflare DNS:
 
@@ -67,21 +68,21 @@ You have two options:
 
 Cloudflare Pages provides automatic SSL. After the custom domain is active:
 
-1. Visit `https://notafintech.co` and confirm the SSL certificate is valid.
+1. Visit `https://www.notafintech.co` and confirm the SSL certificate is valid.
 2. In the Cloudflare dashboard, go to **SSL/TLS** and ensure the mode is set to **Full (strict)**.
 
 ## Step 6: Verify the live site
 
 Check the following:
 
-- [ ] Homepage loads at `https://notafintech.co`
+- [ ] Homepage loads at `https://www.notafintech.co`
 - [ ] All guide pages render correctly
 - [ ] Google Sheets iframes load on model and docs pages
 - [ ] Sidebar navigation works
 - [ ] Search works (type in the search box)
 - [ ] Footer shows CC0 license and Totavi credit
-- [ ] `https://notafintech.co/sitemap-index.xml` returns the sitemap
-- [ ] `https://notafintech.co/robots.txt` is correct
+- [ ] `https://www.notafintech.co/sitemap-index.xml` returns the sitemap
+- [ ] `https://www.notafintech.co/robots.txt` is correct
 - [ ] OG image loads when sharing a link (test with https://www.opengraph.xyz/)
 - [ ] Plausible dashboard shows traffic
 - [ ] Google Analytics real-time view shows activity
