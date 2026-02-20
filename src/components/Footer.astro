@@ -1,0 +1,42 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+---
+
+<Default {...Astro.props}><slot /></Default>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p class="copyright">&copy; {new Date().getFullYear()} Not a Fintech Company.</p>
+    <p class="license">
+      All materials are provided under a <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer" target="_blank">CC0 1.0 Universal</a> license, unless otherwise noted.
+    </p>
+    <p class="hosted-by">
+      Powered by community. Hosted by <a href="https://www.totavi.com" rel="noopener noreferrer" target="_blank">Totavi</a>.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--sl-color-gray-5);
+    padding: 1.5rem var(--sl-content-pad-x);
+    text-align: center;
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+  }
+  .site-footer-inner {
+    max-width: var(--sl-content-width);
+    margin: 0 auto;
+  }
+  .site-footer p {
+    margin: 0.25rem 0;
+  }
+  .site-footer a {
+    color: var(--sl-color-white);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  .site-footer a:hover {
+    color: var(--sl-color-accent-high);
+  }
+</style>

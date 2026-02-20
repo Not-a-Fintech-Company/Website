@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-02-19 — Astro + Starlight Migration
+
+### Changed
+- Migrated entire site from Jekyll 4.x to Astro + Starlight
+- Replaced Jekyll layouts, includes, SCSS, and Liquid templates with Starlight's built-in theme
+- Content restructured into `src/content/docs/` with Starlight frontmatter format
+- Models and docs pages converted to `.mdx` with reusable `GoogleEmbed` component
+- Static assets moved to `public/` and `src/assets/`
+- Twitter embed blockquotes in resources.md converted to plain blockquotes
+- Deployment target changed from GitHub Pages to Cloudflare Pages
+- Updated README with Astro build commands
+
+### Added
+- `astro.config.mjs` with Starlight integration, sidebar config, analytics, and branding
+- `src/components/GoogleEmbed.astro` reusable iframe component
+- `src/styles/custom.css` with brand colors (Roboto font, #284B9C accent)
+- `wrangler.jsonc` for Cloudflare Pages deployment
+- `src/content.config.ts` for Astro content collections
+- Built-in search via Pagefind (provided by Starlight)
+
+### Removed
+- Jekyll files: Gemfile, _config.yml, _layouts/, _includes/, _sass/, _data/, css/
+- Blog section (_posts/), staff members collection (_staff_members/)
+- Contact page, pricing page, contact-success page
+- CloudCannon CMS configuration
+- Milligram CSS framework and normalize.css CDN dependencies
+- compress.html layout (Astro handles optimization)
+
 ## 2026-02-19
 
 ### Added

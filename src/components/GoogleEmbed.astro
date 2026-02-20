@@ -1,0 +1,19 @@
+---
+interface Props {
+  src: string;
+  title: string;
+  height?: string;
+}
+
+const { src, title, height = '600px' } = Astro.props;
+---
+
+<div class="google-embed-container">
+  <iframe
+    src={src}
+    title={title}
+    width="100%"
+    height={height}
+    sandbox="allow-scripts allow-same-origin"
+  ></iframe>
+</div>

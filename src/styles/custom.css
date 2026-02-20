@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --sl-font: 'Roboto', sans-serif;
+  --sl-font-system: 'Roboto', sans-serif;
+  --sl-color-accent-low: #1a3166;
+  --sl-color-accent: #284B9C;
+  --sl-color-accent-high: #5a7fd4;
+  --sl-content-width: 50rem;
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-low: #d4ddf0;
+  --sl-color-accent: #284B9C;
+  --sl-color-accent-high: #1a3166;
+}
+
+/* Hero image: invert the white logo on light theme */
+:root[data-theme='light'] .hero img {
+  filter: invert(1);
+}
+
+.google-embed-container {
+  margin: 1.5rem 0;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.google-embed-container iframe {
+  display: block;
+  border: none;
+}
