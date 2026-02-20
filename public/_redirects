@@ -1,0 +1,16 @@
+# Removed pages (Jekyll → Astro migration)
+/pricing/ / 301
+/pricing / 301
+/contact/ /about/ 301
+/contact /about/ 301
+/contact-success/ / 301
+/contact-success / 301
+/blog/ /guides/ 301
+/blog /guides/ 301
+
+# Moved static files
+/docs/credit-card-biz-trunk.pdf /credit-card-biz-trunk.pdf 301
+/docs/credit-card-biz-trunk.ppt /credit-card-biz-trunk.ppt 301
+
+# Removed files (content inlined)
+/docs/BSA%20Policy%20(SAMPLE)%20(08-25-21).docx /docs/bsa/ 301
