@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://notafintech.co/sitemap-index.xml
+Sitemap: https://notafintech.co/sitemap.xml

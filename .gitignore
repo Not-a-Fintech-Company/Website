@@ -1,6 +1,5 @@
-_site/
-.sass-cache/
-.jekyll-metadata
-.jekyll-cache/
-CLAUDE.md
-MIGRATION_PLAN.md
+node_modules/
+dist/
+.astro/
+.env*
+.claude/
