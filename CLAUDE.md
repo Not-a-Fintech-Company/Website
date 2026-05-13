@@ -4,53 +4,58 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Astro + Starlight static site for [Not a Fintech Company](https://www.notafintech.co) — an open-source knowledge base for fintech founders. Licensed under CC0 1.0. Deployed on Cloudflare Pages at `notafintech.pages.dev` with primary domain `www.notafintech.co` (`notafintech.co` redirects to `www` via Cloudflare rules). Contact email: hello@notafintech.co.
+Astro 5 + Tailwind v4 + Preact static site for [Not a Fintech Company](https://www.notafintech.co) — an open-source knowledge base for fintech founders. Licensed under CC0 1.0. Deployed on Cloudflare Pages at `notafintech.pages.dev` with primary domain `www.notafintech.co` (`notafintech.co` redirects to `www` via Cloudflare rules). Contact email: hello@notafintech.co.
 
-Previously a Jekyll 4.x site on GitHub Pages — fully migrated to Astro in February 2026. No Jekyll files remain.
+Previously a Jekyll 4.x site on GitHub Pages — fully migrated to Astro in February 2026. Migrated again from Starlight to custom Astro + Tailwind in May 2026. No Jekyll or Starlight files remain.
 
 ## Build Commands
 
 ```bash
 npm install        # Install dependencies
 npm run dev        # Local dev server at http://localhost:4321
-npm run build      # Production build (output to dist/)
+npm run check      # Type-check Astro/TypeScript files
+npm run build      # Production build (output to dist/) with Pagefind indexing
 npm run preview    # Preview production build locally
 ```
+
+The `npm run build` command chains `astro build && pagefind --site dist`, which builds the site and generates the search index into `dist/pagefind/`.
 
 There are no test or lint commands — this is a content-focused static site.
 
 ## Architecture
 
-**Framework**: Astro 5.x with Starlight documentation theme. Static output (`output: 'static'`). Dev toolbar disabled.
+**Framework**: Astro 5.x with custom Tailwind v4 layouts. Static output (`output: 'static'`). Dev toolbar disabled.
 
-**Configuration**: `astro.config.mjs` is the central config — Starlight integration, sidebar structure, analytics scripts, SEO meta tags, custom CSS, and component overrides are all defined here.
+**Configuration**: `astro.config.mjs` is the central config — Preact integration, MDX processing, sitemap generation, analytics scripts, SEO meta tags, and the Tailwind v4 Vite plugin are all defined here. Tailwind tokens live in `src/styles/global.css`.
 
-**Content**: All pages live in `src/content/docs/` as Markdown (`.md`) or MDX (`.mdx`). MDX is used only when a page needs the `GoogleEmbed` component for Google Sheets iframes. Content schema is defined in `src/content.config.ts` using Starlight's `docsSchema()`.
+**Content**: All pages live in `src/content/pages/` as Markdown (`.md`) or MDX (`.mdx`). The content collection is named `pages`. Content schema is defined in `src/content.config.ts` with fields: `title`, `description`, `section`, `template`, `publishedAt`, `updatedAt`, `draft`, `ogImage`, `hideToc`, `hideSidebar`.
 
-**Sidebar**: Guides, Models, and Docs sections auto-generate from their directories. Resources and About are linked individually by slug.
+**Sidebar**: The auto-generated sidebar is gone. The `Sidebar` component pulls section siblings from the `pages` collection. Sidebar appears only on Article-template pages.
 
-**Components**:
-- `src/components/GoogleEmbed.astro` — sandboxed iframe wrapper for Google Sheets embeds
-- `src/components/Footer.astro` — custom footer extending Starlight's default, adds CC0 license notice, Totavi hosting credit, and link to GitHub source repo
+**Components**: Organized in subdirectories:
+- `src/components/layout/` — Page layout templates (BaseLayout, ArticleLayout, SectionIndexLayout, ModelLayout, ToolLayout)
+- `src/components/nav/` — Navigation components (Header, Footer, MobileMenu, Breadcrumbs)
+- `src/components/ui/` — Reusable UI components (ThemeToggle, Sidebar, Toc, GoogleEmbed, SearchModal)
+- `src/components/blocks/` — Content block components (Hero, GuideCard, RoadmapGrid, Prose)
 
-**Styling**: `src/styles/custom.css` overrides Starlight CSS variables for brand colors (`#284B9C`), Roboto font, content width, iframe containers, and light-theme logo inversion.
+**Styling**: Tailwind v4 entry CSS at `src/styles/global.css` defines the design system. Color tokens are CSS variables read by Tailwind's `@theme`. Dark mode uses `.dark` class on `<html>`.
 
 **Content sections** (each with its own `index.md`):
 - `guides/` — Educational guides for fintech founders (6 guides)
 - `models/` — Financial model templates with Google Sheets embeds (3 models)
 - `docs/` — Compliance documentation: BSA policy (inline markdown), credit card trunk (iframe embed)
+- `tools/` — Stub section for upcoming Preact calculators
 
 **Static assets**: `public/` contains favicon.png, apple-touch-icon.png, og-image.png (1200x630), siteicon.png, touch-icon.png, robots.txt, sitemap.xml, CNAME, and PDF/PPT downloads.
 
-**Search**: Pagefind (built into Starlight). Index is generated at build time — only works in production builds, not `npm run dev`. Use `npm run preview` to test search locally.
+**Search**: Pagefind with a custom Preact modal UI. Index is generated via post-build CLI step (`pagefind --site dist`) and indexed only in production builds, not `npm run dev`. Use `npm run preview` to test search locally.
 
 ## Content Conventions
 
-- Pages use YAML frontmatter with `title` and `description`
-- Homepage (`index.mdx`) uses Starlight's `template: splash` with a hero section and the NAFC Roadmap
+- Pages use YAML frontmatter with fields: `title`, `description`, `section`, `template`, `publishedAt`, `updatedAt`, `draft`, `ogImage`, `hideToc`, `hideSidebar`
+- Page templates: `article` (default), `section-index`, `model`, `tool`
 - Google Sheets embeds use the `GoogleEmbed` component in `.mdx` files
-- Google Docs content has been inlined as markdown (not iframed) — homepage roadmap and BSA policy
-- Roadmap items on the homepage link to their corresponding pages where available
+- Homepage (`index.astro`) uses the `RoadmapGrid` component to display roadmap with links to corresponding pages
 - Footer: CC0 license notice, Totavi hosting credit, GitHub source link
 - Footer social links: GitHub only
 - CHANGELOG.md tracks all site updates
@@ -99,7 +104,5 @@ See `DEPLOYMENT.md` for full setup instructions and `MIGRATION.md` for the Jekyl
 
 ## Logo
 
-- `src/assets/logo.svg` — pie-chart icon only, uses `fill="currentColor"` for theme adaptation. No text.
-- `src/assets/logo.png` — full logo with text, used for homepage hero image.
-- Light theme applies CSS `filter: invert(1)` to the hero logo image.
-- The SVG viewBox is `"0 20 85 85"` — if editing, ensure all 4 values are present.
+- Header wordmark in Fraunces (display typeface). No static PNG logo — the wordmark is rendered as text with the custom font.
+- Old `src/assets/logo.svg` and `src/assets/logo.png` may be removed in a follow-up cleanup.
