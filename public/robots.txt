@@ -1,3 +1,4 @@
 User-agent: *
+Allow: /
+
 Sitemap: https://www.notafintech.co/sitemap-index.xml
-Sitemap: https://www.notafintech.co/sitemap.xml
