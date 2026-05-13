@@ -1,0 +1,11 @@
+---
+// src/components/ui/Prose.astro
+interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<div class:list={['prose', className]}>
+  <slot />
+</div>
