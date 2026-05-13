@@ -54,11 +54,12 @@ const icons = { FileText, PenLine, Circle, ExternalLink };
                         class:list={[
                           'flex items-start gap-2 text-sm leading-snug',
                           item.status === 'planned' ? 'text-muted' : 'text-ink',
-                          isLink && 'hover:text-accent transition-colors',
+                          isLink &&
+                            'underline underline-offset-[3px] decoration-1 decoration-[color:var(--color-rule)] hover:text-accent hover:decoration-[color:var(--color-accent)] transition-colors',
                         ]}
                       >
                         <Icon class:list={[
-                          'w-3.5 h-3.5 mt-1 flex-shrink-0',
+                          'w-3.5 h-3.5 mt-1 flex-shrink-0 no-underline',
                           item.status === 'published' && 'text-accent',
                           item.status === 'external' && 'text-muted',
                           item.status === 'planned' && 'text-muted opacity-50',
