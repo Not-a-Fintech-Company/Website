@@ -1,0 +1,78 @@
+---
+// src/components/blocks/RoadmapGrid.astro
+import { roadmap, type Status } from '../../data/roadmap';
+import { ExternalLink, FileText, PenLine, Circle } from 'lucide-astro';
+
+const statusMeta: Record<Status, { label: string; iconName: string }> = {
+  published: { label: 'Published', iconName: 'FileText' },
+  drafting: { label: 'In progress', iconName: 'PenLine' },
+  planned: { label: 'Planned', iconName: 'Circle' },
+  external: { label: 'External link', iconName: 'ExternalLink' },
+};
+
+const icons = { FileText, PenLine, Circle, ExternalLink };
+---
+
+<section class="max-w-7xl mx-auto px-4 md:px-6 py-16 md:py-24">
+  <header class="max-w-3xl mb-12">
+    <p class="text-xs uppercase tracking-[0.25em] text-muted font-medium">Roadmap</p>
+    <h2 class="mt-3 font-display text-4xl md:text-5xl font-semibold tracking-tight text-ink">
+      What we're building
+    </h2>
+    <p class="mt-5 text-lg text-muted leading-relaxed">
+      A living catalog of everything in scope. Some items are published.
+      Others are planned, drafting, or linked to external authoritative sources.
+    </p>
+  </header>
+
+  <div class="space-y-16">
+    {roadmap.map((section) => (
+      <div>
+        <h3 class="font-display text-2xl font-semibold text-ink mb-6 pb-3 border-b border-rule">
+          {section.title}
+        </h3>
+        <div class="grid gap-x-10 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+          {section.categories.map((cat) => (
+            <div>
+              <p class="text-xs uppercase tracking-[0.18em] text-muted font-medium mb-3">{cat.title}</p>
+              <ul class="space-y-2">
+                {cat.items.map((item) => {
+                  const meta = statusMeta[item.status];
+                  const Icon = icons[meta.iconName as keyof typeof icons];
+                  const isLink = !!item.href;
+                  const isExternal = item.status === 'external' || item.href?.startsWith('http');
+                  const Wrapper = isLink ? 'a' : 'span';
+                  return (
+                    <li>
+                      <Wrapper
+                        {...(isLink
+                          ? {
+                              href: item.href,
+                              ...(isExternal && { rel: 'noopener noreferrer', target: '_blank' }),
+                            }
+                          : {})}
+                        class:list={[
+                          'flex items-start gap-2 text-sm leading-snug',
+                          item.status === 'planned' ? 'text-muted' : 'text-ink',
+                          isLink && 'hover:text-accent transition-colors',
+                        ]}
+                      >
+                        <Icon class:list={[
+                          'w-3.5 h-3.5 mt-1 flex-shrink-0',
+                          item.status === 'published' && 'text-accent',
+                          item.status === 'external' && 'text-muted',
+                          item.status === 'planned' && 'text-muted opacity-50',
+                        ]} />
+                        <span>{item.label}</span>
+                      </Wrapper>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
