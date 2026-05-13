@@ -1,0 +1,120 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/layout/Header.astro';
+import MobileMenu from '../components/layout/MobileMenu.astro';
+import Footer from '../components/layout/Footer.astro';
+import Hero from '../components/blocks/Hero.astro';
+import GuideCard from '../components/blocks/GuideCard.astro';
+import RoadmapGrid from '../components/blocks/RoadmapGrid.astro';
+import { getCollection } from 'astro:content';
+import { ArrowRight } from 'lucide-astro';
+
+const guides = await getCollection('pages', ({ data }) =>
+  data.section === 'guides' && data.template !== 'section-index' && !data.draft
+);
+const featuredGuides = guides.slice(0, 3);
+
+const models = await getCollection('pages', ({ data }) =>
+  data.section === 'models' && data.template !== 'section-index' && !data.draft
+);
+
+const title = 'Not a Fintech Company';
+const description = 'All the pieces you need to start, build, and run a fintech company. Guides, models, and policies — open-source and CC0.';
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <MobileMenu />
+
+  <main id="main" class="flex-1">
+    <Hero />
+
+    <section class="max-w-7xl mx-auto px-4 md:px-6 pb-16 md:pb-24 border-t border-rule pt-16">
+      <header class="flex items-end justify-between mb-10">
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-muted font-medium">Guides</p>
+          <h2 class="mt-3 font-display text-3xl md:text-4xl font-semibold tracking-tight">Start here</h2>
+        </div>
+        <a href="/guides/" class="hidden md:inline-flex items-center gap-1 text-sm text-muted hover:text-accent transition-colors">
+          All guides
+          <ArrowRight class="w-3.5 h-3.5" />
+        </a>
+      </header>
+      <div class="grid gap-6 md:grid-cols-3">
+        {featuredGuides.map((g) => {
+          const href = `/${g.id.replace(/\.(md|mdx)$/, '/').replace(/\/index\/$/, '/')}`;
+          return (
+            <GuideCard
+              title={g.data.title}
+              description={g.data.description}
+              href={href}
+              eyebrow="Guide"
+            />
+          );
+        })}
+      </div>
+      <a href="/guides/" class="md:hidden mt-6 inline-flex items-center gap-1 text-sm text-muted hover:text-accent">
+        All guides <ArrowRight class="w-3.5 h-3.5" />
+      </a>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 md:px-6 pb-16 md:pb-24 border-t border-rule pt-16">
+      <header class="flex items-end justify-between mb-10">
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-muted font-medium">Models</p>
+          <h2 class="mt-3 font-display text-3xl md:text-4xl font-semibold tracking-tight">The math, in a spreadsheet</h2>
+          <p class="mt-3 text-muted max-w-2xl">
+            Open Google Sheets templates for fintech product economics. Interactive versions are coming to <a href="/tools/" class="underline hover:text-accent">Tools</a>.
+          </p>
+        </div>
+      </header>
+      <div class="grid gap-6 md:grid-cols-3">
+        {models.map((m) => {
+          const href = `/${m.id.replace(/\.(md|mdx)$/, '/').replace(/\/index\/$/, '/')}`;
+          return (
+            <GuideCard
+              title={m.data.title}
+              description={m.data.description}
+              href={href}
+              eyebrow="Model"
+            />
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="bg-surface-2 border-y border-rule">
+      <div class="max-w-5xl mx-auto px-4 md:px-6 py-16 md:py-24 text-center">
+        <p class="text-xs uppercase tracking-[0.25em] text-muted font-medium">Open source</p>
+        <h2 class="mt-3 font-display text-3xl md:text-4xl font-semibold tracking-tight max-w-2xl mx-auto">
+          Everything here is yours to use, fork, and improve.
+        </h2>
+        <p class="mt-5 text-muted max-w-2xl mx-auto leading-relaxed">
+          All content is released under CC0 1.0 — no rights reserved. Spot something missing or wrong?
+          Open a pull request or send us a note.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <a
+            href="https://github.com/Not-a-Fintech-Company/Website"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-ink text-paper font-medium hover:opacity-90 transition-opacity"
+          >
+            Contribute on GitHub
+          </a>
+          <a
+            href="mailto:hello@notafintech.co"
+            class="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-rule text-ink hover:bg-paper transition-colors"
+          >
+            hello@notafintech.co
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <RoadmapGrid />
+  </main>
+
+  <Footer />
+</BaseLayout>
