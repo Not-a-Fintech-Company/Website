@@ -1,0 +1,69 @@
+---
+// src/components/layout/Header.astro
+import { topNav } from '../../data/navigation';
+import ThemeToggle from '../ui/ThemeToggle.astro';
+import { Github, Search, Menu } from 'lucide-astro';
+
+const currentPath = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === '/' ? currentPath === '/' : currentPath.startsWith(href);
+---
+
+<header class="sticky top-0 z-40 backdrop-blur-md bg-paper/85 border-b border-rule">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center gap-6">
+    <a href="/" class="font-display text-lg font-semibold tracking-tight text-ink hover:text-accent transition-colors whitespace-nowrap">
+      Not a Fintech Company
+    </a>
+
+    <nav class="hidden md:flex items-center gap-1 ml-4" aria-label="Primary">
+      {topNav.map((item) => (
+        <a
+          href={item.href}
+          class:list={[
+            'px-3 py-1.5 text-sm rounded-md transition-colors',
+            isActive(item.href)
+              ? 'text-accent font-medium'
+              : 'text-ink hover:text-accent hover:bg-surface-2',
+          ]}
+          aria-current={isActive(item.href) ? 'page' : undefined}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="ml-auto flex items-center gap-1">
+      <button
+        type="button"
+        id="search-button"
+        class="inline-flex items-center justify-center w-9 h-9 rounded-md text-ink hover:bg-surface-2 transition-colors"
+        aria-label="Open search"
+      >
+        <Search class="w-4 h-4" />
+      </button>
+
+      <ThemeToggle />
+
+      <a
+        href="https://github.com/Not-a-Fintech-Company/Website"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="inline-flex items-center justify-center w-9 h-9 rounded-md text-ink hover:bg-surface-2 transition-colors"
+        aria-label="View on GitHub"
+      >
+        <Github class="w-4 h-4" />
+      </a>
+
+      <button
+        type="button"
+        id="mobile-menu-trigger"
+        class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-md text-ink hover:bg-surface-2 transition-colors"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <Menu class="w-4 h-4" />
+      </button>
+    </div>
+  </div>
+</header>
