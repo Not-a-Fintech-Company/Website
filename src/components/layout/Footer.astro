@@ -20,7 +20,7 @@ const year = new Date().getFullYear();
       <ul class="space-y-2">
         {footerSections.map((item) => (
           <li>
-            <a href={item.href} class="text-sm text-muted hover:text-accent transition-colors">
+            <a href={item.href} class="text-sm text-muted underline decoration-1 decoration-[color:var(--color-rule)] underline-offset-[3px] hover:text-accent hover:decoration-[color:var(--color-accent)] transition-colors">
               {item.label}
             </a>
           </li>
@@ -37,7 +37,7 @@ const year = new Date().getFullYear();
               href={item.href}
               rel={item.external ? 'noopener noreferrer' : undefined}
               target={item.external ? '_blank' : undefined}
-              class="text-sm text-muted hover:text-accent transition-colors"
+              class="text-sm text-muted underline decoration-1 decoration-[color:var(--color-rule)] underline-offset-[3px] hover:text-accent hover:decoration-[color:var(--color-accent)] transition-colors"
             >
               {item.label}
             </a>
