@@ -90,14 +90,18 @@
 /*
  * Tailwind Typography plugin theme — customized to Fraunces / Inter.
  *
- * IMPORTANT: These rules are UNLAYERED on purpose. @tailwindcss/typography
- * registers its `.prose` styles in `@layer utilities`, which trumps `@layer base`
- * regardless of specificity or source order. Unlayered styles win against any
- * @layer, so we sit outside the cascade pyramid and reliably override.
+ * IMPORTANT: These rules sit in @layer utilities — the same layer where
+ * @tailwindcss/typography registers its .prose styles. Within the same layer,
+ * source order decides; ours come later in this file so we win.
  *
- * The `.prose-x` double-class selectors push specificity above the plugin's
- * `.prose :where(a):not(...)` (specificity 0,1,0) so we win source-order too.
+ * Why not unlayered: Vite's dev pipeline wraps tail-of-file unlayered rules
+ * into a @layer base block in some setups, demoting them below the plugin's
+ * utilities layer. Explicit @layer utilities works identically in dev + prod.
+ *
+ * The `.prose.prose` double-class selectors push specificity above the plugin's
+ * `.prose :where(a):not(...)` (specificity 0,1,0) for defense-in-depth.
  */
+@layer utilities {
 .prose.prose {
   --tw-prose-body: var(--color-ink);
   --tw-prose-headings: var(--color-ink);
@@ -206,7 +210,7 @@
  * index pages. Subheads render as small uppercase eyebrows; lists get bullets; links
  * adopt the home-roadmap aesthetic (subtle rule-colored underline → oxblood on hover).
  *
- * Unlayered for the same cascade reasons as .prose.prose above.
+ * In @layer utilities for the same reason as .prose.prose above.
  */
 .section-intro h2 {
   margin-top: 2.5rem;
@@ -270,3 +274,5 @@
   color: var(--color-accent);
   text-decoration-color: var(--color-accent);
 }
+}
+/* end @layer utilities */
