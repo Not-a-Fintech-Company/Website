@@ -5,7 +5,6 @@ import Header from '../components/layout/Header.astro';
 import MobileMenu from '../components/layout/MobileMenu.astro';
 import Footer from '../components/layout/Footer.astro';
 import { getCollection } from 'astro:content';
-import { ArrowRight } from 'lucide-astro';
 
 interface Props {
   title: string;
@@ -45,25 +44,20 @@ entries.sort((a, b) => {
     <slot name="intro" />
 
     {entries.length > 0 ? (
-      <ul class="mt-12 divide-y divide-rule border-t border-rule">
+      <ul class="mt-12 list-disc pl-6 marker:text-muted space-y-7">
         {entries.map((entry) => {
           const href = `/${entry.id.replace(/\.(md|mdx)$/, '/').replace(/\/index\/$/, '/')}`;
           return (
             <li>
               <a
                 href={href}
-                class="group flex items-start gap-6 py-6 hover:bg-surface-2 -mx-4 px-4 rounded-lg transition-colors"
+                class="font-display text-xl md:text-2xl text-ink underline underline-offset-[4px] decoration-1 decoration-[color:var(--color-rule)] hover:text-accent hover:decoration-[color:var(--color-accent)] transition-colors"
               >
-                <div class="flex-1 min-w-0">
-                  <h2 class="font-display text-2xl font-medium text-ink group-hover:text-accent transition-colors">
-                    {entry.data.title}
-                  </h2>
-                  {entry.data.description && (
-                    <p class="mt-2 text-muted max-w-2xl">{entry.data.description}</p>
-                  )}
-                </div>
-                <ArrowRight class="w-5 h-5 mt-2 text-muted group-hover:text-accent transition-colors flex-shrink-0" />
+                {entry.data.title}
               </a>
+              {entry.data.description && (
+                <p class="mt-2 text-sm md:text-base text-muted max-w-2xl leading-relaxed">{entry.data.description}</p>
+              )}
             </li>
           );
         })}
