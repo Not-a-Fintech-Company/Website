@@ -1,0 +1,79 @@
+---
+// src/layouts/SectionIndexLayout.astro
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/layout/Header.astro';
+import MobileMenu from '../components/layout/MobileMenu.astro';
+import Footer from '../components/layout/Footer.astro';
+import { getCollection } from 'astro:content';
+import { ArrowRight } from 'lucide-astro';
+
+interface Props {
+  title: string;
+  description: string;
+  section: string;
+  ogImage?: string;
+}
+const { title, description, section, ogImage } = Astro.props;
+
+const entries = await getCollection('pages', ({ data }) =>
+  data.section === section &&
+  data.template !== 'section-index' &&
+  !data.draft
+);
+
+entries.sort((a, b) => {
+  const ad = a.data.publishedAt?.getTime() ?? 0;
+  const bd = b.data.publishedAt?.getTime() ?? 0;
+  if (ad !== bd) return bd - ad;
+  return a.data.title.localeCompare(b.data.title);
+});
+---
+
+<BaseLayout {title} {description} {ogImage}>
+  <Header />
+  <MobileMenu />
+
+  <main id="main" class="flex-1 max-w-5xl w-full mx-auto px-4 md:px-6 py-12 md:py-20">
+    <header class="max-w-3xl">
+      <p class="text-xs uppercase tracking-[0.2em] text-muted font-medium">{section}</p>
+      <h1 class="mt-3 font-display text-5xl md:text-6xl font-semibold tracking-tight text-ink">
+        {title}
+      </h1>
+      <p class="mt-5 text-lg md:text-xl text-muted leading-relaxed">{description}</p>
+    </header>
+
+    <slot name="intro" />
+
+    {entries.length > 0 ? (
+      <ul class="mt-12 divide-y divide-rule border-t border-rule">
+        {entries.map((entry) => {
+          const href = `/${entry.id.replace(/\.(md|mdx)$/, '/').replace(/\/index\/$/, '/')}`;
+          return (
+            <li>
+              <a
+                href={href}
+                class="group flex items-start gap-6 py-6 hover:bg-surface-2 -mx-4 px-4 rounded-lg transition-colors"
+              >
+                <div class="flex-1 min-w-0">
+                  <h2 class="font-display text-2xl font-medium text-ink group-hover:text-accent transition-colors">
+                    {entry.data.title}
+                  </h2>
+                  {entry.data.description && (
+                    <p class="mt-2 text-muted max-w-2xl">{entry.data.description}</p>
+                  )}
+                </div>
+                <ArrowRight class="w-5 h-5 mt-2 text-muted group-hover:text-accent transition-colors flex-shrink-0" />
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    ) : (
+      <div class="mt-12 py-12 text-center text-muted border-t border-rule">
+        <p>Nothing here yet — check back soon.</p>
+      </div>
+    )}
+  </main>
+
+  <Footer />
+</BaseLayout>
