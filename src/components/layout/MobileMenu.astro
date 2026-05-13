@@ -1,0 +1,96 @@
+---
+// src/components/layout/MobileMenu.astro
+import { topNav, footerCommunity } from '../../data/navigation';
+import { X } from 'lucide-astro';
+
+const currentPath = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === '/' ? currentPath === '/' : currentPath.startsWith(href);
+---
+
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-50 bg-paper hidden md:hidden flex-col"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Site navigation"
+  hidden
+>
+  <div class="flex items-center justify-between h-16 px-4 border-b border-rule">
+    <span class="font-display text-lg font-semibold">Menu</span>
+    <button
+      type="button"
+      id="mobile-menu-close"
+      class="inline-flex items-center justify-center w-9 h-9 rounded-md text-ink hover:bg-surface-2"
+      aria-label="Close menu"
+    >
+      <X class="w-5 h-5" />
+    </button>
+  </div>
+  <nav class="flex-1 overflow-y-auto px-4 py-6" aria-label="Primary mobile">
+    <ul class="space-y-1">
+      {topNav.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            class:list={[
+              'block px-3 py-3 text-lg rounded-md transition-colors',
+              isActive(item.href)
+                ? 'text-accent font-medium'
+                : 'text-ink hover:bg-surface-2',
+            ]}
+            aria-current={isActive(item.href) ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <div class="border-t border-rule mt-6 pt-6">
+      <p class="px-3 text-sm font-medium text-muted mb-2">Community</p>
+      <ul class="space-y-1">
+        {footerCommunity.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              rel={item.external ? 'noopener noreferrer' : undefined}
+              target={item.external ? '_blank' : undefined}
+              class="block px-3 py-3 text-base rounded-md text-ink hover:bg-surface-2 transition-colors"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<script is:inline>
+  (function () {
+    const menu = document.getElementById('mobile-menu');
+    const trigger = document.getElementById('mobile-menu-trigger');
+    const close = document.getElementById('mobile-menu-close');
+    if (!menu || !trigger || !close) return;
+
+    const open = () => {
+      menu.hidden = false;
+      menu.classList.remove('hidden');
+      menu.classList.add('flex');
+      trigger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    };
+    const shut = () => {
+      menu.hidden = true;
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      trigger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+    trigger.addEventListener('click', open);
+    close.addEventListener('click', shut);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !menu.hidden) shut();
+    });
+  })();
+</script>
