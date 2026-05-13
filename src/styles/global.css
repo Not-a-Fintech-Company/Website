@@ -123,15 +123,51 @@
   .prose :where(h2) { font-size: 1.875rem; margin-top: 2.5em; }
   .prose :where(h3) { font-size: 1.375rem; margin-top: 2em; }
 
+  /* Lists — preflight strips list-style from all ul/ol; restore inside prose. */
+  .prose :where(ul) {
+    list-style-type: disc;
+    padding-inline-start: 1.625em;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+  .prose :where(ol) {
+    list-style-type: decimal;
+    padding-inline-start: 1.625em;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+  .prose :where(li) {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    padding-inline-start: 0.25em;
+  }
+  .prose :where(li)::marker {
+    color: var(--color-muted);
+  }
+  .prose :where(ul ul, ul ol, ol ul, ol ol) {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .prose :where(ul ul) { list-style-type: circle; }
+  .prose :where(ul ul ul) { list-style-type: square; }
+
+  /* Links — explicit color + underline so they read as links, not body text. */
   .prose :where(a) {
+    color: var(--color-accent);
+    font-weight: 500;
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    text-decoration-color: color-mix(in oklab, var(--color-accent) 50%, transparent);
     text-underline-offset: 0.2em;
-    transition: color 150ms ease;
+    transition: color 150ms ease, text-decoration-color 150ms ease, text-decoration-thickness 150ms ease;
   }
-
   .prose :where(a):hover {
     color: var(--color-accent-hover);
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 2px;
+  }
+  .prose :where(a):visited {
+    color: color-mix(in oklab, var(--color-accent) 80%, var(--color-muted) 20%);
   }
 
   .prose :where(code) {
