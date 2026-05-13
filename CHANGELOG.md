@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-05 — Migration off Starlight
+
+- Replaced `@astrojs/starlight` with custom Astro layouts styled in Tailwind v4.
+- Added Preact integration; search modal is the first island.
+- Self-hosted Fraunces / Inter / JetBrains Mono fonts; removed Google Fonts request.
+- New editorial visual identity: warm Paper/Ink palette, oxblood accent, Fraunces display.
+- Renamed content collection `docs` → `pages`.
+- Added Tools section (stub) for upcoming Preact calculators.
+- Replaced flat bullet roadmap with structured `RoadmapGrid` component.
+- Added `@astrojs/sitemap` integration; `sitemap-index.xml` replaces the static `sitemap.xml`.
+- Light/dark theme toggle with localStorage persistence; theme flash prevented via inline script.
+- Kept Pagefind for search — now via a custom Preact modal UI.
+
 ## 2026-02-19 — Astro + Starlight Migration
 
 ### Changed
