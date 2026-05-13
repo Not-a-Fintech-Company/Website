@@ -1,0 +1,57 @@
+---
+// src/components/nav/Toc.astro
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+const { headings } = Astro.props;
+
+const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+
+{toc.length > 0 && (
+  <aside class="hidden xl:block" aria-label="Table of contents">
+    <div class="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto">
+      <p class="text-xs font-medium uppercase tracking-wider text-muted mb-3">On this page</p>
+      <ul class="space-y-2 text-sm border-l border-rule">
+        {toc.map((h) => (
+          <li class:list={['leading-snug', h.depth === 3 && 'pl-3']}>
+            <a
+              href={`#${h.slug}`}
+              data-toc-slug={h.slug}
+              class="toc-link block pl-4 -ml-px border-l-2 border-transparent text-muted hover:text-ink transition-colors py-1"
+            >
+              {h.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </aside>
+
+  <script is:inline>
+    (function () {
+      const links = document.querySelectorAll('.toc-link');
+      if (!links.length) return;
+      const headings = Array.from(document.querySelectorAll('h2[id], h3[id]'));
+      if (!headings.length) return;
+
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            links.forEach((l) => {
+              const active = l.getAttribute('data-toc-slug') === id;
+              l.classList.toggle('border-accent', active);
+              l.classList.toggle('text-accent', active);
+              l.classList.toggle('font-medium', active);
+            });
+          }
+        });
+      }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+
+      headings.forEach((h) => obs.observe(h));
+    })();
+  </script>
+)}
