@@ -113,3 +113,35 @@ Once the new site is live and verified:
 - Remove `public/CNAME` from the repo (GitHub Pages artifact)
 - Delete this file (`MIGRATION.md`) if no longer needed
 - Update `CHANGELOG.md` with the migration date
+
+---
+
+## Migration from Starlight to Custom Astro + Tailwind (May 2026)
+
+After the initial Jekyll → Astro migration (February 2026), the site was redesigned off Starlight and onto a custom Astro + Tailwind v4 layout with a fresh editorial visual identity.
+
+### Approach
+
+- Implemented in an isolated git worktree (`astro-tailwind-migration` branch)
+- Single PR with all changes: new components, styling, content structure, and removal of Starlight dependencies
+- No content URLs changed — all internal links, redirects, and SEO structure remained intact
+- Pagefind search retained via a custom Preact modal UI
+
+### Key Changes
+
+- Replaced `@astrojs/starlight` with custom page templates (Article, SectionIndex, Model, Tool)
+- Renamed content collection from `docs` to `pages` with extended frontmatter
+- Added Tailwind v4 styling and custom Fraunces/Inter fonts
+- Integrated Preact for the first interactive island (SearchModal)
+- Added light/dark theme toggle with localStorage persistence
+- Replaced sidebar generation with a component-based sidebar that queries the `pages` collection
+- Added new editorial visual identity (Paper/Ink palette, oxblood accent, Fraunces display)
+- Added Tools section as a stub for upcoming Preact calculators
+
+### Verification
+
+- Deployment was tested on Cloudflare Pages preview
+- All 18 pages render correctly in both light and dark themes
+- All 301 redirects remain functional
+- Search works via the custom modal
+- Lighthouse and accessibility audits meet baseline targets
