@@ -1,6 +1,7 @@
 ---
 // src/layouts/BaseLayout.astro
 import '../styles/global.css';
+import SearchModal from '../components/ui/SearchModal.tsx';
 
 interface Props {
   title: string;
@@ -100,5 +101,6 @@ const ogImageUrl = ogImage.startsWith('http')
   </head>
   <body class="min-h-screen flex flex-col bg-paper text-ink antialiased">
     <slot />
+    <SearchModal client:idle />
   </body>
 </html>
