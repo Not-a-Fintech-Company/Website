@@ -1,0 +1,74 @@
+---
+// src/pages/[...slug].astro
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../layouts/ArticleLayout.astro';
+import SectionIndexLayout from '../layouts/SectionIndexLayout.astro';
+import ModelLayout from '../layouts/ModelLayout.astro';
+import ToolLayout from '../layouts/ToolLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('pages', ({ data }) => !data.draft);
+  return entries.map((entry) => {
+    const slug = entry.id.replace(/\.(md|mdx)$/, '').replace(/\/index$/, '');
+    return {
+      params: { slug: slug === '' ? undefined : slug },
+      props: { entry },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const data = entry.data;
+const template = data.template ?? 'article';
+---
+
+{template === 'section-index' && (
+  <SectionIndexLayout
+    title={data.title}
+    description={data.description}
+    section={data.section!}
+    ogImage={data.ogImage}
+  >
+    <Content slot="intro" />
+  </SectionIndexLayout>
+)}
+
+{template === 'model' && (
+  <ModelLayout
+    title={data.title}
+    description={data.description}
+    section={data.section}
+    ogImage={data.ogImage}
+  >
+    <Content />
+  </ModelLayout>
+)}
+
+{template === 'tool' && (
+  <ToolLayout
+    title={data.title}
+    description={data.description}
+    section={data.section}
+    ogImage={data.ogImage}
+  >
+    <Content />
+  </ToolLayout>
+)}
+
+{(template === 'article' || !template) && (
+  <ArticleLayout
+    title={data.title}
+    description={data.description}
+    section={data.section}
+    slug={entry.id}
+    headings={headings}
+    ogImage={data.ogImage}
+    hideToc={data.hideToc}
+    hideSidebar={data.hideSidebar}
+    publishedAt={data.publishedAt}
+    updatedAt={data.updatedAt}
+  >
+    <Content />
+  </ArticleLayout>
+)}
