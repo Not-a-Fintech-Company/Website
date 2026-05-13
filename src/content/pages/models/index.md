@@ -1,6 +1,8 @@
 ---
 title: Models
-description: Financial model templates for fintech products.
+description: Financial model templates for fintech products — bank accounts, term loans, credit cards.
+section: models
+template: section-index
 ---
 
 * [Term Loans](/models/term-loan/)

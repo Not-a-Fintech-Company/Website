@@ -1,6 +1,8 @@
 ---
 title: BSA/AML/OFAC Sample Policy
 description: A sample Bank Secrecy Act / Anti-Money Laundering / OFAC policy document.
+section: docs
+template: article
 ---
 
 :::note

@@ -1,6 +1,8 @@
 ---
 title: Resources
-description: A compilation of links to pieces other people have written, guides, or just blogs in general if they're a good source of content.
+description: External resources for fintech founders — newsletters, communities, regulators, tools.
+section: resources
+template: article
 ---
 
 ## Compilations
