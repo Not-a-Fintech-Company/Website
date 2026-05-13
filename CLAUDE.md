@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Astro 5 + Tailwind v4 + Preact static site for [Not a Fintech Company](https://www.notafintech.co) — an open-source knowledge base for fintech founders. Licensed under CC0 1.0. Deployed on Cloudflare Pages at `notafintech.pages.dev` with primary domain `www.notafintech.co` (`notafintech.co` redirects to `www` via Cloudflare rules). Contact email: hello@notafintech.co.
+Astro 6 + Tailwind v4 + Preact static site for [Not a Fintech Company](https://www.notafintech.co) — an open-source knowledge base for fintech founders. Licensed under CC0 1.0. Deployed on Cloudflare Pages at `notafintech.pages.dev` with primary domain `www.notafintech.co` (`notafintech.co` redirects to `www` via Cloudflare rules). Contact email: hello@notafintech.co.
 
 Previously a Jekyll 4.x site on GitHub Pages — fully migrated to Astro in February 2026. Migrated again from Starlight to custom Astro + Tailwind in May 2026. No Jekyll or Starlight files remain.
 
@@ -24,7 +24,7 @@ There are no test or lint commands — this is a content-focused static site.
 
 ## Architecture
 
-**Framework**: Astro 5.x with custom Tailwind v4 layouts. Static output (`output: 'static'`). Dev toolbar disabled.
+**Framework**: Astro 6.x with custom Tailwind v4 layouts. Static output (`output: 'static'`). Dev toolbar disabled.
 
 **Configuration**: `astro.config.mjs` is the central config — Preact integration, MDX processing, sitemap generation, analytics scripts, SEO meta tags, and the Tailwind v4 Vite plugin are all defined here. Tailwind tokens live in `src/styles/global.css`.
 
