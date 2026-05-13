@@ -1,6 +1,8 @@
 ---
-title: Documents
-description: A collection of policy and procedure documents for launching fintech products.
+title: Docs
+description: Compliance documents and policy templates for fintech operators.
+section: docs
+template: section-index
 ---
 
 Here are a collection of policy and procedure documents for what it takes to launch a new product.

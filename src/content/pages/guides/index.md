@@ -1,6 +1,8 @@
 ---
 title: Guides
-description: All the pieces you need to start, build and run a fintech company.
+description: Educational guides for fintech founders — bank partner selection, card products, go-to-market, and more.
+section: guides
+template: section-index
 ---
 
 ## Done

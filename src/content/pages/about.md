@@ -1,6 +1,8 @@
 ---
 title: About
-description: The folks helping to free the things locked up in their brain.
+description: Not a Fintech Company is an open-source knowledge base for fintech founders.
+section: about
+template: article
 ---
 
 A non-exhaustive list of people who have contributed in some form so far:
