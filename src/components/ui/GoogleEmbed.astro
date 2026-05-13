@@ -1,0 +1,21 @@
+---
+// src/components/ui/GoogleEmbed.astro
+interface Props {
+  src: string;
+  title: string;
+  height?: string;
+}
+const { src, title, height = '600px' } = Astro.props;
+---
+
+<div class="my-8 border border-rule rounded-lg overflow-hidden bg-surface shadow-sm">
+  <iframe
+    src={src}
+    title={title}
+    width="100%"
+    height={height}
+    sandbox="allow-scripts allow-same-origin"
+    loading="lazy"
+    class="block border-0"
+  ></iframe>
+</div>
