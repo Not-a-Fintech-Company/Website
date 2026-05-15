@@ -4,20 +4,20 @@ import { ArrowRight } from '@lucide/astro';
 import GithubIcon from '../ui/GithubIcon.astro';
 ---
 
-<section class="relative max-w-7xl mx-auto px-4 md:px-6 pt-16 md:pt-28 pb-12 md:pb-20">
-  <div class="max-w-4xl">
-    <p class="text-xs uppercase tracking-[0.25em] text-muted font-medium">Open-source · CC0 1.0</p>
-    <h1 class="mt-5 font-display text-5xl md:text-7xl font-semibold tracking-tight text-ink leading-[1.05]">
-      The fintech info <em class="font-display italic">you need</em>
+<section class="relative max-w-7xl mx-auto px-4 md:px-6 pt-16 md:pt-32 pb-14 md:pb-24">
+  <div class="max-w-5xl">
+    <p class="text-xs uppercase tracking-[0.28em] text-accent font-semibold">Open-source · CC0 1.0</p>
+    <h1 class="mt-6 font-display font-bold tracking-[-0.025em] text-ink leading-[1.02] text-[clamp(2.75rem,7vw,6.25rem)]">
+      The fintech info <em class="font-display italic font-bold">you need</em>
     </h1>
-    <p class="mt-6 text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
+    <p class="mt-7 text-lg md:text-xl text-ink/85 max-w-2xl leading-relaxed">
       Guides, financial models, and policy templates for fintech founders.
       Everything here is free, public-domain, and improving every week.
     </p>
-    <div class="mt-8 flex flex-wrap items-center gap-3">
+    <div class="mt-9 flex flex-wrap items-center gap-3">
       <a
         href="/guides/"
-        class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-accent text-paper font-medium hover:bg-accent-hover transition-colors"
+        class="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-accent text-paper font-semibold hover:bg-accent-hover transition-colors shadow-sm"
       >
         Read the guides
         <ArrowRight class="w-4 h-4" />
@@ -26,7 +26,7 @@ import GithubIcon from '../ui/GithubIcon.astro';
         href="https://github.com/Not-a-Fintech-Company/Website"
         rel="noopener noreferrer"
         target="_blank"
-        class="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-rule text-ink hover:bg-surface-2 transition-colors"
+        class="inline-flex items-center gap-2 px-6 py-3.5 rounded-md border-2 border-ink text-ink font-semibold hover:bg-ink hover:text-paper transition-colors"
       >
         <GithubIcon class="w-4 h-4" />
         View on GitHub
