@@ -60,28 +60,33 @@ const description = 'All the pieces you need to start, build, and run a fintech 
     </section>
 
     <section class="max-w-7xl mx-auto px-4 md:px-6 pb-16 md:pb-24 border-t border-rule pt-16">
-      <header class="flex items-end justify-between mb-10">
+      <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
         <div>
           <p class="text-xs uppercase tracking-[0.25em] text-muted font-medium">Models</p>
           <h2 class="mt-3 font-display text-3xl md:text-4xl font-semibold tracking-tight">The math, in a spreadsheet</h2>
           <p class="mt-3 text-muted max-w-2xl">
-            Open Google Sheets templates for fintech product economics. Interactive versions are coming to <a href="/tools/" class="underline hover:text-accent">Tools</a>.
+            Open Google Sheets templates for fintech product economics. Interactive versions are coming to <a href="/tools/" class="underline decoration-1 decoration-[color:var(--color-rule)] underline-offset-[3px] hover:text-accent hover:decoration-[color:var(--color-accent)] transition-colors">Tools</a>.
           </p>
         </div>
       </header>
-      <div class="grid gap-6 md:grid-cols-3">
-        {models.map((m) => {
+      <ol class="grid gap-x-10 gap-y-8 md:grid-cols-3 list-none border-t border-rule pt-8">
+        {models.map((m, i) => {
           const href = `/${m.id.replace(/\.(md|mdx)$/, '/').replace(/\/index\/$/, '/')}`;
+          const num = String(i + 1).padStart(2, '0');
           return (
-            <GuideCard
-              title={m.data.title}
-              description={m.data.description}
-              href={href}
-              eyebrow="Model"
-            />
+            <li class="flex flex-col gap-2">
+              <span class="font-mono text-xs text-muted tracking-wider">{num} / {String(models.length).padStart(2, '0')}</span>
+              <a
+                href={href}
+                class="font-display text-2xl font-medium text-ink underline decoration-1 decoration-[color:var(--color-rule)] underline-offset-[5px] hover:text-accent hover:decoration-[color:var(--color-accent)] transition-colors self-start"
+              >
+                {m.data.title}
+              </a>
+              <p class="text-sm text-muted leading-relaxed">{m.data.description}</p>
+            </li>
           );
         })}
-      </div>
+      </ol>
     </section>
 
     <section class="bg-surface-2 border-y border-rule">
