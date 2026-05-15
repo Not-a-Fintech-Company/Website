@@ -1,7 +1,7 @@
 ---
 // src/components/blocks/RoadmapGrid.astro
 import { roadmap, type Status } from '../../data/roadmap';
-import { ExternalLink, FileText, PenLine, Circle } from 'lucide-astro';
+import { ExternalLink, FileText, PenLine, Circle } from '@lucide/astro';
 
 const statusMeta: Record<Status, { label: string; iconName: string }> = {
   published: { label: 'Published', iconName: 'FileText' },
