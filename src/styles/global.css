@@ -43,10 +43,10 @@
   --ink: #1A1714;
   --accent: #7A2E2A;
   --accent-hover: #5C2220;
-  --rule: #E5DDD0;
-  --muted: #5A534D;        /* darkened from #6E6660 for ~6.5:1 on paper, better AA margin */
+  --rule: #D2C5B0;         /* darkened from #E5DDD0 — stronger dividers, more presence */
+  --muted: #5A534D;        /* ~6.5:1 on paper */
   --surface: #FFFFFF;
-  --surface-2: #F2EBE0;
+  --surface-2: #EFE8D9;    /* slightly more saturated cream for visible section breaks */
 
   color-scheme: light;
 }
@@ -55,12 +55,12 @@
 .dark {
   --paper: #15110E;
   --ink: #F4EFE7;
-  --accent: #CD7572;       /* lifted from #B85450 for ~5.6:1 on dark paper (was ~4.2:1, failed AA) */
-  --accent-hover: #DC8B89; /* matched lighter hover for the new accent */
-  --rule: #2A231D;
-  --muted: #9E968F;        /* nudged lighter to maintain readable secondary text */
+  --accent: #CD7572;       /* ~5.6:1 on dark paper */
+  --accent-hover: #DC8B89;
+  --rule: #3C3128;         /* lifted from #2A231D — matches stronger light-mode rule */
+  --muted: #9E968F;
   --surface: #1F1813;
-  --surface-2: #271F19;
+  --surface-2: #2B221A;    /* slightly more contrast for surface-2 sections */
 
   color-scheme: dark;
 }
@@ -147,15 +147,15 @@
 
 .prose.prose :where(h1, h2, h3, h4) {
   font-family: var(--font-display);
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
   color: var(--color-ink);
 }
 
-.prose.prose :where(h1) { font-size: 2.5rem; }
-.prose.prose :where(h2) { font-size: 1.875rem; margin-top: 2.5em; }
-.prose.prose :where(h3) { font-size: 1.375rem; margin-top: 2em; }
+.prose.prose :where(h1) { font-size: 2.75rem; }
+.prose.prose :where(h2) { font-size: 2rem; margin-top: 2.5em; letter-spacing: -0.018em; }
+.prose.prose :where(h3) { font-size: 1.5rem; margin-top: 2em; letter-spacing: -0.012em; }
 
 /* Lists — preflight strips list-style from all ul/ol; restore inside prose. */
 .prose.prose ul {

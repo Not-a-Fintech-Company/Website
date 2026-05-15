@@ -13,14 +13,14 @@ const { title, description, href, eyebrow } = Astro.props;
 
 <a
   href={href}
-  class="group block p-6 rounded-lg border border-rule bg-surface hover:border-accent transition-colors"
+  class="group block p-6 rounded-lg border-2 border-rule bg-surface hover:border-ink hover:-translate-y-0.5 transition-all"
 >
   {eyebrow && (
-    <p class="text-xs uppercase tracking-[0.2em] text-muted font-medium mb-3">{eyebrow}</p>
+    <p class="text-xs uppercase tracking-[0.22em] text-accent font-semibold mb-3">{eyebrow}</p>
   )}
-  <h3 class="font-display text-xl font-medium text-ink group-hover:text-accent transition-colors flex items-start gap-2">
+  <h3 class="font-display text-xl md:text-2xl font-bold tracking-[-0.015em] text-ink group-hover:text-accent transition-colors flex items-start gap-2 leading-snug">
     <span class="flex-1">{title}</span>
-    <ArrowUpRight class="w-4 h-4 mt-1.5 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+    <ArrowUpRight class="w-5 h-5 mt-1 -translate-x-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all flex-shrink-0" />
   </h3>
-  <p class="mt-3 text-sm text-muted leading-relaxed">{description}</p>
+  <p class="mt-3 text-sm text-ink/75 leading-relaxed">{description}</p>
 </a>
