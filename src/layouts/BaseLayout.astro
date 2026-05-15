@@ -74,11 +74,8 @@ const ogImageUrl = ogImage.startsWith('http')
 
     <link rel="sitemap" href="/sitemap-index.xml" />
 
-    {/* Analytics — Plausible */}
-    <script
-      async
-      src="https://plausible.io/js/pa-W0Dq5s5xrg0nZbo6PsWi5.js"
-    ></script>
+    {/* Analytics — Plausible only (Google Analytics removed; one tracker is enough) */}
+    <script is:inline async src="https://plausible.io/js/pa-W0Dq5s5xrg0nZbo6PsWi5.js"></script>
     <script is:inline>
       window.plausible = window.plausible || function () {
         (plausible.q = plausible.q || []).push(arguments);
@@ -86,20 +83,14 @@ const ogImageUrl = ogImage.startsWith('http')
       plausible.init = plausible.init || function (i) { plausible.o = i || {}; };
       plausible.init();
     </script>
-
-    {/* Analytics — Google Analytics */}
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-VJXL7WCFNM"
-    ></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'G-VJXL7WCFNM');
-    </script>
   </head>
   <body class="min-h-screen flex flex-col bg-paper text-ink antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-md focus:bg-surface focus:px-4 focus:py-2 focus:text-ink focus:border focus:border-rule focus:shadow-md focus:font-medium"
+    >
+      Skip to content
+    </a>
     <slot />
     <SearchModal client:idle />
   </body>

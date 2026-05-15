@@ -38,7 +38,7 @@
   --accent: #7A2E2A;
   --accent-hover: #5C2220;
   --rule: #E5DDD0;
-  --muted: #6E6660;
+  --muted: #5A534D;        /* darkened from #6E6660 for ~6.5:1 on paper, better AA margin */
   --surface: #FFFFFF;
   --surface-2: #F2EBE0;
 
@@ -49,14 +49,27 @@
 .dark {
   --paper: #15110E;
   --ink: #F4EFE7;
-  --accent: #B85450;
-  --accent-hover: #D26B66;
+  --accent: #CD7572;       /* lifted from #B85450 for ~5.6:1 on dark paper (was ~4.2:1, failed AA) */
+  --accent-hover: #DC8B89; /* matched lighter hover for the new accent */
   --rule: #2A231D;
-  --muted: #8E867F;
+  --muted: #9E968F;        /* nudged lighter to maintain readable secondary text */
   --surface: #1F1813;
   --surface-2: #271F19;
 
   color-scheme: dark;
+}
+
+/* Reduced-motion preference: kill transitions, animations, and smooth-scroll. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html { scroll-behavior: auto !important; }
 }
 
 /* Base styles */
