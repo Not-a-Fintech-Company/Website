@@ -1,13 +1,14 @@
 ---
 // src/components/blocks/Hero.astro
-import { ArrowRight, Github } from 'lucide-astro';
+import { ArrowRight } from '@lucide/astro';
+import GithubIcon from '../ui/GithubIcon.astro';
 ---
 
 <section class="relative max-w-7xl mx-auto px-4 md:px-6 pt-16 md:pt-28 pb-12 md:pb-20">
   <div class="max-w-4xl">
     <p class="text-xs uppercase tracking-[0.25em] text-muted font-medium">Open-source · CC0 1.0</p>
     <h1 class="mt-5 font-display text-5xl md:text-7xl font-semibold tracking-tight text-ink leading-[1.05]">
-      The fintech info <em class="font-display italic text-accent">you need</em>
+      The fintech info <em class="font-display italic">you need</em>
     </h1>
     <p class="mt-6 text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
       Guides, financial models, and policy templates for fintech founders.
@@ -27,7 +28,7 @@ import { ArrowRight, Github } from 'lucide-astro';
         target="_blank"
         class="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-rule text-ink hover:bg-surface-2 transition-colors"
       >
-        <Github class="w-4 h-4" />
+        <GithubIcon class="w-4 h-4" />
         View on GitHub
       </a>
     </div>
