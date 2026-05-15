@@ -3,8 +3,9 @@
 @plugin "@tailwindcss/typography";
 
 /* Self-hosted fonts */
-@import "@fontsource-variable/fraunces/index.css";
-@import "@fontsource-variable/inter/index.css";
+@import "@fontsource-variable/eb-garamond/index.css";
+@import "@fontsource-variable/eb-garamond/wght-italic.css";
+@import "@fontsource-variable/hanken-grotesk/index.css";
 @import "@fontsource/jetbrains-mono/400.css";
 @import "@fontsource/jetbrains-mono/700.css";
 
@@ -12,9 +13,14 @@
 @variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Typography */
-  --font-display: "Fraunces Variable", Georgia, "Times New Roman", serif;
-  --font-sans: "Inter Variable", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Typography
+   * Display: EB Garamond (variable, OFL) — classical Garalde with gravitas for an
+   * open-source fintech reference. Pairs with humanist sans for UI.
+   * Body / UI: Hanken Grotesk (variable, OFL) — warm humanist sans, not Inter.
+   * Mono: JetBrains Mono — kept for tabular figures and code.
+   */
+  --font-display: "EB Garamond Variable", "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Hanken Grotesk Variable", "Hanken Grotesk", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
   /* Color tokens read from CSS variables (set per theme below) */
