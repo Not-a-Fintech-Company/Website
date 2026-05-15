@@ -6,8 +6,9 @@ import { Sun, Moon } from 'lucide-astro';
 <button
   type="button"
   id="theme-toggle"
-  class="inline-flex items-center justify-center w-9 h-9 rounded-md text-ink hover:bg-surface-2 transition-colors"
+  class="inline-flex items-center justify-center w-11 h-11 rounded-md text-ink hover:bg-surface-2 transition-colors"
   aria-label="Toggle dark mode"
+  aria-pressed="false"
 >
   <Sun class="w-4 h-4 hidden dark:block" />
   <Moon class="w-4 h-4 block dark:hidden" />
@@ -17,10 +18,13 @@ import { Sun, Moon } from 'lucide-astro';
   (function () {
     const btn = document.getElementById('theme-toggle');
     if (!btn) return;
+    // Set initial aria-pressed from the pre-applied theme class.
+    btn.setAttribute('aria-pressed', document.documentElement.classList.contains('dark') ? 'true' : 'false');
     btn.addEventListener('click', () => {
       const isDark = document.documentElement.classList.toggle('dark');
       const theme = isDark ? 'dark' : 'light';
       document.documentElement.dataset.theme = theme;
+      btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
       try {
         localStorage.setItem('theme', theme);
       } catch (e) { /* private mode */ }
