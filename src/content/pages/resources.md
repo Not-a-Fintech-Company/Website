@@ -41,7 +41,7 @@ The external resources below complement those with material from other practitio
 * [2017 payment card landscape](https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/) — GetFinal (archived but historically useful)
 * Credit Card as a Service — [Part 1](https://ckarchive.com/b/92uzhnhmlqpw), [Part 2](https://ckarchive.com/b/wvu2hghprdkk), [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/) — Cokie Hasiotis
 * [Explainer on the Prepaid Rule for Fintechs](https://blog.lithic.com/prepaid-rule/) — Lithic
-* [Common problems with bank partners](https://kunle.app/august-2021-common-problems-with-bank-partners.html) — kunle.app (Aug 2021)
+* [Common problems with bank partners](https://kunle.app/august-2021-common-problems-with-bank-partners.html) — [Ayokunle Omojola](https://www.linkedin.com/in/omojola/) (Aug 2021)
 
 ### Payments and acquiring
 
@@ -50,11 +50,11 @@ The external resources below complement those with material from other practitio
 
 ### Banking-as-a-Service and challenger banks
 
-* [Vertical banks](https://www.kunle.app/march-2020-vertical-banks.html) — kunle.app (Mar 2020)
-* [Permissionless issuing](https://www.kunle.app/feb-2020-permissionless-issuing.html) — kunle.app (Feb 2020)
-* [API routing layers](https://www.kunle.app/may-2020-API-routing-layers.html) — kunle.app (May 2020)
-* [Financial reconciliation](https://www.kunle.app/dec-2020-financial-reconciliation.html) — kunle.app (Dec 2020)
-* [Time to money](https://ayokunle.substack.com/p/time-to-money) — ayokunle.substack.com
+* [Vertical banks](https://www.kunle.app/march-2020-vertical-banks.html) — [Ayokunle Omojola](https://www.linkedin.com/in/omojola/) (Mar 2020)
+* [Permissionless issuing](https://www.kunle.app/feb-2020-permissionless-issuing.html) — [Ayokunle Omojola](https://www.linkedin.com/in/omojola/) (Feb 2020)
+* [API routing layers](https://www.kunle.app/may-2020-API-routing-layers.html) — [Ayokunle Omojola](https://www.linkedin.com/in/omojola/) (May 2020)
+* [Financial reconciliation](https://www.kunle.app/dec-2020-financial-reconciliation.html) — [Ayokunle Omojola](https://www.linkedin.com/in/omojola/) (Dec 2020)
+* [Time to money](https://ayokunle.substack.com/p/time-to-money) — [Ayokunle Omojola](https://www.linkedin.com/in/omojola/)
 
 ## Newsletters
 
@@ -69,7 +69,7 @@ The external resources below complement those with material from other practitio
 * [16 things to know about raising debt for startups](https://a16z.com/2022/04/15/16-things-to-know-about-raising-debt-for-startups/) — Andreessen Horowitz
 * [Lessons in raising debt capital for lending company founders](https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c) — Rohit Mittal
 * [Calculating the true cost of a debt facility](https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt) — Rohit Mittal
-* [Differentiated and sustainable lending businesses](https://www.kunle.app/august-2020-differentiated-and-sustainable-lending-businesses.html) — kunle.app (Aug 2020)
+* [Differentiated and sustainable lending businesses](https://www.kunle.app/august-2020-differentiated-and-sustainable-lending-businesses.html) — [Ayokunle Omojola](https://www.linkedin.com/in/omojola/) (Aug 2020)
 
 ## Compliance
 
