@@ -7,7 +7,7 @@ publishedAt: 2020-12-15
 updatedAt: 2026-05-16
 ---
 
-* [Term Loans](/models/term-loan/)
+* [Term Loans](/models/term-loan/) — see also the interactive [Term Loan Unit Economics calculator](/tools/term-loan/)
 * [Bank Accounts](/models/bank-account/)
 * [Credit Cards](/models/credit-card/)
 * [Fintech Revenue Model - Unit.co](https://docs.google.com/spreadsheets/d/1JhYdzIAmlG_tJyFE5ryTaxfDa2HxCVP8U1NmG6Tzk7o/edit#gid=0)

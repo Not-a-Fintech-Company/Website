@@ -7,6 +7,19 @@ publishedAt: 2020-12-14
 updatedAt: 2026-05-16
 ---
 
+## Start here
+
+Our primary content covers many of these topics directly:
+
+* **Card products**: [How to launch a card product](/guides/how-to-launch-a-card-product/), [Credit Card Economics Model](/models/credit-card/)
+* **Bank partnerships**: [How to select a bank partner](/guides/how-to-select-a-bank-partner/), [14 steps to closing a bank partner](/guides/n-steps-to-closing-a-bank-partner/)
+* **Challenger banks**: [Guide to starting a challenger bank](/guides/guide-to-starting-a-challenger-bank/), [Bank Account Economics Model](/models/bank-account/)
+* **Lending**: [Term Loan Economics Model](/models/term-loan/), [Term Loan Unit Economics calculator](/tools/term-loan/)
+* **Compliance**: [BSA/AML Sample Policy](/docs/bsa/), [Credit Card Business Trunk](/docs/credit-card-trunk/)
+* **Going to market**: [Go to market guide](/guides/go-to-market-plan/)
+
+The external resources below complement those with material from other practitioners and vendors.
+
 ## Compilations
 
 * [Banks and Processors](https://docs.google.com/spreadsheets/d/1r1WT0hbTlh3bswOPZk8ssKRjF9U33FVkpq74jN8cw4A/edit#gid=0)

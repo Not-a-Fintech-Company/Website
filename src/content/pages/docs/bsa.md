@@ -334,3 +334,14 @@ All records pertaining to law enforcement requests under USA PATRIOT Act Section
 | Date of Action | Responsible Party | Description of Policy Action |
 |---|---|---|
 | PLACEHOLDER | PLACEHOLDER | Version 1.0 |
+
+---
+
+## Related
+
+This template was contributed as part of our [compliance documents](/docs/) section. For broader context on how BSA/AML/OFAC programs fit into a fintech product launch:
+
+* [How to launch a card product](/guides/how-to-launch-a-card-product/) — the Compliance section covers where this policy applies in the card-product context
+* [How to select a bank partner](/guides/how-to-select-a-bank-partner/) — sponsor banks evaluate BSA/AML program maturity during diligence
+* [14 steps to closing a bank partner](/guides/n-steps-to-closing-a-bank-partner/) — what bank partners look for, and what compliance documentation they expect
+* [Guide to starting a challenger bank](/guides/guide-to-starting-a-challenger-bank/) — broader product-compliance considerations for deposit-led businesses
