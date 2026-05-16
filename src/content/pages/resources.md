@@ -22,87 +22,88 @@ The external resources below complement those with material from other practitio
 
 ## Compilations
 
-* [Banks and Processors](https://docs.google.com/spreadsheets/d/1r1WT0hbTlh3bswOPZk8ssKRjF9U33FVkpq74jN8cw4A/edit#gid=0)
+* [Banks and Processors](https://docs.google.com/spreadsheets/d/1r1WT0hbTlh3bswOPZk8ssKRjF9U33FVkpq74jN8cw4A/edit#gid=0) — community-maintained spreadsheet of sponsor banks and card processors
 
-## Readings
+## Foundational reading
 
-### General
-* <https://www.getfinal.com/company-news/2017/07/20/transaction-processing-flow/>
-* <https://medium.com/@stephenjcho/deciphering-the-payments-stack-efbcb9c8eac4>
-* <https://gendal.me/2014/08/09/a-simple-explanation-of-fees-in-the-payment-card-industry/>
-* <https://moov.io/blog/guides/complete-fintech-dictionary/>
-* <https://kunle.app/august-2021-common-problems-with-bank-partners.html>
-* <https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/>
-* [Best practices in bank-fintech partnerships - QED & BCG](https://www.qedinvestors.com/blog/whitepaper-best-practices-in-bank-fintech-partnerships)
-* [Explainer on The Prepaid Rule for Fintechs - Lithic](https://blog.lithic.com/prepaid-rule/)
-* [Modern Treasury Learn](https://www.moderntreasury.com/learn)
+### Payments mechanics
 
-### Newsletters
-* <https://bam.kalzumeus.com/>
-* <https://fintechtldr.substack.com/>
-* <https://www.netinterest.co/>
-* <https://fintechbusinessweekly.substack.com/>
-* <https://www.cardsftw.com/>
-
-### Credit Cards
-* Credit Card as a Service [Part 1](https://ckarchive.com/b/92uzhnhmlqpw) [Part 2](https://ckarchive.com/b/wvu2hghprdkk) [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/)
+* [A simple explanation of fees in the payment card industry](https://gendal.me/2014/08/09/a-simple-explanation-of-fees-in-the-payment-card-industry/) — Richard Gendal Brown
+* [Deciphering the payments stack](https://medium.com/@stephenjcho/deciphering-the-payments-stack-efbcb9c8eac4) — Stephen Cho
+* [Transaction processing flow](https://www.getfinal.com/company-news/2017/07/20/transaction-processing-flow/) — GetFinal (archived)
+* [Complete fintech dictionary](https://moov.io/blog/guides/complete-fintech-dictionary/) — Moov
+* [Best practices in bank-fintech partnerships](https://www.qedinvestors.com/blog/whitepaper-best-practices-in-bank-fintech-partnerships) — QED & BCG whitepaper
 
 ### Cards
-* [Ultimate guide to interchange revenues - Unit.co](https://www.unit.co/guides/ultimate-guide-interchange-revenue)
-* [Interchange in 1000 words](https://www.mtb.xyz/notes/interchange-in-1000-words)
 
-### Payments / Acquiring
-* [Payment Processor Shopping](https://truptinatu.substack.com/p/lets-go-payment-processor-shopping)
+* [Ultimate guide to interchange revenues](https://www.unit.co/guides/ultimate-guide-interchange-revenue) — Unit
+* [Interchange in 1000 words](https://www.mtb.xyz/notes/interchange-in-1000-words) — mtb.xyz
+* [2017 payment card landscape](https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/) — GetFinal (archived but historically useful)
+* Credit Card as a Service — [Part 1](https://ckarchive.com/b/92uzhnhmlqpw), [Part 2](https://ckarchive.com/b/wvu2hghprdkk), [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/) — Cokie Hasiotis
+* [Explainer on the Prepaid Rule for Fintechs](https://blog.lithic.com/prepaid-rule/) — Lithic
+* [Common problems with bank partners](https://kunle.app/august-2021-common-problems-with-bank-partners.html) — kunle.app (Aug 2021)
 
-### BaaS
-* <https://www.kunle.app/march-2020-vertical-banks.html>
+### Payments and acquiring
 
-### Debt
-* <https://a16z.com/2022/04/15/16-things-to-know-about-raising-debt-for-startups/>
-* <https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c>
-* <https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt>
+* [Payment processor shopping](https://truptinatu.substack.com/p/lets-go-payment-processor-shopping) — Trupti Natu
+* [Modern Treasury Learn](https://www.moderntreasury.com/learn) — explainers on payment rails (ACH, wire, RTP, FedNow)
 
-### Insurance
-* [Insurtech Areas of Interest](https://www.jaredfranklin.com/2023/01/21/2023-insurtech-areas-of-interest/)
+### Banking-as-a-Service and challenger banks
 
-### KYC/Identity/Fraud
-* [Mapping the Identity Verification Tech Stack](https://medium.com/9yards/mapping-the-identity-verification-technology-stack-in-financial-services-6d8edc74121f)
-* [KYC and AML: beyond the acronyms](https://www.bitsaboutmoney.com/archive/kyc-and-aml-beyond-the-acronyms/)
-* [Fraud Glossary - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:27459ec7-5481-4a5d-9dea-155210f9e65b)
+* [Vertical banks](https://www.kunle.app/march-2020-vertical-banks.html) — kunle.app (Mar 2020)
+* [Permissionless issuing](https://www.kunle.app/feb-2020-permissionless-issuing.html) — kunle.app (Feb 2020)
+* [API routing layers](https://www.kunle.app/may-2020-API-routing-layers.html) — kunle.app (May 2020)
+* [Financial reconciliation](https://www.kunle.app/dec-2020-financial-reconciliation.html) — kunle.app (Dec 2020)
+* [Time to money](https://ayokunle.substack.com/p/time-to-money) — ayokunle.substack.com
 
-### Marketing
-* [Marketing Guidelines - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:5ad7f104-9935-43b7-9dba-d3423d206e1c)
+## Newsletters
 
-### Compliance
-* [Policy Glossary - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:112717cc-15cf-4b2c-b8ab-eb9c18988ddf)
-* [Basics of Financial Compliance - RizeFS.com](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b89e7527-19a2-4b45-a570-f5c57c0d9fd2)
-* [Fintech Guide to Building U.S. KYC/KYB Operations - Lithic.com](https://blog.lithic.com/kyc-operations/)
-* [Fintech Guide to Building a Compliance Program - Lithic.com](https://blog.lithic.com/compliance-program/)
-* [The Complete Guide to Transaction Monitoring - Unit21.ai](https://www.unit21.ai/blog/the-complete-guide-to-transaction-monitoring)
+* [Bits About Money](https://bam.kalzumeus.com/) — Patrick McKenzie on financial infrastructure
+* [Net Interest](https://www.netinterest.co/) — Marc Rubinstein on financial-sector economics
+* [Fintech Business Weekly](https://fintechbusinessweekly.substack.com/) — Jason Mikula
+* [Fintech TLDR](https://fintechtldr.substack.com/) — daily fintech newsletter
+* [Cards FTW](https://www.cardsftw.com/) — Matthew Goldman on card products and infrastructure
 
-### Random
-* <https://ayokunle.substack.com/p/time-to-money>
-* <https://www.kunle.app/feb-2020-permissionless-issuing.html>
-* <https://www.kunle.app/may-2020-API-routing-layers.html>
-* <https://www.kunle.app/august-2020-differentiated-and-sustainable-lending-businesses.html>
-* <https://www.kunle.app/dec-2020-financial-reconciliation.html>
-* <https://a16z.com/2020/10/20/payroll-apis/>
+## Debt and lending
 
-### Product
-* <https://www.getfinal.com/company-news/2017/03/01/feature-development-at-final/>
+* [16 things to know about raising debt for startups](https://a16z.com/2022/04/15/16-things-to-know-about-raising-debt-for-startups/) — Andreessen Horowitz
+* [Lessons in raising debt capital for lending company founders](https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c) — Rohit Mittal
+* [Calculating the true cost of a debt facility](https://rohitmittal.substack.com/p/calculating-the-true-cost-of-a-debt) — Rohit Mittal
+* [Differentiated and sustainable lending businesses](https://www.kunle.app/august-2020-differentiated-and-sustainable-lending-businesses.html) — kunle.app (Aug 2020)
 
-## X (formerly Twitter) Threads
+## Compliance
+
+* [Policy Glossary](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:112717cc-15cf-4b2c-b8ab-eb9c18988ddf) — RizeFS
+* [Basics of Financial Compliance](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b89e7527-19a2-4b45-a570-f5c57c0d9fd2) — RizeFS
+* [Fintech Guide to Building U.S. KYC/KYB Operations](https://blog.lithic.com/kyc-operations/) — Lithic
+* [Fintech Guide to Building a Compliance Program](https://blog.lithic.com/compliance-program/) — Lithic
+* [The Complete Guide to Transaction Monitoring](https://www.unit21.ai/blog/the-complete-guide-to-transaction-monitoring) — Unit21
+
+## KYC, identity, and fraud
+
+* [Mapping the Identity Verification Tech Stack](https://medium.com/9yards/mapping-the-identity-verification-technology-stack-in-financial-services-6d8edc74121f) — 9yards
+* [KYC and AML: beyond the acronyms](https://www.bitsaboutmoney.com/archive/kyc-and-aml-beyond-the-acronyms/) — Bits About Money
+* [Fraud Glossary](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:27459ec7-5481-4a5d-9dea-155210f9e65b) — RizeFS
+
+## Other topics
+
+* [Payroll APIs](https://a16z.com/2020/10/20/payroll-apis/) — Andreessen Horowitz
+* [2023 Insurtech Areas of Interest](https://www.jaredfranklin.com/2023/01/21/2023-insurtech-areas-of-interest/) — Jared Franklin
+* [Marketing Guidelines](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:5ad7f104-9935-43b7-9dba-d3423d206e1c) — RizeFS
+* [Feature development at Final](https://www.getfinal.com/company-news/2017/03/01/feature-development-at-final/) — GetFinal (archived)
+
+## X (formerly Twitter) threads
 
 > What teams are building in the customer support side of Banking as a Service? I'm struggling to find good examples.
 >
 > It's the main operational headache of building a neobank. And everyone needs the same things.
 >
-> -- Will White (@willwhite003), [July 26, 2020](https://twitter.com/willwhite003/status/1287315227470684166)
+> — Will White (@willwhite003), [July 26, 2020](https://twitter.com/willwhite003/status/1287315227470684166)
 
 > I spent the last month diving into "instant" ACH with four different players (Sardine, Astra, Orum and Plaid) and it's fascinating how much of fintech is being built as I type this message. So damn bullish on this space.
 >
-> -- Aditi Shekar (@aditishekar), [April 21, 2022](https://twitter.com/aditishekar/status/1517085880929955840)
+> — Aditi Shekar (@aditishekar), [April 21, 2022](https://twitter.com/aditishekar/status/1517085880929955840)
 
 > I've spent a lot of time thinking how to best advise and invest into fintech companies, and over time have come up with a few mental frameworks to assist myself. Here's one of them:
 >
-> -- Aaron (@arfrank), [August 24, 2020](https://twitter.com/arfrank/status/1297997387475099654)
+> — Aaron Frank (@arfrank), [August 24, 2020](https://twitter.com/arfrank/status/1297997387475099654)
