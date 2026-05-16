@@ -36,24 +36,23 @@ jobs:
 
       - name: Fetch sitemap and submit to IndexNow
         shell: bash
+        env:
+          # Cloudflare returns a bot-challenge HTML page to default curl
+          # user-agents from GitHub-hosted runners, which makes the sitemap
+          # fetch silently return zero URLs. A real browser UA bypasses it.
+          UA: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         run: |
-          set -x
-          echo "Bash version: $BASH_VERSION"
-          echo "Host: $SITE_HOST, Key length: ${#INDEXNOW_KEY}"
-          which curl jq grep
+          set -euo pipefail
 
-          set -o pipefail
           URLS_JSON=$(
-            curl -sfL "https://${SITE_HOST}/sitemap-0.xml" \
+            curl -sfL -A "$UA" "https://${SITE_HOST}/sitemap-0.xml" \
             | grep -oE "https://${SITE_HOST}/[^<]+" \
             | jq -R . | jq -s -c .
-          ) || { echo "::error::sitemap fetch/parse failed"; exit 1; }
+          )
 
-          echo "URLS_JSON: $URLS_JSON"
           URL_COUNT=$(echo "$URLS_JSON" | jq 'length')
-          echo "URL_COUNT: $URL_COUNT"
           if [ "$URL_COUNT" -eq 0 ]; then
-            echo "::error::Sitemap returned no URLs"
+            echo "::error::Sitemap returned no URLs (host: ${SITE_HOST})"
             exit 1
           fi
 
@@ -70,6 +69,7 @@ jobs:
 
           HTTP_CODE=$(
             curl -s -o /tmp/indexnow-response.txt -w "%{http_code}" \
+              -A "$UA" \
               -X POST "https://api.indexnow.org/IndexNow" \
               -H "Content-Type: application/json; charset=utf-8" \
               -d "$PAYLOAD"
