@@ -18,11 +18,11 @@ These are a handful of dimensions to look at when choosing a bank partner to lau
 
 ### Table of Contents
 
-* [Location](#location)
-* [Experience](#experience)
-* [Regulatory Concerns](#regulatory-concerns)
-* [Work Cadence](#work-cadence)
-* [Contracting](#contracting)
+* [Where should your bank partner be located?](#where-should-your-bank-partner-be-located)
+* [How much experience should your bank partner have?](#how-much-experience-should-your-bank-partner-have)
+* [What regulatory concerns matter when choosing a bank?](#what-regulatory-concerns-matter-when-choosing-a-bank)
+* [How fast should you expect to iterate with a bank partner?](#how-fast-should-you-expect-to-iterate-with-a-bank-partner)
+* [How does contracting work with a bank partner?](#how-does-contracting-work-with-a-bank-partner)
   * [Length](#length)
   * [Pricing](#pricing)
   * [Minimums](#minimums)
@@ -30,23 +30,23 @@ These are a handful of dimensions to look at when choosing a bank partner to lau
   * [Negotiations](#negotiations)
 * [Miscellaneous](#miscellaneous)
 
-## Choosing a Bank Partner
+## How do you choose a bank partner?
 
-### Location
+### Where should your bank partner be located?
 Depending upon the product offering, the physical location of a bank partner can highly influence their ability to support your product. For example, when issuing credit products, some banks are beholden to their state regulations that may treat fees in an non-exacting way.
 
 For credit, the typical states to issue out of are: Utah, Delaware and South Dakota. There are a few others that work relatively well, and some that one must avoid, such as New York.
 
-### Experience
+### How much experience should your bank partner have?
 In choosing a bank, one of the biggest concerns is in making sure that bank has experience issuing the product you are planning on launching. If they have not previously brought that product to market, you will likely have to spend more effort than would otherwise be necessary getting them prepped to launch and ensuring they understand all the nuances about your product type.
 
-### Regulatory Concerns
+### What regulatory concerns matter when choosing a bank?
 It is an open secret that fintech companies have run into issues when their partner banks get dinged for regulatory issues, for their program or any other program the bank is running.  When this happens, it can stall growth and ability to make any meaningful product changes.  Therefore, when looking at a partner bank, one should also evaluate their regulatory risk based upon how they underwrite programs
 
-### Work Cadence
+### How fast should you expect to iterate with a bank partner?
 One of the most important concepts when choosing a bank partner, if you have a choice, is the speed at which you're able to iterate with them.  Since the bank is technically the issuer of the product and you will just be the marketer and maybe program manager, aligning with a higher speed partner is key.
 
-### Contracting
+### How does contracting work with a bank partner?
 When partnering with a bank, there are a few models for how it will look.  It can be a revenue share, pay per use pricing, or some mashup of those two.
 
 At the time of writing this, there are 4 major considerations for the contract: Length, Pricing, Minimums and Reserves.  In addition to those major costs, there are additional fees including setup fees, diligence fees, and more.

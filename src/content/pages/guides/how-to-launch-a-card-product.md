@@ -20,21 +20,21 @@ One of the hardest parts of bringing a card to market is solving for each busine
 
 ## Table of Contents
 
-- [Product](#product)
-- [Technology](#technology)
-- [Compliance](#compliance)
-- [Risk](#risk)
+- [What product decisions need to be made first?](#what-product-decisions-need-to-be-made-first)
+- [How do you choose a card-issuing technology stack?](#how-do-you-choose-a-card-issuing-technology-stack)
+- [What compliance requirements apply to card programs?](#what-compliance-requirements-apply-to-card-programs)
+- [How do you manage card-program risk?](#how-do-you-manage-card-program-risk)
   - Fraud
-- [Debt & Capital Requirements](#debt--capital-requirements)
-- [Banks](#banks)
-- [Networks](#networks)
+- [How do you fund a credit card program?](#how-do-you-fund-a-credit-card-program)
+- [How do you choose a sponsor bank?](#how-do-you-choose-a-sponsor-bank)
+- [How do you choose a card network?](#how-do-you-choose-a-card-network)
   - Majors
   - Debit
-- [Servicing](#servicing)
-- [Marketing](#marketing)
+- [How do you build card servicing operations?](#how-do-you-build-card-servicing-operations)
+- [How do you market a card product?](#how-do-you-market-a-card-product)
 - [Resources](#resources)
 
-## Product
+## What product decisions need to be made first?
 
 Defining the card product you want to launch is the first important decision you will need to make in order bring a product to market.  Some features only apply to certain product types (i.e. APR for credit cards), while others apply across all card types.  There are numerous decisions in what it takes to launch a card product, more than can be explicitly written out, so a non-exhaustive list is included below with some definitions.
 
@@ -52,11 +52,11 @@ Defining the card product you want to launch is the first important decision you
 
 Depending on the product decisions one makes, will impact the documentation and product features presented to the users.
 
-## Technology
+## How do you choose a card-issuing technology stack?
 
 When it comes to the technology side of the industry, modernization is always about 10 years behind, if that, but luckily there are many different ways to compose the technology stack to bring your product to market.
 
-### Issuing systems
+### What card issuing systems are available?
 
 | Name                     | Description                                                  | Examples                                                     |
 | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -66,11 +66,11 @@ When it comes to the technology side of the industry, modernization is always ab
 | Core Banking             | Not connected to the network, but able to handle all account and accounting requirements.  With a issuing gateway on top it's how many banks initially brought debit cards to market | Profile, Phoenix, Finacle, Finxact                           |
 | General Service Provider | Bundles together core processing with bank relationship and servicing organization. Ala carte pricing on top of basic relationship | Deserve, Cardworks, TCW, Unit, Synapse, Treasury Prime, Cascade |
 
-## Compliance
+## What compliance requirements apply to card programs?
 
 An alphabet soup of regulations apply to any product you may want to launch, but given the work of countless others it's easier now than ever.
 
-### Primary Documents
+### What primary documents does a card program need?
 
 - Cardholder agreement - [CFPB template Card Agreement](https://www.consumerfinance.gov/data-research/credit-card-data/know-you-owe-credit-cards/)
 - Privacy Policy
@@ -80,7 +80,7 @@ An alphabet soup of regulations apply to any product you may want to launch, but
 - Annual privacy notice
 - Data sharing / marketing agreement
 
-### Regulations
+### What regulations govern card programs?
 
 Here is a non-exhaustive list of regulations that need to be addressed as one builds and launches a card program:
 
@@ -92,11 +92,11 @@ Here is a non-exhaustive list of regulations that need to be addressed as one bu
 * [Card Act](https://en.wikipedia.org/wiki/Credit_CARD_Act_of_2009)
 * [Dodd-Frank as applies to UDAAP](https://en.wikipedia.org/wiki/Dodd%E2%80%93Frank_Wall_Street_Reform_and_Consumer_Protection_Act)
 
-## Risk
+## How do you manage card-program risk?
 
 One of the most complex and key components of running any program is understanding and managing risk. This needs to be considered continuously during a live program, and also analyzed at critical points of customer interactions lifecycle.
 
-### Customer lifecycle events
+### What are the key customer lifecycle events?
 
 - On-boarding & Marketing channels
 - Application
@@ -105,7 +105,7 @@ One of the most complex and key components of running any program is understandi
 - Transaction Usage
 - Customer Service Interactions
 
-### Fraud
+### How do you manage card fraud?
 
 #### Identity
 
@@ -127,7 +127,7 @@ Some of the controls you would configure include things like:
 
 Upon crossing any control threshold, or triggering any hard flags, there are a few ways to handle an account. Primarily these consist of a allowlist, blocklist, and graylist, with other subtleties around soft blocking versus hard blocking.
 
-## Debt & Capital Requirements
+## How do you fund a credit card program?
 
 For credit programs, debt is what will fuel your ability to grow.  The business will require different tiers of capital at different price points/costs of funds as it scales.  See Rohit's blog post for a strong outline of one path to scaling debt capital: [https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c](https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c)
 
@@ -136,11 +136,11 @@ For credit programs, debt is what will fuel your ability to grow.  The business 
 > So if your cost of funds is 8% and 15% of your customers revolve monthly, that ends of up being roughly 30% of your receivables at the end of the month.  This leads you to an approximate cost of funds of 26.67%. While not an exact number, this is an approximate APR where you will break even on the portfolio at large.
 >
 
-## Banks
+## How do you choose a sponsor bank?
 
 Choosing a bank partner is the most critical of all partnership decisions.   A lot of the advice can be boiled down to a piece of advice from an unnamed industry veteran: "if this is how they are when you're dating, then imagine how it will be once you're married."   A separate guide for this exists [here](/guides/how-to-select-a-bank-partner/).
 
-## Networks
+## How do you choose a card network?
 
 ### Major Networks
 
@@ -165,7 +165,7 @@ Besides acceptance, the one main drawback of these two networks is customer perc
 
 While not a major differentiator anymore, debit networks are a requirement for all debit cards issued inside the US due to the Durbin Amendment. For most major banks in the US, dual routing (the Durbin Requirement) is usually done by the major networks wholly owned debit networks (Visa -> Interlink, Mastercard -> Maestro).  For NeoBanks, a common ATM network provider is AllPoint, which is provides ~40,000 ATMs throughout the us.  There are other Interbank or Pin Debit networks that provide ATM access and a list can be found on this Wikipedia [page](https://en.wikipedia.org/wiki/Interbank_network#United_States).
 
-## Servicing
+## How do you build card servicing operations?
 
 The servicing segment of the business consists primarily of 2 major components. The self service capabilities provided to consumers (Mobile, Web and Phone), and the back office servicing organization that runs the operations for the business.
 
@@ -208,7 +208,7 @@ There is a laundry list of the things a back office might need to accomplish for
 * Change PIN Request
 * Statement Error Inquiry
 
-## Marketing
+## How do you market a card product?
 
 Finding product marketing fit is never easy in this industry. With incumbents having 100s of millions of dollars at their disposal for acquisition, its always an uphill battle to break through the noise, so focusing on niches and truly understanding your customer acquisition cost are key.
 

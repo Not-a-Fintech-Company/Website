@@ -12,12 +12,12 @@ authors:
 
 ## Table of Contents
 
-1. [Components of a Challenger Bank](#the-components-of-a-challenger-bank)
-1. [Working with a processor](#working-with-a-processor)
-1. [Working with a bank partner](#working-with-a-bank-partner)
-1. [Working with a card partner](#working-with-a-card-partner)
-1. [Product Features](#product-features)
-1. [Glossary](#glossary-of-terms)
+1. [Components of a challenger bank](#the-components-of-a-challenger-bank)
+1. [How do you work with a card processor?](#how-do-you-work-with-a-card-processor)
+1. [How do you work with a sponsor bank?](#how-do-you-work-with-a-sponsor-bank)
+1. [How do you work with a card manufacturer?](#how-do-you-work-with-a-card-manufacturer)
+1. [What product features should a challenger bank build?](#what-product-features-should-a-challenger-bank-build)
+1. [Glossary of terms](#glossary-of-terms)
 
 ## The components of a challenger bank
 
@@ -32,7 +32,7 @@ In industry speak, a challenger bank is an "agent of the bank" or a "marketer". 
 3. **Issuer Processor** - think of your issuer processor as a node within the card networks. When a card is used, the merchant processor sends an authorization request to the card network, who in turn routes that request through to the processor. From there, the processor or the program manager authorizes or declines the transaction. I will outline the architecture further below.
 4. **Card Provider (aka. Card manufacturer, emboss partner, perso facility)** - The card provider is licensed by the networks to manufacture cards in bulk and then personalize and ship them as they are ordered by cardholders.
 
-## Working with a processor
+## How do you work with a card processor?
 
 Choosing your issuer processor is the most critical decision you will make about the architecture of your program. The processor is your primary technical integration and depending on your architecture will inherit some or all of their constraints. It is more difficult to switch your processor than it is to swap out any of the other partners listed above.
 
@@ -118,7 +118,7 @@ The notable exception to the above is if you want to use your processor to handl
 
 Monthly minimums scaling from $5k-$25k over the first 36 months of your contract. Contract term of 3-5 years depending on your negotiating leverage.
 
-## Working with a bank partner
+## How do you work with a sponsor bank?
 
 ### Setup
 
@@ -201,7 +201,7 @@ Interchange is determined by the card type (ie. debit vs. credit), whether the c
 
 In my experience, pre-Covid, you could expect about 60% of transactions to be card not-present (higher interchange!).
 
-## Working with a card partner
+## How do you work with a card manufacturer?
 
 ### Designing your card and packaging
 
@@ -223,7 +223,7 @@ Every program manager starts off thinking about the opportunity to deliver a gre
 
 One final note on cards. Card partners ramp up for gift card season in early Fall.  Make sure you have enough card inventory to get through to the new year. It's unlikely the card partner will prioritize you over Walmart if you run out of stock.
 
-## Product Features
+## What product features should a challenger bank build?
 
 1. Card transactions
     1. Data you will get from your processor
