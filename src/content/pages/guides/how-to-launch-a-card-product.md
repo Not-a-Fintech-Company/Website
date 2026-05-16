@@ -20,7 +20,6 @@ One of the hardest parts of bringing a card to market is solving for each busine
 - [Compliance](#compliance)
 - [Risk](#risk)
   - Fraud
-  - Credit Underwriting
 - [Debt & Capital Requirements](#debt--capital-requirements)
 - [Banks](#banks)
 - [Networks](#networks)
@@ -123,15 +122,6 @@ Some of the controls you would configure include things like:
 
 Upon crossing any control threshold, or triggering any hard flags, there are a few ways to handle an account. Primarily these consist of a allowlist, blocklist, and graylist, with other subtleties around soft blocking versus hard blocking.
 
-
-#### Account Takeover
-
-### Credit
-
-#### Underwriting
-
-#### Collections
-
 ## Debt & Capital Requirements
 
 For credit programs, debt is what will fuel your ability to grow.  The business will require different tiers of capital at different price points/costs of funds as it scales.  See Rohit's blog post for a strong outline of one path to scaling debt capital: [https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c](https://mittalrohit.com/lessons-in-raising-debt-capital-for-lending-company-founders-7caececc34c)
@@ -216,10 +206,6 @@ There is a laundry list of the things a back office might need to accomplish for
 ## Marketing
 
 Finding product marketing fit is never easy in this industry. With incumbents having 100s of millions of dollars at their disposal for acquisition, its always an uphill battle to break through the noise, so focusing on niches and truly understanding your customer acquisition cost are key.
-
-
-ToDos
-* Notes on marketing and making sure to not run afoul of UDAAP & FTC
 
 ## Resources
 
