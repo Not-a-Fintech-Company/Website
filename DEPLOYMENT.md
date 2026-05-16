@@ -46,8 +46,16 @@ src/
 ├── content.config.ts    # Content collection schema
 └── styles/
     └── global.css       # Tailwind v4 entry CSS, theme tokens, prose styles
-public/                  # Static files served as-is (favicons, robots.txt, _redirects, PDFs)
-astro.config.mjs         # Astro configuration (Preact, MDX, sitemap, Tailwind v4)
+public/                  # Static files served as-is:
+                         #   - favicons, og-image, robots.txt
+                         #   - _redirects (Jekyll-era 301s + sitemap.xml redirect)
+                         #   - _headers (HSTS, CSP, immutable cache TTL)
+                         #   - llms.txt (AI-search crawler manifest)
+                         #   - <uuid>.txt (IndexNow verification key)
+                         #   - credit-card-biz-trunk.pdf / .ppt
+astro.config.mjs         # Astro configuration (Preact, MDX, sitemap with per-URL lastmod, Tailwind v4)
+.github/workflows/       # GitHub Actions (indexnow.yml: pings IndexNow API on push to main)
+scripts/                 # One-off generation helpers (e.g. generate-font-fallbacks.mjs)
 wrangler.jsonc           # Local Wrangler CLI deploys only — Git-connected Pages doesn't use it
 ```
 
@@ -112,22 +120,24 @@ If needed, environment variables can be set in:
 
 ## Analytics
 
-Two analytics services are configured in `astro.config.mjs` via the `head` config:
+Two analytics services are loaded in `src/layouts/BaseLayout.astro` (inline `<script is:inline async>` tags in the `<head>`):
 
 - **Plausible Analytics** — privacy-friendly, script ID: `pa-W0Dq5s5xrg0nZbo6PsWi5`
-- **Google Analytics** — measurement ID: `G-VJXL7WCFNM`
+- **Google Analytics 4** — measurement ID: `G-VJXL7WCFNM`
 
-To change or remove either, edit the `head` array in `astro.config.mjs`.
+To change or remove either, edit the script tags in `BaseLayout.astro`. The CSP in `public/_headers` allowlists both origins; update there too if you swap providers.
 
 ## Updating Content
 
 All content lives in `src/content/pages/`. To add or edit pages:
 
-- **Markdown pages** (`.md`): Use standard Markdown with YAML frontmatter (`title`, `description`, `section`, `template`, `publishedAt`, `updatedAt`, `draft`, `ogImage`, `hideToc`, `hideSidebar`).
+- **Markdown pages** (`.md`): Use standard Markdown with YAML frontmatter (`title`, `description`, `section`, `template`, `publishedAt`, `updatedAt`, `authors`, `draft`, `ogImage`, `hideToc`, `hideSidebar`).
 - **MDX pages** (`.mdx`): Use when you need the `GoogleEmbed` component for iframe embeds.
 - **Templates**: Pages use one of four templates: `article` (default), `section-index`, `model`, `tool`.
 
-After editing, push to the configured branch and Cloudflare will rebuild automatically.
+For guides, populate the `authors` field as an array of `{name, url}` objects — these render as a visible byline on the article page and as `Person` objects in the Article JSON-LD.
+
+After editing, push to the configured branch and Cloudflare will rebuild automatically. Each push also triggers the IndexNow GitHub Action which submits all sitemap URLs to Bing, Yandex, Naver, and Seznam.
 
 ## Troubleshooting
 

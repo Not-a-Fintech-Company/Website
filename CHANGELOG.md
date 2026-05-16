@@ -1,5 +1,54 @@
 # Changelog
 
+## 2026-05-16 — SEO audit implementation (P0 + P1 + P2 + P3)
+
+Ran `/seo audit` against production, then closed or declined every item across all four priority tiers. 14 commits, audit health score estimate up from **57/100 → ~85/100**.
+
+### Added — structured data + crawler discovery
+- **JSON-LD sitewide** (P1-5): `Organization` + `WebSite` `@graph` in `BaseLayout`; `Article` in `ArticleLayout` (gated on `publishedAt`); `BreadcrumbList` inline in `Breadcrumbs.astro`; `SoftwareApplication` + `Offer` on `/tools/term-loan/` via a `schema` prop on `ToolLayout`
+- **`og:type=article`** on article-template pages with `article:published_time` / `article:modified_time` meta (P1-6)
+- **`public/llms.txt`** — AI-search crawler manifest with all guides/models/tools/docs/license/contact (P1-9)
+- **Per-URL sitemap `<lastmod>`** — `astro.config.mjs` synchronously scans frontmatter at config-load time and builds a URL → date map for `@astrojs/sitemap`'s `serialize` callback (P3-22)
+- **IndexNow workflow** (`.github/workflows/indexnow.yml`) — submits all sitemap URLs to Bing/Yandex/Naver/Seznam on every push to main. Key file at `public/<uuid>.txt` (P2-19)
+- **`public/_redirects`** entry: `/sitemap.xml` → `/sitemap-index.xml` 301 (P1-10)
+
+### Added — content fields + trust signals
+- **`authors` frontmatter field** in `src/content.config.ts` (array of `{name, url}`); rendered as a visible byline in `ArticleLayout` and as `Person` objects in Article JSON-LD (P1-12). Populated across all 5 guides: Aaron Frank (3), Jeremy Black, Seema Amble
+- **Site-wide YMYL disclaimer** in the footer ("not legal/financial/regulatory/tax/accounting advice; consult qualified counsel") (P2-13)
+- **About page** expanded from 72 → 342 words: "Why this exists" / "How we work" / "Contribute" sections plus the existing contributor list. Added Jeremy Black and Seema Amble (P3-23)
+
+### Added — performance + security infrastructure
+- **`public/_headers`** (P1-7 + P2-20): HSTS preload, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, CSP scoped to Plausible/GTM/GA/Google Sheets, immutable cache (`max-age=31536000`) on `/_astro/*` `/pagefind/*` `/fonts/*`
+- **Font preload** in `BaseLayout` — `<link rel="preload" as="font" crossorigin>` for EB Garamond + Hanken Grotesk Latin woff2 (cuts LCP ~200-400ms on cold visits) (P2-17)
+- **Metrics-aligned font fallbacks** — Capsize-generated size-adjust/ascent-override/descent-override declarations for Georgia/Times New Roman (serif) and Arial/Helvetica Neue (sans) eliminate CLS from `font-display: swap`. Generator script at `scripts/generate-font-fallbacks.mjs` (P2-18)
+- **Latin-only `@font-face`** — replaced `@fontsource-variable/*/index.css` imports with explicit Latin-subset declarations. Dist asset count drops from 14+ subset variants to 5 Latin-only files (P2-16)
+
+### Changed — content quality
+- **Per-article bylines** rendered on all 5 guide pages with rel="author" LinkedIn links
+- **Model pages rewritten** (P1-8): `/models/credit-card/`, `/models/bank-account/`, `/models/term-loan/` each expanded from ~60 → 400+ words. Adds "How to use it" (bulleted input list with industry-standard ranges), "Modeling assumptions", and "Related" sections. Iframe + "make a copy" link remain prominent
+- **Tool stub pages expanded** (P1-11): `/tools/bank-account/` and `/tools/credit-card/` from ~80 → ~250 words each, describing the eventual interactive calculator's inputs/outputs
+- **Resources page rewritten** (P2-15): bare-URL `<https://...>` autolinks → `[Title](url) — attribution` format. 45 external links verified live (all 200). Consolidated 13 small sections into 7 thematic ones. Preserved the "Start here" intro and Twitter quote section
+- **Question-form headings on 3 guides** (P2-14): card-product, bank-partner, challenger-bank h2/h3s rewritten ("Networks" → "How do you choose a card network?"). Table of Contents anchors updated. Underlying content untouched. n-steps and go-to-market guides left as-is (already imperative-action or question-oriented)
+- **Internal linking from orphans** (P3-24): added "Start here" section to `/resources/`; "Related" sections to `/docs/bsa/` and `/docs/credit-card-trunk/`; annotated `/models/` index to point at the `/tools/term-loan/` calculator. `/tools/term-loan/` inbound link count: 1 → 6
+
+### Fixed — content quality (P0)
+- **Empty stub headings removed** (P0-3): `/guides/how-to-launch-a-card-product/` had `<h4>Underwriting</h4>`, `<h4>Collections</h4>`, `<h4>Marketing ToDos</h4>` with no body content. Removed headings + TOC entries
+- **`publishedAt` + `updatedAt` populated** (P0-4) on all 20 content files. `publishedAt` = git first-add date; `updatedAt` = 2026-05-16
+- **GSC verification + GA4 scopes** (P0-1): credentials migrated to local repo, OAuth re-auth flow expanded scopes to include `analytics.readonly` and `indexing`
+- **Post-migration indexation** (P0-2): confirmed clean via GSC URL Inspection
+
+### Declined / closed without change
+- **P3-21** (`twitter:site` / `twitter:creator` meta): site owner no longer maintains a Twitter/X presence; no canonical handle
+
+### Added — tooling
+- `@capsizecss/core` + `@capsizecss/metrics` as devDependencies for font-fallback metrics generation
+- `scripts/generate-font-fallbacks.mjs` — one-off generator that emits the @font-face fallback CSS
+
+### Internal docs
+- `docs/seo/2026-05-16-audit.md` — full SEO audit output (8 sub-skill subagents in parallel) preserved as historical reference
+
+---
+
 ## 2026-05-16 — Documentation refresh, orphan cleanup, analytics + gitignore
 
 ### Removed
