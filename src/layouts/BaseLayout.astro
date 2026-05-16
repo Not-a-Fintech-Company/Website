@@ -74,7 +74,7 @@ const ogImageUrl = ogImage.startsWith('http')
 
     <link rel="sitemap" href="/sitemap-index.xml" />
 
-    {/* Analytics — Plausible only (Google Analytics removed; one tracker is enough) */}
+    {/* Analytics — Plausible (privacy-friendly, primary) */}
     <script is:inline async src="https://plausible.io/js/pa-W0Dq5s5xrg0nZbo6PsWi5.js"></script>
     <script is:inline>
       window.plausible = window.plausible || function () {
@@ -82,6 +82,15 @@ const ogImageUrl = ogImage.startsWith('http')
       };
       plausible.init = plausible.init || function (i) { plausible.o = i || {}; };
       plausible.init();
+    </script>
+
+    {/* Analytics — Google Analytics (kept alongside Plausible) */}
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-VJXL7WCFNM"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-VJXL7WCFNM');
     </script>
   </head>
   <body class="min-h-screen flex flex-col bg-paper text-ink antialiased">
