@@ -7,11 +7,11 @@ template: article
 
 A non-exhaustive list of people who have contributed in some form so far:
 
-* [@arfrank](https://x.com/arfrank)
-* [@lachygroom](https://x.com/lachygroom)
-* [@cokiehasiotis](https://x.com/cokiehasiotis)
-* [@magoldman](https://matthewgoldman.com)
-* [@cedpvd](https://x.com/cedpvd)
-* [@waltrcox](https://x.com/waltrcox)
-* [@amandapey](https://x.com/amandapey)
-* [@willwhite003](https://x.com/willwhite003)
+* [Aaron Frank](https://www.linkedin.com/in/arfrank/) — [@arfrank](https://x.com/arfrank)
+* [Lachy Groom](https://www.linkedin.com/in/lachy-groom-b218895/) — [@lachygroom](https://x.com/lachygroom)
+* [Cokie Hasiotis](https://www.linkedin.com/in/cokie-hasiotis-9b666363/) — [@cokiehasiotis](https://x.com/cokiehasiotis)
+* [Matthew Goldman](https://www.linkedin.com/in/matthewgoldman/)
+* [Charlie Deutsch](https://www.linkedin.com/in/charlesedeutsch/) — [@cedpvd](https://x.com/cedpvd)
+* [Walt Cox](https://www.linkedin.com/in/waltcox/) — [@waltrcox](https://x.com/waltrcox)
+* [Amanda Peyton](https://www.linkedin.com/in/amandapey/) — [@amandapey](https://x.com/amandapey)
+* [Will White](https://www.linkedin.com/in/will-white-11004b15/) — [@willwhite003](https://x.com/willwhite003)
