@@ -10,6 +10,18 @@ interface Props {
   crumbs: Crumb[];
 }
 const { crumbs } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.label,
+    item: c.href ? new URL(c.href, Astro.site).toString() : canonicalUrl,
+  })),
+};
 ---
 
 <nav aria-label="Breadcrumb" class="text-sm text-muted">
@@ -26,3 +38,4 @@ const { crumbs } = Astro.props;
     ))}
   </ol>
 </nav>
+<script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />

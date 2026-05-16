@@ -12,8 +12,9 @@ interface Props {
   description: string;
   section?: string;
   ogImage?: string;
+  schema?: object | object[];
 }
-const { title, description, section, ogImage } = Astro.props;
+const { title, description, section, ogImage, schema } = Astro.props;
 
 const sectionLabel = section ? section.charAt(0).toUpperCase() + section.slice(1) : null;
 const crumbs = [
@@ -23,7 +24,7 @@ const crumbs = [
 ];
 ---
 
-<BaseLayout {title} {description} {ogImage}>
+<BaseLayout {title} {description} {ogImage} {schema}>
   <Header />
   <MobileMenu />
 

@@ -23,6 +23,20 @@ const { Content, headings } = await render(entry);
 const data = entry.data;
 const template = data.template ?? 'article';
 const entrySlug = entry.id.replace(/\.(md|mdx)$/, '').replace(/\/index$/, '');
+
+const toolSchema = entrySlug === 'tools/term-loan'
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: 'Term Loan Unit Economics Calculator',
+      description: data.description,
+      url: new URL('/tools/term-loan/', Astro.site).toString(),
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      publisher: { '@id': `${Astro.site!.toString().replace(/\/$/, '')}/#organization` },
+    }
+  : undefined;
 ---
 
 {template === 'section-index' && (
@@ -53,6 +67,7 @@ const entrySlug = entry.id.replace(/\.(md|mdx)$/, '').replace(/\/index$/, '');
     description={data.description}
     section={data.section}
     ogImage={data.ogImage}
+    schema={toolSchema}
   >
     {entrySlug === 'tools/term-loan' && (
       <TermLoanCalculator client:load slot="tool" />

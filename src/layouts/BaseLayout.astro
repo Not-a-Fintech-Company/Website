@@ -9,6 +9,10 @@ interface Props {
   ogImage?: string;
   canonical?: string;
   noindex?: boolean;
+  pageType?: 'website' | 'article';
+  publishedTime?: Date;
+  modifiedTime?: Date;
+  schema?: object | object[];
 }
 
 const {
@@ -17,6 +21,10 @@ const {
   ogImage = '/og-image.png',
   canonical,
   noindex = false,
+  pageType = 'website',
+  publishedTime,
+  modifiedTime,
+  schema,
 } = Astro.props;
 
 const siteName = 'Not a Fintech Company';
@@ -25,6 +33,33 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).toStri
 const ogImageUrl = ogImage.startsWith('http')
   ? ogImage
   : new URL(ogImage, Astro.site).toString();
+
+const siteUrl = Astro.site!.toString().replace(/\/$/, '');
+const orgWebsiteGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: siteName,
+      url: `${siteUrl}/`,
+      logo: `${siteUrl}/og-image.png`,
+      sameAs: ['https://github.com/Not-a-Fintech-Company/Website'],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      url: `${siteUrl}/`,
+      name: siteName,
+      description: 'An open-source knowledge base for fintech founders.',
+      publisher: { '@id': `${siteUrl}/#organization` },
+      license: 'https://creativecommons.org/publicdomain/zero/1.0/',
+      inLanguage: 'en-US',
+    },
+  ],
+};
+
+const extraSchemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 ---
 
 <!DOCTYPE html>
@@ -57,7 +92,7 @@ const ogImageUrl = ogImage.startsWith('http')
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={pageType} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
@@ -66,6 +101,12 @@ const ogImageUrl = ogImage.startsWith('http')
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
+    {pageType === 'article' && publishedTime && (
+      <meta property="article:published_time" content={publishedTime.toISOString()} />
+    )}
+    {pageType === 'article' && modifiedTime && (
+      <meta property="article:modified_time" content={modifiedTime.toISOString()} />
+    )}
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
@@ -92,6 +133,11 @@ const ogImageUrl = ogImage.startsWith('http')
       gtag('js', new Date());
       gtag('config', 'G-VJXL7WCFNM');
     </script>
+
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(orgWebsiteGraph)} />
+    {extraSchemas.map((s) => (
+      <script is:inline type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
   </head>
   <body class="min-h-screen flex flex-col bg-paper text-ink antialiased">
     <a

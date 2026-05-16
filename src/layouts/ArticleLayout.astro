@@ -40,9 +40,42 @@ const crumbs = [
 
 const showSidebar = !hideSidebar && !!section;
 const showToc = !hideToc;
+
+const siteUrl = Astro.site!.toString().replace(/\/$/, '');
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImagePath = ogImage ?? '/og-image.png';
+const ogImageAbsolute = ogImagePath.startsWith('http')
+  ? ogImagePath
+  : new URL(ogImagePath, Astro.site).toString();
+
+const articleSchema = publishedAt
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title,
+      description,
+      url: canonicalUrl,
+      image: ogImageAbsolute,
+      datePublished: publishedAt.toISOString(),
+      dateModified: (updatedAt ?? publishedAt).toISOString(),
+      publisher: { '@id': `${siteUrl}/#organization` },
+      isPartOf: { '@id': `${siteUrl}/#website` },
+      mainEntityOfPage: canonicalUrl,
+      inLanguage: 'en-US',
+      license: 'https://creativecommons.org/publicdomain/zero/1.0/',
+    }
+  : null;
 ---
 
-<BaseLayout {title} {description} {ogImage}>
+<BaseLayout
+  {title}
+  {description}
+  {ogImage}
+  pageType="article"
+  publishedTime={publishedAt}
+  modifiedTime={updatedAt ?? publishedAt}
+  schema={articleSchema ?? undefined}
+>
   <Header />
   <MobileMenu />
 
