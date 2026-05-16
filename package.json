@@ -26,6 +26,8 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
+    "@capsizecss/core": "^4.1.3",
+    "@capsizecss/metrics": "^3.7.0",
     "pagefind": "^1.5.2",
     "typescript": "^6.0.3"
   }
