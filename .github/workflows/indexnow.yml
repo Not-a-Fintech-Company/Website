@@ -1,0 +1,81 @@
+name: IndexNow Submission
+
+# Pushes a list of site URLs to IndexNow on every push to main so Bing,
+# Yandex, Naver, and Seznam are notified of changes immediately rather than
+# waiting for their crawlers to re-discover the site. Google does not use
+# IndexNow (use GSC URL Inspection or Indexing API instead).
+#
+# Flow: wait for Cloudflare Pages to deploy -> fetch sitemap from prod ->
+# extract URLs -> POST as JSON to api.indexnow.org. The key file at
+# public/<KEY>.txt verifies ownership.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      INDEXNOW_KEY: 632bd8ad43764a609258eac08666fa83
+      SITE_HOST: www.notafintech.co
+    steps:
+      - name: Wait for Cloudflare Pages deploy
+        # CF Pages typically deploys this site in 60-90 seconds; the wait gives
+        # the new sitemap time to be live before we read it.
+        run: sleep 120
+
+      - name: Fetch sitemap and submit to IndexNow
+        run: |
+          set -euo pipefail
+
+          URLS_JSON=$(
+            curl -sfL "https://${SITE_HOST}/sitemap-0.xml" \
+            | grep -oE "https://${SITE_HOST}/[^<]+" \
+            | jq -R . | jq -s -c .
+          )
+
+          URL_COUNT=$(echo "$URLS_JSON" | jq 'length')
+          if [ "$URL_COUNT" -eq 0 ]; then
+            echo "::error::Sitemap returned no URLs"
+            exit 1
+          fi
+
+          PAYLOAD=$(
+            jq -n \
+              --arg host "$SITE_HOST" \
+              --arg key "$INDEXNOW_KEY" \
+              --arg keyLocation "https://${SITE_HOST}/${INDEXNOW_KEY}.txt" \
+              --argjson urlList "$URLS_JSON" \
+              '{host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList}'
+          )
+
+          echo "Submitting ${URL_COUNT} URLs to IndexNow..."
+
+          HTTP_CODE=$(
+            curl -s -o /tmp/indexnow-response.txt -w "%{http_code}" \
+              -X POST "https://api.indexnow.org/IndexNow" \
+              -H "Content-Type: application/json; charset=utf-8" \
+              -d "$PAYLOAD"
+          )
+
+          echo "Response code: ${HTTP_CODE}"
+          echo "Response body:"
+          cat /tmp/indexnow-response.txt
+          echo
+
+          # IndexNow returns 200 (accepted + crawl queued) or 202 (accepted,
+          # crawl not yet queued). Any other code is a real failure.
+          case "$HTTP_CODE" in
+            200|202) echo "Submitted successfully." ;;
+            *) echo "::error::IndexNow returned status ${HTTP_CODE}"; exit 1 ;;
+          esac
