@@ -5,6 +5,7 @@ import ArticleLayout from '../layouts/ArticleLayout.astro';
 import SectionIndexLayout from '../layouts/SectionIndexLayout.astro';
 import ModelLayout from '../layouts/ModelLayout.astro';
 import ToolLayout from '../layouts/ToolLayout.astro';
+import TermLoanCalculator from '../components/tools/TermLoanCalculator';
 
 export async function getStaticPaths() {
   const entries = await getCollection('pages', ({ data }) => !data.draft);
@@ -21,6 +22,7 @@ const { entry } = Astro.props;
 const { Content, headings } = await render(entry);
 const data = entry.data;
 const template = data.template ?? 'article';
+const entrySlug = entry.id.replace(/\.(md|mdx)$/, '').replace(/\/index$/, '');
 ---
 
 {template === 'section-index' && (
@@ -52,6 +54,9 @@ const template = data.template ?? 'article';
     section={data.section}
     ogImage={data.ogImage}
   >
+    {entrySlug === 'tools/term-loan' && (
+      <TermLoanCalculator client:load slot="tool" />
+    )}
     <Content />
   </ToolLayout>
 )}
