@@ -1,6 +1,6 @@
 # Changelog
 
-## 2026-05-16 — Documentation refresh + orphan cleanup
+## 2026-05-16 — Documentation refresh, orphan cleanup, analytics + gitignore
 
 ### Removed
 - `src/assets/logo.svg`, `src/assets/logo.png` — orphan Starlight-era logo files
@@ -9,7 +9,20 @@
 - `public/sitemap.xml` — static sitemapindex backup, redundant now that `@astrojs/sitemap` emits `sitemap-index.xml` + `sitemap-0.xml`
 
 ### Changed
-- `CLAUDE.md`, `README.md`, `CHANGELOG.md`, `DEPLOYMENT.md` updated to reflect the post-migration state (typography swap, Tools section live, audit fixes, calculator)
+- Restored **Google Analytics** alongside Plausible in `BaseLayout.astro` — both trackers wanted, reverting the audit-era decision to drop GA
+- `CLAUDE.md`, `README.md`, `CHANGELOG.md`, `DEPLOYMENT.md` updated to reflect the post-migration state (typography swap, Tools section live, audit fixes, calculator, dual-tracker analytics)
+
+### Added
+- `.gitignore` rules for local credential mirrors (`analytics-credentials.md`, `.google-client-secret.json`, `.google-token.json`) — never to be committed; canonical credentials remain at `~/dev/ghost/analytics-credentials.md`
+
+### Partial work — not pushed
+- Started a `/seo audit` of the live site. Four of eight sub-skill subagents completed (technical, schema, sitemap, SXO) with detailed findings. Four were interrupted before completion (content, performance, GEO, google). The completed audits identified actionable items for a future PR:
+  - **Technical** (71/100): soft-404 fallback returns 200 for unknown paths; thin "Coming soon" stub pages are indexed; missing HSTS/CSP/X-Frame-Options security headers; trailing-slash inconsistency on internal homepage links
+  - **Schema** (28/100): zero structured data on any page; recommended additions are Organization, WebSite + SearchAction, Article, Person (for /about/), BreadcrumbList — projected score after implementation: 74/100
+  - **Sitemap** (74/100): `/sitemap.xml` returns HTML instead of redirecting to `/sitemap-index.xml`; no `<lastmod>` on any URL; stub tool pages are indexable
+  - **SXO** (gap score 32/100; persona scores 48/62): `/models/credit-card/` is a critical page-type mismatch (template-marketplace SERP, stub page); guide pages have empty subsections; no media; no per-article author attribution
+  
+  Address in a future PR — none are blockers for the current production deploy.
 
 ## 2026-05-15 — Term Loan calculator + tools section live
 
