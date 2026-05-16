@@ -1,6 +1,6 @@
 ---
 title: Term Loan Economics Model
-description: A model to demonstrate the economics of fixed term loans.
+description: Build-your-own fixed-term loan portfolio model — per-loan IRR, charge-offs, cost of funds, and net interest margin for installment lending.
 section: models
 template: model
 hideSidebar: true
@@ -15,4 +15,35 @@ import GoogleEmbed from '../../../components/ui/GoogleEmbed.astro';
   title="Term Loan Economics Model"
 />
 
-The model can be found here if you'd like to make a copy for your own use: [Google Sheet](https://docs.google.com/spreadsheets/d/14t-3bFl9aiC3mZHVPpeiVLSheHCpkSRgpLB0tL_NK60/)
+Make your own copy: [open in Google Sheets](https://docs.google.com/spreadsheets/d/14t-3bFl9aiC3mZHVPpeiVLSheHCpkSRgpLB0tL_NK60/) → File → Make a copy.
+
+## How to use it
+
+Lender-side economics for a fixed-term consumer loan portfolio (e.g. installment loans, personal loans, point-of-sale lending). The model has a loan-level sheet and a portfolio sheet that aggregates a monthly originations vintage forward in time — so you can see both the per-loan IRR and the portfolio-level revenue ramp, charge-off curve, and net contribution margin.
+
+Key inputs to set:
+
+* **Average loan size** — typical principal balance at origination
+* **Term** — months until full repayment (12, 24, 36, 48, or 60)
+* **APR** — your lending rate
+* **Origination fee** — % of principal taken upfront
+* **CAC** — fully-loaded customer acquisition cost per funded loan
+* **Annual charge-off rate** — expected losses as % of outstanding balance per year
+* **Cost of funds** — your warehouse or debt facility rate
+* **Servicing cost per loan per month** — allocated cost of payments, collections, customer support
+* **Originations per month** — drives the portfolio-level revenue and loss timing
+
+The output gives per-loan IRR, per-loan net profit, and a portfolio-level monthly P&L stack showing revenue, charge-offs, cost of funds, and net contribution margin over time. The breakeven analysis surfaces the annual charge-off rate at which a loan flips from profitable to negative.
+
+## Modeling assumptions
+
+* Charge-offs are smoothed across the life of the loan. Real-world vintages typically take 6-24 months for losses to peak — this is an annualized approximation
+* No prepayment modeling. Loans assumed to run full term, which overstates the duration of received cash flows for high-prepayment products
+* CAC is treated as a one-time origination cost, not amortized across the life of the loan
+* Capital deployment uses a simple revolver assumption; doesn't model the dynamics of a real warehouse line (advance rates, concentration limits, eligibility criteria)
+* All figures are nominal. For NPV/IRR analysis across loans of different terms, you'd need to discount cash flows separately
+
+## Related
+
+* [Term Loan Unit Economics calculator](/tools/term-loan/) — interactive single-loan calculator (live)
+* [Credit Card Economics Model](/models/credit-card/) — for revolving credit products instead of installment

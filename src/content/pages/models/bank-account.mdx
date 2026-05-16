@@ -1,6 +1,6 @@
 ---
 title: Bank Account Economics Model
-description: A model to demonstrate the economics of bank accounts.
+description: Build-your-own deposit account unit economics — model net interest income, debit interchange, monthly fees, and per-account servicing cost across checking and savings products.
 section: models
 template: model
 hideSidebar: true
@@ -15,4 +15,34 @@ import GoogleEmbed from '../../../components/ui/GoogleEmbed.astro';
   title="Bank Account Economics Model"
 />
 
-The model can be found here if you'd like to make a copy for your own use: [Google Sheet](https://docs.google.com/spreadsheets/d/17SqQAYnFYKHgnnw60eD_D_9Zb79mJku-z42Wb3Pp_qI)
+Make your own copy: [open in Google Sheets](https://docs.google.com/spreadsheets/d/17SqQAYnFYKHgnnw60eD_D_9Zb79mJku-z42Wb3Pp_qI/) → File → Make a copy.
+
+## How to use it
+
+Deposit account economics come down to three numbers most pitch decks gloss over: the **yield earned on the deposit balance**, the **fee and interchange revenue per active month**, and the **fully-loaded servicing cost per account**. Get those three right and the rest is arithmetic — the eventual breakeven balance threshold is just a function of them.
+
+Key inputs to set:
+
+* **Average deposit balance per account** — what an average customer holds across the deposit products you offer
+* **Yield earned on deposits** — the rate at which you deploy customer balances (Fed funds rate for the simplest model; asset yield if you're using the deposits to fund lending)
+* **APY paid to customer** — what you pay back (0% for most checking; 4-5% for high-yield savings competing on rate)
+* **Debit transactions per active month and average ticket size** — drives interchange volume
+* **Net interchange rate** — capped at ~0.21¢ + 0.05% per debit transaction for banks with over $10B in assets (Durbin Amendment); 1.0-1.5% for smaller banks
+* **Monthly account fee, overdraft fee revenue** — fee-based revenue (overdraft revenue increasingly regulated; size conservatively)
+* **Per-account servicing cost** — card issuance, fraud, customer support, compliance, hosting, allocated per account
+
+The output rolls up to per-account annual net interest income, fee income, total revenue, fully-loaded cost, and net profit. A sensitivity grid at the bottom shows how net profit shifts across different deposit balance assumptions — useful for figuring out which customer segments are actually worth acquiring.
+
+## Modeling assumptions
+
+* Single-product simplification. Most neobanks bundle checking + savings + debit; this models one product at a time
+* Interchange revenue scales linearly with transaction count; doesn't model spend cyclicality or seasonality
+* Inactive accounts aren't separately modeled — assume the balance figure represents an active account
+* Overdraft fees are modeled as % of accounts × fees per occurrence; CFPB rule changes may compress this revenue stream
+* No customer lifetime modeling — outputs are steady-state annual figures, not LTV
+
+## Related
+
+* [Guide to starting a challenger bank](/guides/guide-to-starting-a-challenger-bank/) — processors, bank partners, and product features for a deposit-led product
+* [Bank Account Unit Economics calculator](/tools/bank-account/) — interactive single-account model (coming soon)
+* [Credit Card Economics Model](/models/credit-card/) — for credit-led products

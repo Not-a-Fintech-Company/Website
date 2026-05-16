@@ -1,6 +1,6 @@
 ---
 title: Credit Card Economics Model
-description: A model to demonstrate the economics of credit cards.
+description: Build-your-own credit card unit economics — model revolve rate, APR, interchange, charge-offs, cost of funds, and rewards costs across credit and charge card products.
 section: models
 template: model
 hideSidebar: true
@@ -15,6 +15,36 @@ import GoogleEmbed from '../../../components/ui/GoogleEmbed.astro';
   title="Credit Card Economics Model"
 />
 
-The model can be found here if you'd like to make a copy for your own use: [Google Sheet](https://docs.google.com/spreadsheets/d/1Q2vsPIlfoncvZDPCYjv2JXhWTXVdI3EqgT6UxJMsSbY/)
+Make your own copy: [open in Google Sheets](https://docs.google.com/spreadsheets/d/1Q2vsPIlfoncvZDPCYjv2JXhWTXVdI3EqgT6UxJMsSbY/) → File → Make a copy.
+
+## How to use it
+
+Credit card economics are deceptively layered. Revenue arrives from at least four streams — interchange, interest on revolving balances, late fees, and annual fees — while costs accumulate across funding, charge-offs, rewards, and servicing. A small move in revolve rate or net charge-off rate can flip a portfolio from profitable to underwater.
+
+Key inputs to set:
+
+* **Average outstanding balance per active account** — the revolving balance you expect to carry
+* **Revolve rate** — % of accounts that carry a balance month-to-month vs. pay in full ("transactors"). Consumer portfolios typically run 30-50%
+* **APR** — your annual rate on revolving balances
+* **Net interchange rate** — interchange after subtracting the rewards funded out of interchange (1.5-2.5% net for general-purpose credit; lower for premium rewards cards)
+* **Annual gross charge-off rate** — expected losses as % of receivables (super-prime under 2%, prime 3-5%, subprime 8-15%)
+* **Cost of funds** — your debt facility rate
+* **Annual fee, late fee revenue, per-account servicing cost** — the other lines
+
+The output stacks gross revenue, minus rewards, minus charge-offs, minus cost of funds, minus servicing, to land on net per-account profit. The breakeven section surfaces the revolve rate and charge-off rate at which a portfolio flips negative.
+
+## Modeling assumptions
+
+* Per-account, annual figures. Doesn't model multi-year vintages or behavior changes over time
+* Charge-offs are treated as a constant annual rate. Real-world losses follow a vintage curve (heavier in months 6–24)
+* Rewards costs are modeled as a flat % of spend. Doesn't break out category multipliers (e.g., 5% on travel)
+* Promotional APR periods (0% intro offers) aren't modeled
+* For charge cards, set revolve rate to 0% — APR drops out; annual fee + interchange are the only revenue lines
+
+## Related
+
+* [How to launch a card product](/guides/how-to-launch-a-card-product/) — the full playbook for taking a card from concept to live
+* [Credit Card Unit Economics calculator](/tools/credit-card/) — interactive single-account model (coming soon)
+* [Bank Account Economics Model](/models/bank-account/) — for debit-led products
 
 Also a big thank you to [Matthew Goldman](https://matthewgoldman.com) for providing the original foundational template for this model.
