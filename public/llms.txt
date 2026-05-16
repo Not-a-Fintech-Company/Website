@@ -1,0 +1,43 @@
+# Not a Fintech Company
+
+> An open-source knowledge base for fintech founders. Tactical guides, financial models, compliance documents, and interactive calculators for launching card products, debit programs, lending businesses, and challenger banks. All content is CC0 1.0 (public domain) — no attribution required.
+
+## Guides
+
+- [Guides Index](https://www.notafintech.co/guides/): All guides on launching and operating fintech products
+- [How to Launch a Card Product](https://www.notafintech.co/guides/how-to-launch-a-card-product/): End-to-end playbook covering product decisions, technology stack, compliance, risk, debt capital, bank and network partnerships, servicing, and marketing
+- [How to Select a Bank Partner](https://www.notafintech.co/guides/how-to-select-a-bank-partner/): Framework for evaluating sponsor banks, including questions to ask and red flags
+- [N Steps to Closing a Bank Partner](https://www.notafintech.co/guides/n-steps-to-closing-a-bank-partner/): Practical timeline and milestones for bank partnership negotiations
+- [Go-To-Market Plan](https://www.notafintech.co/guides/go-to-market-plan/): GTM frameworks for fintech product launches
+- [Guide to Starting a Challenger Bank](https://www.notafintech.co/guides/guide-to-starting-a-challenger-bank/): Long-form guide to building a neobank from zero
+
+## Financial Models
+
+- [Models Index](https://www.notafintech.co/models/): Google Sheets unit-economics templates for fintech products
+- [Bank Account Model](https://www.notafintech.co/models/bank-account/): Debit card / deposit account economics including interchange, ATM, and FX
+- [Credit Card Model](https://www.notafintech.co/models/credit-card/): Credit card unit economics including APR, interchange, fees, losses, and funding costs
+- [Term Loan Model](https://www.notafintech.co/models/term-loan/): Lender-side term-loan economics
+
+## Interactive Tools
+
+- [Term Loan Unit Economics Calculator](https://www.notafintech.co/tools/term-loan/): Lender-side calculator for portfolio yield, cost of funds, charge-offs, and net interest margin on installment-loan portfolios
+
+## Compliance Documents
+
+- [Docs Index](https://www.notafintech.co/docs/): Compliance templates and reference documents
+- [BSA Policy (Sample)](https://www.notafintech.co/docs/bsa/): Sample Bank Secrecy Act / AML policy template
+- [Credit Card Business Trunk](https://www.notafintech.co/docs/credit-card-trunk/): Compilation of credit-card business reference materials
+
+## Reference
+
+- [Resources](https://www.notafintech.co/resources/): External links to industry resources, regulations, and useful tools
+- [About & Contributors](https://www.notafintech.co/about/): Project background and contributor list
+
+## License
+
+CC0 1.0 Universal — https://creativecommons.org/publicdomain/zero/1.0/
+No attribution required. Free to use, reproduce, and redistribute without restriction.
+
+## Contact
+
+hello@notafintech.co

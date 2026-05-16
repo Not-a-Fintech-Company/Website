@@ -14,3 +14,6 @@
 
 # Removed files (content inlined)
 /docs/BSA%20Policy%20(SAMPLE)%20(08-25-21).docx /docs/bsa/ 301
+
+# SEO infrastructure — fix soft-404 on legacy sitemap path
+/sitemap.xml /sitemap-index.xml 301
