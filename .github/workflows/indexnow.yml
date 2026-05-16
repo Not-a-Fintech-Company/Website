@@ -37,16 +37,31 @@ jobs:
       - name: Fetch sitemap and submit to IndexNow
         shell: bash
         env:
-          # Cloudflare returns a bot-challenge HTML page to default curl
-          # user-agents from GitHub-hosted runners, which makes the sitemap
-          # fetch silently return zero URLs. A real browser UA bypasses it.
           UA: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         run: |
-          set -euo pipefail
+          set -uo pipefail
+
+          # Capture the raw sitemap response + HTTP code so we can see what
+          # Cloudflare is actually returning (Bot Fight Mode JS challenge,
+          # 403, 503, etc.) when the fetch fails.
+          HTTP_CODE=$(
+            curl -sL -A "$UA" -o /tmp/sitemap.xml -w "%{http_code}" \
+              "https://${SITE_HOST}/sitemap-0.xml"
+          )
+          echo "Sitemap HTTP status: $HTTP_CODE"
+          echo "Sitemap response size: $(wc -c < /tmp/sitemap.xml) bytes"
+          echo "Sitemap response first 400 chars:"
+          head -c 400 /tmp/sitemap.xml
+          echo
+          echo "---"
+
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "::error::Sitemap fetch returned status $HTTP_CODE (likely Cloudflare bot challenge)"
+            exit 1
+          fi
 
           URLS_JSON=$(
-            curl -sfL -A "$UA" "https://${SITE_HOST}/sitemap-0.xml" \
-            | grep -oE "https://${SITE_HOST}/[^<]+" \
+            grep -oE "https://${SITE_HOST}/[^<]+" /tmp/sitemap.xml \
             | jq -R . | jq -s -c .
           )
 
