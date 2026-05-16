@@ -10,6 +10,25 @@ updatedAt: 2026-05-16
 
 ## Coming soon
 
-Interactive credit card unit economics is on the roadmap.
+An interactive calculator for credit card unit economics is on the roadmap. The eventual tool will let you stress-test a single account across the levers that actually move portfolio profitability.
 
-In the meantime, the [Google Sheets model](/models/credit-card/) covers the full credit card economics — interchange revenue, interest income on revolving balances, fee income, cost of funds, expected losses, and rewards costs across credit and charge card products.
+## What this tool will model
+
+Credit card economics are deceptively layered: revenue arrives from at least four streams (interchange, interest, late fees, annual fees) while costs accumulate across funding, losses, rewards, and servicing. A small change in **revolve rate** or **net charge-off rate** can flip an account from profitable to underwater.
+
+Inputs will include:
+
+* Average outstanding balance and revolve rate (% of balance carrying month-to-month vs. paid in full)
+* APR and effective annual yield on revolving balances
+* Net interchange rate (after rewards funding cost)
+* Annual fee and late fee revenue per account
+* Annual gross charge-off rate and recovery rate
+* Cost of funds — the rate at which you fund the receivable
+* Rewards earn rate and redemption cost
+* Per-account servicing cost — issuance, fraud, customer support, compliance
+
+Outputs will surface per-account annual revenue, fully-loaded cost, **net profit per account**, **breakeven revolve rate**, and sensitivity to the two biggest swing factors: charge-offs and cost of funds.
+
+## Use the full model in the meantime
+
+The [Google Sheets credit card model](/models/credit-card/) covers the same economics with broader portfolio assumptions including charge card economics (no revolve, interchange-only revenue) and the revenue ramp across a portfolio's first 24 months.
