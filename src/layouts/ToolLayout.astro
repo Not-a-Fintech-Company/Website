@@ -36,7 +36,11 @@ const crumbs = [
       <p class="mt-5 text-lg text-ink/80 max-w-prose leading-relaxed">{description}</p>
     )}
 
-    <div class="mt-10">
+    {/* Mount point for interactive tool islands. Filled by the dynamic
+        router for specific slugs (e.g. tools/term-loan); empty for stubs. */}
+    <slot name="tool" />
+
+    <div class="mt-12">
       <Prose>
         <slot />
       </Prose>
