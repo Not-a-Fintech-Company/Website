@@ -5,6 +5,9 @@ section: guides
 template: article
 publishedAt: 2020-12-15
 updatedAt: 2026-05-16
+authors:
+  - name: Aaron Frank
+    url: https://www.linkedin.com/in/arfrank/
 ---
 
 ## Introduction

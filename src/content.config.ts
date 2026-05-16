@@ -19,6 +19,14 @@ const pages = defineCollection({
     ogImage: z.string().optional(),
     hideToc: z.boolean().optional().default(false),
     hideSidebar: z.boolean().optional().default(false),
+    authors: z
+      .array(
+        z.object({
+          name: z.string(),
+          url: z.string().url().optional(),
+        }),
+      )
+      .optional(),
   }),
 });
 

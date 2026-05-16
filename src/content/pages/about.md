@@ -17,3 +17,5 @@ A non-exhaustive list of people who have contributed in some form so far:
 * [Walt Cox](https://www.linkedin.com/in/waltcox/) — [@waltrcox](https://x.com/waltrcox)
 * [Amanda Peyton](https://www.linkedin.com/in/amandapey/) — [@amandapey](https://x.com/amandapey)
 * [Will White](https://www.linkedin.com/in/will-white-11004b15/) — [@willwhite003](https://x.com/willwhite003)
+* [Jeremy Black](https://www.linkedin.com/in/jeremywblack/)
+* [Seema Amble](https://www.linkedin.com/in/seema-amble-b404126/)

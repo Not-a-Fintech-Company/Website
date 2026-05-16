@@ -5,6 +5,9 @@ section: guides
 template: article
 publishedAt: 2021-02-28
 updatedAt: 2026-05-16
+authors:
+  - name: Jeremy Black
+    url: https://www.linkedin.com/in/jeremywblack/
 ---
 
 ## Table of Contents

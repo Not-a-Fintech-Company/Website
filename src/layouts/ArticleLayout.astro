@@ -10,6 +10,10 @@ import Toc from '../components/nav/Toc.astro';
 import Prose from '../components/ui/Prose.astro';
 import type { MarkdownHeading } from 'astro';
 
+interface Author {
+  name: string;
+  url?: string;
+}
 interface Props {
   title: string;
   description: string;
@@ -21,11 +25,12 @@ interface Props {
   hideSidebar?: boolean;
   publishedAt?: Date;
   updatedAt?: Date;
+  authors?: Author[];
 }
 const {
   title, description, section, slug, headings,
   ogImage, hideToc = false, hideSidebar = false,
-  publishedAt, updatedAt,
+  publishedAt, updatedAt, authors,
 } = Astro.props;
 
 const sectionLabel = section
@@ -48,6 +53,12 @@ const ogImageAbsolute = ogImagePath.startsWith('http')
   ? ogImagePath
   : new URL(ogImagePath, Astro.site).toString();
 
+const authorSchema = authors?.map((a) => ({
+  '@type': 'Person',
+  name: a.name,
+  ...(a.url ? { url: a.url } : {}),
+}));
+
 const articleSchema = publishedAt
   ? {
       '@context': 'https://schema.org',
@@ -58,6 +69,7 @@ const articleSchema = publishedAt
       image: ogImageAbsolute,
       datePublished: publishedAt.toISOString(),
       dateModified: (updatedAt ?? publishedAt).toISOString(),
+      ...(authorSchema && authorSchema.length > 0 ? { author: authorSchema } : {}),
       publisher: { '@id': `${siteUrl}/#organization` },
       isPartOf: { '@id': `${siteUrl}/#website` },
       mainEntityOfPage: canonicalUrl,
@@ -96,6 +108,21 @@ const articleSchema = publishedAt
         </h1>
         {description && (
           <p class="mt-5 text-lg text-ink/80 max-w-prose leading-relaxed">{description}</p>
+        )}
+        {authors && authors.length > 0 && (
+          <p class="mt-5 text-sm text-muted">
+            By{' '}
+            {authors.map((a, i) => (
+              <>
+                {i > 0 && (i === authors.length - 1 ? ' and ' : ', ')}
+                {a.url ? (
+                  <a href={a.url} rel="author noopener noreferrer" target="_blank" class="text-ink hover:text-accent transition-colors">{a.name}</a>
+                ) : (
+                  <span class="text-ink">{a.name}</span>
+                )}
+              </>
+            ))}
+          </p>
         )}
         {(publishedAt || updatedAt) && (
           <p class="mt-3 text-xs text-muted">

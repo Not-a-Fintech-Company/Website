@@ -5,6 +5,9 @@ section: guides
 template: article
 publishedAt: 2021-02-24
 updatedAt: 2026-05-16
+authors:
+  - name: Aaron Frank
+    url: https://www.linkedin.com/in/arfrank/
 ---
 
 This guide serves as a complement to the "[How to select a bank partner](/guides/how-to-select-a-bank-partner/)" guide.

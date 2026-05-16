@@ -5,6 +5,9 @@ section: guides
 template: article
 publishedAt: 2022-04-12
 updatedAt: 2026-05-16
+authors:
+  - name: Seema Amble
+    url: https://www.linkedin.com/in/seema-amble-b404126/
 ---
 
 The goal of this guide is to provide a list of questions to answer in order to launch a product within one year and hopefully start seeing signs of product market fit for a new fintech company. While not exhaustive on all questions, it should provide a good start on what you will need to plan to build vs. buy vs. rent to get a new product launched.
