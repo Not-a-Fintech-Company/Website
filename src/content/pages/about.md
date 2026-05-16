@@ -3,6 +3,8 @@ title: About
 description: Not a Fintech Company is an open-source knowledge base for fintech founders.
 section: about
 template: article
+publishedAt: 2020-12-04
+updatedAt: 2026-05-16
 ---
 
 A non-exhaustive list of people who have contributed in some form so far:

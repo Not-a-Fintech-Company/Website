@@ -3,6 +3,8 @@ title: Resources
 description: External resources for fintech founders — newsletters, communities, regulators, tools.
 section: resources
 template: article
+publishedAt: 2020-12-14
+updatedAt: 2026-05-16
 ---
 
 ## Compilations

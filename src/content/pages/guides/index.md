@@ -3,6 +3,8 @@ title: Guides
 description: Educational guides for fintech founders — bank partner selection, card products, go-to-market, and more.
 section: guides
 template: section-index
+publishedAt: 2020-12-15
+updatedAt: 2026-05-16
 ---
 
 ## Done

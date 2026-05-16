@@ -3,6 +3,8 @@ title: Docs
 description: Compliance documents and policy templates for fintech operators.
 section: docs
 template: section-index
+publishedAt: 2020-12-15
+updatedAt: 2026-05-16
 ---
 
 Here are a collection of policy and procedure documents for what it takes to launch a new product.

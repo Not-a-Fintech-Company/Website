@@ -4,6 +4,8 @@ description: Model the profitability of a single credit card account — interch
 section: tools
 template: tool
 hideSidebar: true
+publishedAt: 2026-05-15
+updatedAt: 2026-05-16
 ---
 
 ## Coming soon

@@ -4,6 +4,8 @@ description: Model the profitability of a single fixed-term consumer loan from t
 section: tools
 template: tool
 hideSidebar: true
+publishedAt: 2026-05-15
+updatedAt: 2026-05-16
 ---
 
 ## Modeling assumptions

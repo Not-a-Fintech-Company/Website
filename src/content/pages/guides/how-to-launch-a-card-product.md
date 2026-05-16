@@ -3,6 +3,8 @@ title: How to launch a card product
 description: Tactical and strategic advice on bringing a card product to market.
 section: guides
 template: article
+publishedAt: 2020-12-16
+updatedAt: 2026-05-16
 ---
 
 ## Introduction

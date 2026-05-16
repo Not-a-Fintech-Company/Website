@@ -3,6 +3,8 @@ title: Guide to starting a challenger bank
 description: A comprehensive guide covering processors, bank partners, card partners, and product features for challenger banks.
 section: guides
 template: article
+publishedAt: 2021-02-28
+updatedAt: 2026-05-16
 ---
 
 ## Table of Contents

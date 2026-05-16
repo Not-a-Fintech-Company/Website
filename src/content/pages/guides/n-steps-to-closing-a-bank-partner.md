@@ -3,6 +3,8 @@ title: 14 steps to closing & working with a bank
 description: A step-by-step guide to the bank partnership process from first meeting to ongoing compliance.
 section: guides
 template: article
+publishedAt: 2021-02-24
+updatedAt: 2026-05-16
 ---
 
 This guide serves as a complement to the "[How to select a bank partner](/guides/how-to-select-a-bank-partner/)" guide.
