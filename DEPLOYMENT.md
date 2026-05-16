@@ -47,7 +47,10 @@ src/
 └── styles/
     └── global.css       # Tailwind v4 entry CSS, theme tokens, prose styles
 public/                  # Static files served as-is:
-                         #   - favicons, og-image, robots.txt
+                         #   - favicon.svg (source), favicon.png (32x32 fallback)
+                         #   - apple-touch-icon.png (180x180)
+                         #   - og-image.svg (source), og-image.png (1200x630 social preview)
+                         #   - robots.txt
                          #   - _redirects (Jekyll-era 301s + sitemap.xml redirect)
                          #   - _headers (HSTS, CSP, immutable cache TTL)
                          #   - llms.txt (AI-search crawler manifest)

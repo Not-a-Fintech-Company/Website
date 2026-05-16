@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-05-16 — Brand mark refresh + IndexNow operational
+
+### Changed — brand assets
+- New brand mark in oxblood (`#7A2E2A`) + paper (`#FAF7F2`): credit-card-N motif with double border, lucide-style credit card icon, diagonal slash, serif "N". Replaces the prior navy + cream design
+- `public/favicon.svg` — hand-coded SVG source of truth (1.1 KB)
+- `public/favicon.png` — 32×32 fallback rasterized from SVG
+- `public/apple-touch-icon.png` — 180×180 (was navy + circle-and-cross "OFC" mark)
+- `public/og-image.svg` — new social-preview source: paper background, oxblood logo centered, EB Garamond headline ("Not a Fintech Company"), Hanken Grotesk subtitle ("Open-source knowledge base for fintech founders"), letter-spaced `NOTAFINTECH.CO` footer, oxblood rule at bottom
+- `public/og-image.png` — 1200×630 rasterized from the new SVG; replaces the navy "Open Sourcing the rest of Fintech" version
+- `notafintech.png` (repo root) — 1024×1024 raster for GitHub repo Social Preview upload, org avatar, etc.
+- `BaseLayout.astro` now serves `favicon.svg` as the primary icon with `favicon.png` fallback
+
+Generation flow: edit SVG sources, re-rasterize with `rsvg-convert`. Documented in `CLAUDE.md` under "Logo / Branding".
+
+### Fixed — IndexNow operational
+- IndexNow GitHub Action workflow was failing on every run with the sitemap fetch returning a Cloudflare "Just a moment..." bot-challenge HTML page instead of XML. Two changes resolved it:
+  - Workflow: added a Chrome User-Agent string to both `curl` calls (sitemap fetch + IndexNow POST), defensive against UA-only matching
+  - Cloudflare: disabled **Bot Fight Mode** and **Browser Integrity Check** in the site's security settings. The site is open CC0 content with no auth surface — these protections were creating friction for the legit AI/SEO crawlers we actually want
+- A WAF Custom Rule was also added covering `/sitemap-*.xml`, `/llms.txt`, `/robots.txt`, and the IndexNow key file — defensive in case Bot Fight Mode is ever re-enabled
+- Manual workflow dispatch verified end-to-end: sitemap returns 20 URLs (200 OK), IndexNow returns 200 (submitted successfully)
+
+### Internal docs
+- `CLAUDE.md` static-assets section + new "Logo / Branding" subsection reflect the SVG-driven workflow
+- `DEPLOYMENT.md` project structure section enumerates the new brand files
+- `.impeccable.md` color tokens corrected to match `global.css` (the May 13 audit hardening lifted dark accent from `#B85450` → `#CD7572` and darkened muted/rule; design context was still showing pre-hardening values)
+
+---
+
 ## 2026-05-16 — SEO audit implementation (P0 + P1 + P2 + P3)
 
 Ran `/seo audit` against production, then closed or declined every item across all four priority tiers. 14 commits, audit health score estimate up from **57/100 → ~85/100**.

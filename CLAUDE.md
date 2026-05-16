@@ -98,12 +98,14 @@ src/
 - `resources.md`, `about.md`, `license.md` — top-level pages
 
 **Static assets** (`public/`):
-- Visual: `favicon.png`, `apple-touch-icon.png`, `og-image.png` (1200×630)
+- Brand: `favicon.svg` (source-of-truth scalable mark) + `favicon.png` (32×32 fallback), `apple-touch-icon.png` (180×180), `og-image.svg` (source) + `og-image.png` (1200×630 social preview)
 - Crawlers: `robots.txt`, `llms.txt` (AI-search manifest with all guides/models/tools/docs and CC0 license)
 - Routing: `_redirects` (Jekyll-era 301s plus `/sitemap.xml` → `/sitemap-index.xml`)
 - Headers: `_headers` (HSTS preload, CSP scoped to Plausible/GTM/GA/Google Sheets, immutable cache on `/_astro/*`, `/pagefind/*`, `/fonts/*`)
 - IndexNow: `<uuid>.txt` key file at root, verified by `api.indexnow.org` on submission
 - Downloads: `credit-card-biz-trunk.pdf`, `credit-card-biz-trunk.ppt`
+
+A 1024×1024 high-res raster of the brand mark lives at `notafintech.png` at the repo root (not in `public/`) for uploading to GitHub repo Social Preview, org avatars, etc.
 
 ## Typography
 
@@ -233,7 +235,18 @@ See `DEPLOYMENT.md` for full setup, `MIGRATION.md` for the Jekyll→Astro and St
 
 ## Logo / Branding
 
-The header is a text wordmark in EB Garamond — no static PNG logo. There is no `src/assets/` directory; the old `logo.svg` / `logo.png` were removed when the migration shipped.
+The header is a text wordmark in EB Garamond — no static logo in the header chrome. The brand mark (used for favicon and social previews) is a credit-card-N motif: oxblood square with a double border, lucide-style credit card upper-left, diagonal slash, serif "N" lower-right. Source of truth: `public/favicon.svg`. PNG variants are rasterized from the SVG via `rsvg-convert`.
+
+To resize or restyle the mark, edit `public/favicon.svg` (and `public/og-image.svg` for the social preview) and re-rasterize:
+
+```bash
+rsvg-convert -w 32 -h 32 public/favicon.svg -o public/favicon.png
+rsvg-convert -w 180 -h 180 public/favicon.svg -o public/apple-touch-icon.png
+rsvg-convert -w 1024 -h 1024 public/favicon.svg -o notafintech.png
+rsvg-convert -w 1200 -h 630 public/og-image.svg -o public/og-image.png
+```
+
+`src/assets/` does not exist (the old Starlight-era `logo.svg`/`logo.png` were removed during the May migration).
 
 ## Design Context
 
