@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Not a Fintech Company">
+  <title>Not a Fintech Company</title>
+  <rect width="100" height="100" fill="#7A2E2A"/>
+
+  <!-- Double border -->
+  <rect x="8" y="8" width="84" height="84" fill="none" stroke="#FAF7F2" stroke-width="0.8"/>
+  <rect x="11.5" y="11.5" width="77" height="77" fill="none" stroke="#FAF7F2" stroke-width="0.8"/>
+
+  <!-- Credit card glyph, upper-left, slight perspective tilt -->
+  <g transform="translate(22 26) rotate(-12)" stroke="#FAF7F2" fill="none" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="22" height="14" rx="1.6"/>
+    <line x1="0" y1="4.6" x2="22" y2="4.6"/>
+    <line x1="3" y1="10" x2="10" y2="10"/>
+  </g>
+
+  <!-- Diagonal slash -->
+  <line x1="20" y1="80" x2="80" y2="20" stroke="#FAF7F2" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Letter N, lower-right, serif -->
+  <text x="72" y="76" font-family="'EB Garamond', Garamond, Georgia, 'Times New Roman', serif" font-weight="500" font-size="24" fill="#FAF7F2" text-anchor="middle">N</text>
+</svg>

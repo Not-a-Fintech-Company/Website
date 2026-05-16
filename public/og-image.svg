@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Not a Fintech Company">
+  <title>Not a Fintech Company — Open-source knowledge base for fintech founders</title>
+
+  <!-- Paper background -->
+  <rect width="1200" height="630" fill="#FAF7F2"/>
+
+  <!-- Subtle bottom rule -->
+  <rect x="0" y="620" width="1200" height="10" fill="#7A2E2A"/>
+
+  <!-- Logo (oxblood square with cream foreground), centered horizontally, upper third -->
+  <g transform="translate(490 110)">
+    <rect width="220" height="220" fill="#7A2E2A"/>
+    <rect x="17.6" y="17.6" width="184.8" height="184.8" fill="none" stroke="#FAF7F2" stroke-width="1.8"/>
+    <rect x="25.3" y="25.3" width="169.4" height="169.4" fill="none" stroke="#FAF7F2" stroke-width="1.8"/>
+
+    <g transform="translate(48 57) rotate(-12)" stroke="#FAF7F2" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="0" y="0" width="48" height="31" rx="3.5"/>
+      <line x1="0" y1="10" x2="48" y2="10"/>
+      <line x1="6.6" y1="22" x2="22" y2="22"/>
+    </g>
+
+    <line x1="44" y1="176" x2="176" y2="44" stroke="#FAF7F2" stroke-width="3.5" stroke-linecap="round"/>
+
+    <text x="158" y="167" font-family="'EB Garamond', Garamond, Georgia, 'Times New Roman', serif" font-weight="500" font-size="52" fill="#FAF7F2" text-anchor="middle">N</text>
+  </g>
+
+  <!-- Headline -->
+  <text x="600" y="420" font-family="'EB Garamond', Garamond, Georgia, 'Times New Roman', serif" font-weight="700" font-size="68" fill="#1A1714" text-anchor="middle" letter-spacing="-1.5">Not a Fintech Company</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="478" font-family="'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="28" fill="#5A534D" text-anchor="middle">Open-source knowledge base for fintech founders</text>
+
+  <!-- Domain footer -->
+  <text x="600" y="556" font-family="'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="18" fill="#7A2E2A" text-anchor="middle" letter-spacing="3">NOTAFINTECH.CO</text>
+</svg>
