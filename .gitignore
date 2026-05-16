@@ -3,3 +3,8 @@ dist/
 .astro/
 .env*
 .claude/
+
+# Local credential mirrors — NEVER commit
+analytics-credentials.md
+.google-client-secret.json
+.google-token.json
