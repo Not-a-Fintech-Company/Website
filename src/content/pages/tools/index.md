@@ -1,11 +1,10 @@
 ---
 title: Tools
-description: Interactive financial calculators for fintech founders — coming soon.
+description: Interactive financial calculators for fintech founders.
 section: tools
 template: section-index
 ---
 
-Interactive versions of our financial models are in the works.
-The first calculators — covering term loans, credit cards, and bank accounts — will ship as their own dedicated pages here.
+Open-source calculators for evaluating fintech product economics. Each tool computes a different dimension of a financial product — change the inputs, see the math respond.
 
-In the meantime, the underlying **[Google Sheets models](/models/)** remain available for copy-and-tweak.
+All formulas are public; the underlying spreadsheet models live under [Models](/models/).
