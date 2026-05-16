@@ -4,7 +4,7 @@ This site is built with [Astro](https://astro.build) + [Tailwind v4](https://tai
 
 ## Prerequisites
 
-- Node.js 18+ (recommended: latest LTS)
+- Node.js 20+ (Tailwind v4 requirement; latest LTS recommended)
 - npm
 - A Cloudflare account (for production deployment)
 
@@ -24,28 +24,31 @@ The `npm run build` command chains `astro build && pagefind --site dist`, which 
 
 ```
 src/
-├── assets/              # Fonts and images (processed by Astro)
+├── layouts/             # Page-level templates (BaseLayout, Article, SectionIndex, Model, Tool)
 ├── components/
-│   ├── layout/          # Page layout templates
-│   ├── nav/             # Navigation components (Header, Footer, etc.)
-│   ├── ui/              # UI components (ThemeToggle, Sidebar, Toc, SearchModal)
-│   └── blocks/          # Content blocks (Hero, GuideCard, RoadmapGrid)
+│   ├── layout/          # Site chrome (Header, Footer, MobileMenu)
+│   ├── nav/             # In-content navigation (Breadcrumbs, Sidebar, Toc)
+│   ├── ui/              # UI primitives (ThemeToggle, SearchModal, Prose, GoogleEmbed, GithubIcon)
+│   ├── blocks/          # Content blocks (Hero, GuideCard, RoadmapGrid)
+│   └── tools/           # Calculator islands (NumberField, ResultBlock, BreakdownRow, TermLoanCalculator)
 ├── content/
 │   └── pages/           # All site content
 │       ├── guides/      # Fintech guides (.md)
-│       ├── models/      # Financial models (.mdx with embeds)
-│       ├── docs/        # Policy documents (.mdx with embeds)
-│       ├── tools/       # Tools section (stub)
+│       ├── models/      # Financial models (.mdx with Google Sheets embeds)
+│       ├── docs/        # Policy documents (.md / .mdx)
+│       ├── tools/       # Calculators (term-loan live; bank-account, credit-card coming soon)
 │       ├── about.md
-│       └── license.md
-├── data/                # Navigation data file
-├── pages/               # Astro routes (index.astro, [...slug].astro)
+│       ├── license.md
+│       └── resources.md
+├── data/                # Navigation + roadmap data files
+├── lib/                 # Pure utility modules (e.g., term-loan.ts math)
+├── pages/               # Astro routes (index.astro home, [...slug].astro dynamic)
 ├── content.config.ts    # Content collection schema
 └── styles/
-    └── global.css       # Tailwind v4 entry CSS and design tokens
-public/                  # Static files served as-is (favicons, robots.txt, PDFs)
-astro.config.mjs         # Astro configuration (Preact, MDX, sitemap, Tailwind)
-wrangler.jsonc           # Cloudflare Pages configuration
+    └── global.css       # Tailwind v4 entry CSS, theme tokens, prose styles
+public/                  # Static files served as-is (favicons, robots.txt, _redirects, PDFs)
+astro.config.mjs         # Astro configuration (Preact, MDX, sitemap, Tailwind v4)
+wrangler.jsonc           # Local Wrangler CLI deploys only — Git-connected Pages doesn't use it
 ```
 
 ## Deploying to Cloudflare Pages
@@ -58,7 +61,7 @@ wrangler.jsonc           # Cloudflare Pages configuration
 4. Configure the build settings:
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
-   - **Node.js version:** Set the environment variable `NODE_VERSION` to `18` (or later).
+   - **Node.js version:** Set the environment variable `NODE_VERSION` to `20` or later (Tailwind v4 requires Node 20+; Cloudflare's current default of Node 22 works).
 5. Click **Save and Deploy**.
 
 Cloudflare will automatically rebuild on every push to the configured branch.
