@@ -37,9 +37,10 @@ The external resources below complement those with material from other practitio
 ### Cards
 
 * [Ultimate guide to interchange revenues](https://www.unit.co/guides/ultimate-guide-interchange-revenue) — Unit
-* [Interchange in 1000 words](https://www.mtb.xyz/notes/interchange-in-1000-words) — mtb.xyz
+* [Interchange in 1000 words](https://www.mtb.xyz/notes/interchange-in-1000-words) — Matt Brown
+* [Card issuing in 1000 words](https://notes.mtb.xyz/p/card-issuing-1000-words) — Matt Brown
 * [2017 payment card landscape](https://www.getfinal.com/company-news/2017/03/30/2017-payment-card-landscape/) — GetFinal (archived but historically useful)
-* Credit Card as a Service — [Part 1](https://ckarchive.com/b/92uzhnhmlqpw), [Part 2](https://ckarchive.com/b/wvu2hghprdkk), [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/) — Cokie Hasiotis
+* Credit Card as a Service — [Part 1](https://ckarchive.com/b/92uzhnhmlqpw), [Part 2](https://ckarchive.com/b/wvu2hghprdkk), [Part 3](https://fintechtoday.co/posts/fttea-with-cokie-credit-card-as-a-service-part-three/) — Cokie Hasiotis and Matthew Goldman
 * [Explainer on the Prepaid Rule for Fintechs](https://blog.lithic.com/prepaid-rule/) — Lithic
 * [Common problems with bank partners](https://kunle.app/august-2021-common-problems-with-bank-partners.html) — [Ayokunle Omojola](https://www.linkedin.com/in/omojola/) (Aug 2021)
 
