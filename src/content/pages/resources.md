@@ -63,7 +63,7 @@ The external resources below complement those with material from other practitio
 * [Net Interest](https://www.netinterest.co/) — Marc Rubinstein on financial-sector economics
 * [Fintech Business Weekly](https://fintechbusinessweekly.substack.com/) — Jason Mikula
 * [Fintech TLDR](https://fintechtldr.substack.com/) — daily fintech newsletter
-* [Cards FTW](https://www.cardsftw.com/) — Matthew Goldman on card products and infrastructure
+* [CardsFTW](https://www.cardsftw.com/) — Matthew Goldman on card products and infrastructure
 
 ## Debt and lending
 
