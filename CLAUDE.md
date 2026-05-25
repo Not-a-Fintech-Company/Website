@@ -208,6 +208,13 @@ Both load `async` and use `is:inline` directives.
 - **Redirect**: `notafintech.co` → `www.notafintech.co` (Cloudflare redirect rule)
 - **Pages URL**: `notafintech.pages.dev`
 
+**Legacy domains** (consolidated 2026-05-25, kept solely to forward traffic + preserve link equity from pre-migration backlinks):
+
+- `notafintech.company` — pre-2026 Jekyll-era domain. Porkbun URL Forwarding: permanent (301) + Include Path + Wildcard → `https://www.notafintech.co`. GSC Change of Address submitted.
+- `notafintechcompany.com` — acquired May 2026 after surfacing as a referring URL. Same Porkbun forwarding config. GSC Change of Address submitted.
+
+Both forward path-preservingly: `legacy.domain/foo/bar?baz=1` → `https://www.notafintech.co/foo/bar?baz=1`.
+
 `wrangler.jsonc` is for local Wrangler CLI deploys only — Git-connected Pages deploys do not use it. Cloudflare's Pages build system handles deployment natively after running the build command.
 
 See `DEPLOYMENT.md` for full setup, `MIGRATION.md` for the Jekyll→Astro and Starlight→Astro cutover steps.

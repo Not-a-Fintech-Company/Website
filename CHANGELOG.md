@@ -1,5 +1,37 @@
 # Changelog
 
+## 2026-05-25 — Post-audit health check + legacy domain consolidation
+
+### Verified (no code changes)
+- **GA4 organic traffic** (28-day): 10 sessions, 8 users, 25 pageviews. Up from 7 organic in the May 16 baseline — directional improvement, still noise-level absolute. Top organic landing pages: `/` (5 sessions, 60% engaged, 4.4 pv/session), `/guides`, `/models/credit-card` (first organic hit since the P1-8 prose rewrite). No regressions vs. baseline.
+- **GSC search performance** (28-day): 0 clicks, 11 impressions across 5 query rows. Best-positioned query: "self challenger bank fintech debit card features fees" at position 7.5 on `/guides/guide-to-starting-a-challenger-bank/`. Other queries at position 24-91. Too early to measure audit lift (typical 2-8 week lag).
+- **Sitemap** at `/sitemap-index.xml`: 21 URLs submitted 2026-05-16, 0 errors, 0 warnings.
+- **URL Inspection** across all 21 URLs:
+  - 7 PASS / indexed (`/`, `/guides/`, `/guides/guide-to-starting-a-challenger-bank/`, `/guides/how-to-launch-a-card-product/`, `/models/bank-account/`, `/models/term-loan/`, `/tools/term-loan/`)
+  - 12 "Discovered — currently not indexed" (normal new-site crawl-budget pattern; the audit signals shipped May 16 should move these to indexed over 2-8 weeks)
+  - 3 stale-data verdicts (pre-migration crawls from Nov-Dec 2025 that GSC hadn't refreshed): `/models/`, `/resources/`, `/guides/n-steps-to-closing-a-bank-partner/`. Manual re-index requested via GSC URL Inspector — should flip to PASS within days.
+- **Rich results detection**: only Breadcrumbs surfaced so far. Article + SoftwareApplication JSON-LD blocks are in the HTML but Google's rich-results validator typically lags 2-6 weeks behind indexation. Re-check mid-June.
+- **Zero 4xx-class errors site-wide.**
+
+### Changed — legacy domain consolidation
+Two old domains now properly funnel into the canonical `www.notafintech.co`:
+
+- **`notafintech.company`** (the pre-2026 Jekyll-era domain) — was previously serving a `302` redirect that collapsed every deep URL to the `.co` homepage, losing per-page link equity (notably from an Alloy blog backlink). Reconfigured Porkbun URL Forwarding:
+  - Type: Permanent (301)
+  - Include Path: yes
+  - Wildcard: yes (covers apex + www)
+  - Destination: `https://www.notafintech.co`
+  - Then submitted **Change of Address** in GSC (`sc-domain:notafintech.company` → `sc-domain:notafintech.co`) so Google formally consolidates ranking signals
+- **`notafintechcompany.com`** (newly acquired; previously appeared as a referring URL to the old `.company` domain) — set up identical Porkbun forwarding, added as GSC property (DNS TXT verification), submitted Change of Address. DNS still propagating to public resolvers at the time of writing; redirect should be externally testable within 24-48h.
+
+End-state: any URL on `notafintech.company` or `notafintechcompany.com` (with or without path or query string) issues a 301 to the path-equivalent on `www.notafintech.co`.
+
+### Internal docs
+- New memory note `cloudflare-security-config` (saved earlier this session) — captured here for the index. Bot Fight Mode + Browser Integrity Check are intentionally OFF on CF; a WAF Skip rule covers SEO crawler paths defensively.
+- Updated memory note `credentials-location` — documents the recurring config-clobber issue between `~/dev/ayso-website` and this project (both share `~/.config/claude-seo/google-api.json` + `oauth-token.json`; whichever ran last wins). Includes the swap procedure and the OAuth scope-drift gotcha (local `.google-token.json` only has `webmasters.readonly` scope; need to re-run `--auth --creds` to restore the broader scope set after a swap).
+
+---
+
 ## 2026-05-16 — Brand mark refresh + IndexNow operational
 
 ### Changed — brand assets
