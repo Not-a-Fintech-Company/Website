@@ -8,3 +8,4 @@ dist/
 analytics-credentials.md
 .google-client-secret.json
 .google-token.json
+.seo-creds/
