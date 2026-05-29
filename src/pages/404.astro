@@ -1,0 +1,59 @@
+---
+// src/pages/404.astro
+// Astro emits this as dist/404.html. Cloudflare Pages serves it with a
+// proper 404 status for any unmatched route — fixing the soft-404 where
+// unknown paths previously returned the homepage at HTTP 200.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/layout/Header.astro';
+import MobileMenu from '../components/layout/MobileMenu.astro';
+import Footer from '../components/layout/Footer.astro';
+import { ArrowRight } from '@lucide/astro';
+
+const title = 'Page not found';
+const description = "That page doesn't exist. Here are some places to pick up the trail.";
+
+const links = [
+  { label: 'Guides', href: '/guides/', note: 'Tactical playbooks for launching card, deposit, and lending products' },
+  { label: 'Models', href: '/models/', note: 'Google Sheets unit-economics templates' },
+  { label: 'Tools', href: '/tools/', note: 'Interactive calculators' },
+  { label: 'Docs', href: '/docs/', note: 'Compliance templates and reference material' },
+];
+---
+
+<BaseLayout {title} {description} noindex={true}>
+  <Header />
+  <MobileMenu />
+
+  <main id="main" class="flex-1 max-w-3xl w-full mx-auto px-4 md:px-6 py-20 md:py-28">
+    <p class="text-xs uppercase tracking-[0.28em] text-accent font-semibold">Error 404</p>
+    <h1 class="mt-4 font-display text-5xl md:text-7xl font-bold tracking-[-0.025em] text-ink leading-[1.02]">
+      Page not found
+    </h1>
+    <p class="mt-6 text-lg text-ink/80 max-w-prose leading-relaxed">
+      The page you were looking for doesn't exist — it may have moved, or the link may be broken. Here are some places to pick up the trail.
+    </p>
+
+    <ul class="mt-12 divide-y divide-rule border-t border-rule">
+      {links.map((l) => (
+        <li>
+          <a
+            href={l.href}
+            class="group flex items-start gap-6 py-5 hover:bg-surface-2 -mx-4 px-4 rounded-lg transition-colors"
+          >
+            <div class="flex-1 min-w-0">
+              <span class="font-display text-2xl font-medium text-ink group-hover:text-accent transition-colors">{l.label}</span>
+              <p class="mt-1 text-muted">{l.note}</p>
+            </div>
+            <ArrowRight class="w-5 h-5 mt-2 text-muted group-hover:text-accent transition-colors flex-shrink-0" />
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="mt-12 text-sm text-muted">
+      Or head back to the <a href="/" class="text-accent underline decoration-1 underline-offset-[3px] hover:text-accent-hover transition-colors">homepage</a>.
+    </p>
+  </main>
+
+  <Footer />
+</BaseLayout>
