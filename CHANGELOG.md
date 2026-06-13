@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-06-13 — favicon.ico, 404 page, health-check script, CF token cleanup
+
+### Added
+- **`src/pages/404.astro`** — real 404 page (BaseLayout, `noindex`, editorial design with links back to Guides/Models/Tools/Docs). Fixes a soft-404 where unknown paths served the homepage at HTTP 200 because no `dist/404.html` existed; Cloudflare Pages now serves a proper 404 for unmatched routes
+- **`public/favicon.ico`** — multi-resolution ICO (48×48 + 32×32, 32-bit) rasterized from the oxblood credit-card-N mark. `BaseLayout` emits `<link rel="icon" href="/favicon.ico" sizes="any">` first, ahead of the SVG + PNG icon links — covers the `/favicon.ico` path that browsers, RSS readers, and link unfurlers probe regardless of `<link>` tags
+- **`scripts/health-check.sh`** — one-command daily HTTP health check (no Google API / OAuth calls, safe anytime). Covers core pages, SEO endpoints, the soft-404 guard, legacy-domain redirects, and security headers. Exits non-zero on failure. `BASE=<url>` overrides for previews
+- **`SITE-HEALTH.md`** + `@`-import pointer in `CLAUDE.md` — tracks the auto-generated health report from `totavi-llc/site-healthcheck` (regenerated each run; do not hand-edit)
+
+### Security
+- **Deleted the over-scoped `notafintech build token`** Cloudflare API token (~23 perms across 1 Account + User + All zones — same broad-template shape as `barranca-verde-prod`). Confirmed unused: notafintech deploys via Git-integrated Pages (GitHub App, not an API token); repo has zero `CLOUDFLARE_API_TOKEN` references; token was dormant since Apr 17 while deploys kept running. Verified post-deletion via an empty commit — Cloudflare Pages + IndexNow check-runs both reported success. If a token is ever needed for manual `wrangler pages deploy`, create minimal: `Account → Cloudflare Pages → Edit`, single account, no zones, named `notafintech-ci-deploy`
+
+### Health snapshot (no code changes)
+- GSC indexing trending up: indexed pages 4 → 9 over the audit window; impressions 71 → 152 (28d). Manual re-index requested for `/guides/go-to-market-plan/` + `/docs/bsa/`
+- Weekly automated healthcheck ALERTs on notafintech traffic swings are noise-floor artifacts (sub-20 weekly sessions); the real signal — impressions + indexed-page count — is positive
+
+---
+
 ## 2026-05-25 — Post-audit health check + legacy domain consolidation
 
 ### Verified (no code changes)

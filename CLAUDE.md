@@ -217,6 +217,8 @@ Both forward path-preservingly: `legacy.domain/foo/bar?baz=1` → `https://www.n
 
 `wrangler.jsonc` is for local Wrangler CLI deploys only — Git-connected Pages deploys do not use it. Cloudflare's Pages build system handles deployment natively after running the build command.
 
+**No Cloudflare API token is required.** Git-integrated Pages authenticates via the Cloudflare Pages GitHub App (OAuth), not a user API token — deploys, WAF rules, redirects, and DNS are all handled by the Git integration or done manually in the dashboard. (An over-scoped leftover `notafintech build token` was deleted 2026-06-13 after confirming it was unused.) If a token is ever needed for a manual `wrangler pages deploy`, create a minimal one: `Account → Cloudflare Pages → Edit`, scoped to the single account, no zones, named `notafintech-ci-deploy`.
+
 See `DEPLOYMENT.md` for full setup, `MIGRATION.md` for the Jekyll→Astro and Starlight→Astro cutover steps.
 
 ## Accessibility
