@@ -98,7 +98,7 @@ src/
 - `resources.md`, `about.md`, `license.md` — top-level pages
 
 **Static assets** (`public/`):
-- Brand: `favicon.svg` (source-of-truth scalable mark) + `favicon.png` (32×32 fallback), `apple-touch-icon.png` (180×180), `og-image.svg` (source) + `og-image.png` (1200×630 social preview)
+- Brand: `favicon.svg` (source-of-truth scalable mark) + `favicon.ico` (multi-res 48/32px, for browsers/readers/unfurlers that probe `/favicon.ico` by path) + `favicon.png` (32×32 fallback), `apple-touch-icon.png` (180×180), `og-image.svg` (source) + `og-image.png` (1200×630 social preview)
 - Crawlers: `robots.txt`, `llms.txt` (AI-search manifest with all guides/models/tools/docs and CC0 license)
 - Routing: `_redirects` (Jekyll-era 301s plus `/sitemap.xml` → `/sitemap-index.xml`)
 - Headers: `_headers` (HSTS preload, CSP scoped to Plausible/GTM/GA/Google Sheets, immutable cache on `/_astro/*`, `/pagefind/*`, `/fonts/*`)
@@ -253,7 +253,11 @@ rsvg-convert -w 32 -h 32 public/favicon.svg -o public/favicon.png
 rsvg-convert -w 180 -h 180 public/favicon.svg -o public/apple-touch-icon.png
 rsvg-convert -w 1024 -h 1024 public/favicon.svg -o notafintech.png
 rsvg-convert -w 1200 -h 630 public/og-image.svg -o public/og-image.png
+# favicon.ico is a multi-res ICO — rsvg-convert can't emit ICO, use ImageMagick:
+magick public/favicon.svg -background none -define icon:auto-resize=48,32 public/favicon.ico
 ```
+
+`BaseLayout` emits four icon links in order: `favicon.ico` (`sizes="any"`), then `favicon.svg`, then `favicon.png`, then `apple-touch-icon.png`.
 
 `src/assets/` does not exist (the old Starlight-era `logo.svg`/`logo.png` were removed during the May migration).
 
